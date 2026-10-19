@@ -13,7 +13,7 @@ def get_card_html(relative_prefix=""):
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prabakala Travels — Visiting Card Studio (Selvabarathi)</title>
+  <title>PKS Travels — Visiting Card Studio (Selvabarathi)</title>
   
   <!-- Google Fonts: Plus Jakarta Sans & Noto Sans Tamil -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -122,7 +122,7 @@ def get_card_html(relative_prefix=""):
           </span>
         </div>
         <h1 class="text-xl sm:text-2xl font-black text-gray-950 mt-1">
-          பிரபாகலா டிராவல்ஸ் — விசிட்டிங் கார்டு
+          PKS டிராவல்ஸ் — விசிட்டிங் கார்டு
         </h1>
         <p class="text-xs text-gray-500 font-medium mt-0.5">
           உரிமையாளர்: <strong id="headerOwnerName" class="text-gray-800">செல்வபாரதி (Selvabarathi)</strong> • White Toyota Taisor SUV
@@ -295,7 +295,7 @@ def get_card_html(relative_prefix=""):
       </button>
     </div>
     <div class="rounded-2xl overflow-hidden shadow-xl border border-gray-200 max-w-3xl mx-auto">
-      <img src="{relative_prefix}assets/visiting_card_light_mockup.jpg" alt="Prabakala Travels Luxury Visiting Card Mockup" class="w-full h-auto object-cover">
+      <img src="{relative_prefix}assets/visiting_card_light_mockup.jpg" alt="PKS Travels Luxury Visiting Card Mockup" class="w-full h-auto object-cover">
     </div>
   </div>
 
@@ -395,8 +395,8 @@ def get_card_html(relative_prefix=""):
 
     // Default Card Settings Data
     const DEFAULT_CARD_DATA = {{
-      brandTa: "பிரபாகலா டிராவல்ஸ்",
-      brandEn: "PRABAKALA TRAVELS",
+      brandTa: "PKS டிராவல்ஸ்",
+      brandEn: "PKS TRAVELS",
       omShakti: "॥ ஓம் சக்தி ॥",
       ownerTa: "செல்வபாரதி",
       ownerEn: "SELVABARATHI",
@@ -419,9 +419,9 @@ def get_card_html(relative_prefix=""):
         if (saved) {{
           const parsed = JSON.parse(saved);
           cardData = Object.assign({{}}, DEFAULT_CARD_DATA, parsed);
-          if (cardData.brandEn === 'PRABHAKALA TRAVELS' || cardData.brandEn === 'PRABAKALA TRAVELS') {{
-            cardData.brandEn = 'PRABAKALA TRAVELS';
-            cardData.brandTa = 'பிரபாகலா டிராவல்ஸ்';
+          if (cardData.brandEn === 'PRABHAKALA TRAVELS' || cardData.brandEn === 'PKS TRAVELS') {{
+            cardData.brandEn = 'PKS TRAVELS';
+            cardData.brandTa = 'PKS டிராவல்ஸ்';
           }}
         }}
         const savedLang = localStorage.getItem('prabhakala_card_lang') || localStorage.getItem('prabakala_card_lang');
@@ -613,7 +613,7 @@ def get_card_html(relative_prefix=""):
     function renderCardBack() {{
       const d = cardData;
       const cleanPhone = d.phone.replace(/[^0-9]/g, '');
-      const waLink = `https://wa.me/${{cleanPhone}}?text=%E0%AE%B5%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%AE%E0%AF%8D!%20I%20would%20like%20to%20book%20Prabakala%20Travels%20cab%20(${{encodeURIComponent(d.carReg)}})`;
+      const waLink = `https://wa.me/${{cleanPhone}}?text=%E0%AE%B5%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%AE%E0%AF%8D!%20I%20would%20like%20to%20book%20PKS%20Travels%20cab%20(${{encodeURIComponent(d.carReg)}})`;
       const qrImgUrl = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&margin=1&data=${{encodeURIComponent(waLink)}}`;
 
       let ownerTitle = '';
@@ -749,7 +749,7 @@ def get_card_html(relative_prefix=""):
     function getCardSVG(type) {{
       const d = cardData;
       const cleanPhone = d.phone.replace(/[^0-9]/g, '');
-      const waLink = `https://wa.me/${{cleanPhone}}?text=%E0%AE%B5%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%AE%E0%AF%8D!%20Prabakala%20Travels%20(${{encodeURIComponent(d.carReg)}})`;
+      const waLink = `https://wa.me/${{cleanPhone}}?text=%E0%AE%B5%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%AE%E0%AF%8D!%20PKS%20Travels%20(${{encodeURIComponent(d.carReg)}})`;
       const qrImgUrl = `https://api.qrserver.com/v1/create-qr-code/?size=240x240&margin=1&data=${{encodeURIComponent(waLink)}}`;
 
       if (type === 'front') {{
