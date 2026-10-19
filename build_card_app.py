@@ -295,7 +295,7 @@ def get_card_html(relative_prefix=""):
       </button>
     </div>
     <div class="rounded-2xl overflow-hidden shadow-xl border border-gray-200 max-w-3xl mx-auto">
-      <img src="{relative_prefix}assets/visiting_card_light_mockup.jpg" alt="Prabhakala Travels Luxury Visiting Card Mockup" class="w-full h-auto object-cover">
+      <img src="{relative_prefix}assets/visiting_card_light_mockup.jpg" alt="Prabakala Travels Luxury Visiting Card Mockup" class="w-full h-auto object-cover">
     </div>
   </div>
 
