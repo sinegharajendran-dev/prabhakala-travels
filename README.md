@@ -1,4 +1,4 @@
-# 🚕 Prabakala Travels (பிரபாகலா டிராவல்ஸ்)
+# 🚕 PKS Travels (PKS டிராவல்ஸ்)
 > Exclusive Owner-Driven White Toyota Taisor SUV Cab Service in Perambalur District, Tamil Nadu.
 
 ## 🌟 Highlights
@@ -10,4 +10,4 @@
 
 ## 🚀 Live Demo & Deployment
 - Built with HTML5, Tailwind CSS, and Vanilla JavaScript.
-- Can be hosted on GitHub Pages or Vercel (`prabhakala.vercel.app` & `prabhakala.vercel.app/card`) with zero server costs.
+- Hosted on Vercel: **https://pkstravels.vercel.app** & **https://pkstravels.vercel.app/card** with zero server costs.
