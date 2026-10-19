@@ -14,7 +14,7 @@ html_content = f'''<!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <title>Prabhakala Travels — Perambalur District Premier Cab Service | White Toyota Taisor SUV (TN 46 AK 1244)</title>
+  <title>Prabakala Travels — Perambalur District Premier Cab Service | White Toyota Taisor SUV (TN 46 AK 1244)</title>
   <meta name="description" content="Official cab service by Selvabarathi. Clean White Toyota Urban Cruiser Taisor AC SUV (TN46AK1244). Doorstep pickup from Perambalur district to Chennai, Trichy, Bangalore, Coimbatore, Madurai & all destinations.">
   
   <!-- Google Fonts: Plus Jakarta Sans & Noto Sans Tamil -->
@@ -55,10 +55,21 @@ html_content = f'''<!DOCTYPE html>
   </script>
 
   <style>
+    /* Strict Mobile Viewport Safety - Prevents ANY horizontal scroll blowout */
+    html, body {{
+      overflow-x: hidden;
+      max-width: 100vw;
+      width: 100%;
+    }}
+    * {{
+      box-sizing: border-box;
+    }}
     body {{
       font-family: "Plus Jakarta Sans", "Noto Sans Tamil", sans-serif;
       -webkit-font-smoothing: antialiased;
       line-height: 1.5;
+      word-break: normal;
+      overflow-wrap: break-word;
     }}
     .no-scrollbar::-webkit-scrollbar {{
       display: none;
@@ -78,13 +89,13 @@ html_content = f'''<!DOCTYPE html>
 <body class="bg-[#F8F9FA] text-brand-dark min-h-screen flex flex-col antialiased selection:bg-brand-yellow selection:text-brand-dark pb-20 md:pb-8">
 
   <!-- ================= TOP NOTIFICATION / TRUST BAR ================= -->
-  <div class="bg-brand-dark text-white text-[11px] sm:text-xs py-2 px-3 sm:px-4 text-center font-medium">
-    <div class="max-w-7xl mx-auto flex items-center justify-center gap-2 flex-wrap">
+  <div class="bg-brand-dark text-white text-[11px] sm:text-xs py-2 px-3 sm:px-4 text-center font-medium w-full overflow-hidden">
+    <div class="max-w-7xl mx-auto flex items-center justify-center gap-1.5 sm:gap-2 flex-wrap leading-relaxed">
       <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-ping shrink-0"></span>
       <span class="lang-text" data-ta="பெரம்பலூர் மாவட்டத்தின் பிரத்யேக கார் சேவை" data-en="Exclusive Cab Service in Perambalur District">
         பெரம்பலூர் மாவட்டத்தின் பிரத்யேக கார் சேவை
       </span>
-      <span class="text-gray-400">•</span>
+      <span class="text-gray-400 hidden xs:inline">•</span>
       <span class="text-brand-yellow font-bold lang-text" data-ta="100% சொன்ன நேரத்தில் புறப்பாடு • TN 46 AK 1244" data-en="100% Punctual Doorstep Pickup • TN 46 AK 1244">
         100% சொன்ன நேரத்தில் புறப்பாடு • TN 46 AK 1244
       </span>
@@ -95,45 +106,45 @@ html_content = f'''<!DOCTYPE html>
   <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm py-2.5 sm:py-3.5">
     <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 flex items-center justify-between gap-2">
       
-      <!-- Brand Logo & Title -->
-      <a href="#" class="flex items-center gap-2.5 sm:gap-3 group shrink min-w-0">
+      <!-- Brand Logo & Title: Clean, never-truncated on mobile -->
+      <a href="#" class="flex items-center gap-2.5 sm:gap-3 group min-w-0 flex-1">
         <!-- Logo Badge -->
         <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl overflow-hidden shadow-sm border border-amber-300 bg-amber-50 shrink-0">
-          <img src="{b64_logo_badge}" alt="Prabhakala Travels Logo" class="w-full h-full object-cover">
+          <img src="{b64_logo_badge}" alt="Prabakala Travels Logo" class="w-full h-full object-cover">
         </div>
         
-        <!-- Text Group (Flexible, Never Overflows) -->
-        <div class="min-w-0">
-          <div class="flex items-center gap-1.5 flex-wrap">
-            <span class="font-black text-base sm:text-xl md:text-2xl tracking-tight text-brand-dark truncate leading-tight lang-text" data-ta="பிரபாகலா டிராவல்ஸ்" data-en="PRABHAKALA TRAVELS">
+        <!-- Text Group (Flexible, legible, never wraps messily) -->
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-1.5">
+            <span class="font-black text-base sm:text-xl md:text-2xl tracking-tight text-brand-dark leading-tight whitespace-nowrap lang-text" data-ta="பிரபாகலா டிராவல்ஸ்" data-en="PRABAKALA TRAVELS">
               பிரபாகலா டிராவல்ஸ்
             </span>
-            <span class="text-[9px] sm:text-[10px] font-black tracking-wider px-2 py-0.5 rounded-md bg-brand-yellow text-brand-dark shrink-0 lang-text" data-ta="பெரம்பலூர் மாவட்டம்" data-en="Perambalur District">
+            <span class="hidden sm:inline-block text-[10px] font-black tracking-wider px-2 py-0.5 rounded-md bg-brand-yellow text-brand-dark shrink-0 lang-text" data-ta="பெரம்பலூர் மாவட்டம்" data-en="Perambalur District">
               பெரம்பலூர் மாவட்டம்
             </span>
           </div>
-          <p class="text-[10px] sm:text-xs text-gray-500 font-medium truncate mt-0.5 lang-text" data-ta="டொயோட்டா டெய்சர் (TN46AK1244) • பெரம்பலூர் மாவட்டம்" data-en="Toyota Taisor (TN46AK1244) • Perambalur District">
-            டொயோட்டா டெய்சர் (TN46AK1244) • பெரம்பலூர் மாவட்டம்
+          <p class="text-[11px] sm:text-xs text-gray-500 font-semibold leading-tight mt-0.5 truncate lang-text" data-ta="பெரம்பலூர் மாவட்டம் • TN 46 AK 1244" data-en="Perambalur District • TN 46 AK 1244">
+            பெரம்பலூர் மாவட்டம் • TN 46 AK 1244
           </p>
         </div>
       </a>
 
       <!-- Quick Action Buttons -->
       <div class="flex items-center gap-1.5 sm:gap-3 shrink-0">
-        <!-- Language Switcher -->
-        <button id="langToggleBtn" onclick="toggleLanguage()" class="px-2.5 sm:px-3.5 py-1.5 rounded-full border border-gray-200 text-xs font-black text-gray-800 bg-white hover:bg-gray-50 flex items-center gap-1.5 tactile-btn shadow-sm">
+        <!-- Language Switcher: Big, accessible pill -->
+        <button id="langToggleBtn" onclick="toggleLanguage()" class="px-3 sm:px-4 py-1.5 sm:py-2 rounded-full border-2 border-brand-yellow/60 text-xs font-black text-brand-dark bg-brand-yellowLight hover:bg-brand-yellow flex items-center gap-1.5 tactile-btn shadow-sm transition-colors cursor-pointer">
           <span>🌐</span>
-          <span id="langText" class="text-[11px] sm:text-xs">English</span>
+          <span id="langText" class="text-xs font-black">English</span>
         </button>
 
         <!-- Call Button (Desktop / Tablet) -->
-        <a href="tel:+916385300259" class="hidden md:flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-grayLight hover:bg-gray-200 text-brand-dark font-bold text-xs tactile-btn border border-gray-200">
+        <a href="tel:+916385300259" class="hidden md:flex items-center gap-2 px-3.5 py-2 rounded-full bg-brand-grayLight hover:bg-gray-200 text-brand-dark font-bold text-xs tactile-btn border border-gray-200">
           <svg class="w-3.5 h-3.5 text-brand-dark" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.72 11.72 0 003.68.59 1 1 0 011 1v3.5a1 1 0 01-1 1A16 16 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.72 11.72 0 00.59 3.68 1 1 0 01-.24 1.02l-2.23 2.09z"/></svg>
           <span>6385300259</span>
         </a>
 
         <!-- WhatsApp Quick Link -->
-        <a href="https://api.whatsapp.com/send?phone=916385300259&text=%E0%AE%B5%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%AE%E0%AF%8D!%20I%20want%20to%20enquire%20about%20Prabhakala%20Travels%20Cab." target="_blank" class="p-2 sm:px-3.5 sm:py-1.5 rounded-full bg-brand-whatsapp hover:bg-brand-whatsappDark text-white font-bold text-xs shadow-wa tactile-btn flex items-center gap-1.5">
+        <a href="https://api.whatsapp.com/send?phone=916385300259&text=%E0%AE%B5%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%AE%E0%AF%8D!%20I%20want%20to%20enquire%20about%20Prabakala%20Travels%20Cab." target="_blank" class="p-2 sm:px-3.5 sm:py-2 rounded-full bg-brand-whatsapp hover:bg-brand-whatsappDark text-white font-bold text-xs shadow-wa tactile-btn flex items-center gap-1.5">
           <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.159.57 4.184 1.564 5.938l-1.564 5.714 5.86-1.537c1.704.931 3.659 1.473 5.74 1.473 6.627 0 12-5.373 12-12s-5.373-12-12-12z"/></svg>
           <span class="hidden sm:inline">WhatsApp</span>
         </a>
@@ -143,31 +154,31 @@ html_content = f'''<!DOCTYPE html>
   </header>
 
   <!-- ================= HERO & MAIN CONTENT ================= -->
-  <main class="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 pt-5 md:pt-10">
+  <main class="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 pt-5 md:pt-10 w-full min-w-0">
 
     <!-- Top Headline Banner -->
     <div class="text-center max-w-3xl mx-auto mb-6 sm:mb-8">
       
-      <!-- Responsive Pill Tag -->
-      <div class="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 rounded-full bg-brand-yellowLight border border-brand-yellow/40 text-brand-dark text-xs sm:text-sm font-bold mb-3 shadow-sm max-w-full">
+      <!-- Responsive Pill Tag: Safe on narrow mobile screens -->
+      <div class="inline-flex flex-wrap items-center justify-center gap-1.5 px-3.5 py-1.5 rounded-full bg-brand-yellowLight border border-brand-yellow/50 text-brand-dark text-xs sm:text-sm font-bold mb-3 shadow-sm max-w-full text-center">
         <span>✨</span>
-        <span class="lang-text truncate" data-ta="பெரம்பலூர் மாவட்டத்தின் முதன்மையான கார் சேவை" data-en="Perambalur District Premier Cab Service">
+        <span class="lang-text" data-ta="பெரம்பலூர் மாவட்டத்தின் முதன்மையான கார் சேவை" data-en="Perambalur District Premier Cab Service">
           பெரம்பலூர் மாவட்டத்தின் முதன்மையான கார் சேவை
         </span>
-        <span class="text-[10px] sm:text-xs bg-brand-yellow text-brand-dark px-2 py-0.5 rounded-full font-black uppercase shrink-0">
-          PRABHAKALA
+        <span class="text-[10px] sm:text-xs bg-brand-yellow text-brand-dark px-2 py-0.5 rounded-full font-black uppercase tracking-wider shrink-0">
+          PRABAKALA
         </span>
       </div>
       
       <!-- Main Headline with generous line-height for Tamil characters -->
-      <h1 class="text-2xl sm:text-4xl md:text-5xl font-black text-brand-dark tracking-tight leading-[1.3] sm:leading-tight px-1">
+      <h1 class="text-2xl sm:text-4xl md:text-5xl font-black text-brand-dark tracking-tight leading-[1.3] sm:leading-tight px-1 break-words">
         <span class="lang-text" data-ta="உங்கள் சொந்த கார் போல ஒரு நிம்மதியான பயணம்!" data-en="Comfortable & Safe Rides Like Your Own Family Car!">
           உங்கள் சொந்த கார் போல ஒரு நிம்மதியான பயணம்!
         </span>
       </h1>
       
       <!-- Subtitle -->
-      <p class="mt-2.5 sm:mt-3 text-xs sm:text-base text-gray-600 font-medium max-w-2xl mx-auto leading-relaxed px-2">
+      <p class="mt-2.5 sm:mt-3 text-xs sm:text-base text-gray-600 font-medium max-w-2xl mx-auto leading-relaxed px-2 break-words">
         <span class="lang-text" 
           data-ta="பெரம்பலூர் மாவட்டத்திலிருந்து சென்னை, திருச்சி, பெங்களூர், கோவை, மதுரை & அனைத்து ஊர்களுக்கும் 100% சொன்ன நேரத்தில் புறப்படும் நம்பகமான ஏசி கார்." 
           data-en="Doorstep pickup from Perambalur district to Chennai, Trichy, Bangalore, Coimbatore, Madurai & all destinations with 100% on-time guarantee.">
@@ -177,41 +188,42 @@ html_content = f'''<!DOCTYPE html>
     </div>
 
     <!-- MAIN GRID: Left (Interactive IndiGo-Style Booking Engine) | Right (Toyota Taisor 3D Showcase & Bento Stats) -->
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-start">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-start w-full min-w-0">
 
       <!-- ================= LEFT: INDIGO-STYLE BOOKING WIDGET (7 COLS) ================= -->
-      <div class="lg:col-span-7 bg-white rounded-3xl p-4 sm:p-7 shadow-bento border border-gray-100">
+      <div class="lg:col-span-7 bg-white rounded-3xl p-4 sm:p-7 shadow-bento border border-gray-100 min-w-0 w-full overflow-hidden">
         
-        <!-- Booking Card Header: Flex-col on mobile, flex-row on tablet+ -->
+        <!-- Booking Card Header -->
         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 border-b border-gray-100 mb-5">
           
-          <div class="flex items-center gap-2.5">
+          <div class="flex items-center gap-2.5 min-w-0">
             <span class="w-9 h-9 rounded-xl bg-brand-yellow flex items-center justify-center font-bold text-base shrink-0">✈️</span>
-            <div>
+            <div class="min-w-0">
               <h2 class="font-black text-base sm:text-xl text-brand-dark leading-tight lang-text" data-ta="எளிதான முன்பதிவு" data-en="Instant Cab Booking">
                 எளிதான முன்பதிவு
               </h2>
-              <p class="text-[11px] sm:text-xs text-gray-500 font-medium lang-text" data-ta="விவரங்களை தேர்வு செய்து வாட்ஸ்அப்பில் புக் செய்க" data-en="Select details & confirm via WhatsApp">
+              <p class="text-[11px] sm:text-xs text-gray-500 font-medium truncate lang-text" data-ta="விவரங்களை தேர்வு செய்து வாட்ஸ்அப்பில் புக் செய்க" data-en="Select details & confirm via WhatsApp">
                 விவரங்களை தேர்வு செய்து வாட்ஸ்அப்பில் புக் செய்க
               </p>
             </div>
           </div>
           
           <!-- Route Type Pill Toggles -->
-          <div class="flex p-1 bg-gray-100 rounded-2xl w-full sm:w-auto shrink-0">
-            <button type="button" id="tripOneWay" onclick="setTripType('oneway')" class="flex-1 sm:flex-initial px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all bg-brand-yellow text-brand-dark shadow-sm text-center">
+          <div class="inline-flex p-1 rounded-2xl bg-gray-100 border border-gray-200 self-start sm:self-auto w-full sm:w-auto">
+            <button type="button" id="tripOneWay" onclick="setTripType('oneway')" class="flex-1 sm:flex-initial px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all bg-brand-yellow text-brand-dark shadow-sm text-center cursor-pointer">
               <span class="lang-text" data-ta="ஒரு வழி" data-en="One-Way">ஒரு வழி</span>
             </button>
-            <button type="button" id="tripRound" onclick="setTripType('round')" class="flex-1 sm:flex-initial px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all text-gray-600 hover:text-brand-dark text-center">
+            <button type="button" id="tripRound" onclick="setTripType('round')" class="flex-1 sm:flex-initial px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all text-gray-600 hover:text-brand-dark text-center cursor-pointer">
               <span class="lang-text" data-ta="இரு வழி" data-en="Round-Trip">இரு வழி</span>
             </button>
           </div>
 
         </div>
 
-        <form id="bookingForm" onsubmit="handleBookingSubmit(event)" class="space-y-5 sm:space-y-6">
+        <!-- Interactive Form Fields -->
+        <form id="bookingForm" onsubmit="handleBookingSubmit(event)" class="space-y-5">
 
-          <!-- STEP 1: FROM & TO LOCATION SELECTORS -->
+          <!-- STEP 1: PICKUP & DROP CITIES -->
           <div class="space-y-2.5 sm:space-y-3">
             
             <div class="flex items-center justify-between gap-2 flex-wrap">
@@ -226,27 +238,27 @@ html_content = f'''<!DOCTYPE html>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3">
-              <!-- FROM (Default Poolambadi / Perambalur) -->
-              <div class="relative bg-brand-grayLight/80 hover:bg-brand-grayLight p-3 sm:p-3.5 rounded-2xl border border-gray-200 focus-within:border-brand-yellow focus-within:bg-white transition-all">
+              <!-- FROM (Default Perambalur / Poolambadi) -->
+              <div class="relative bg-brand-grayLight/80 hover:bg-brand-grayLight p-3 sm:p-3.5 rounded-2xl border border-gray-200 focus-within:border-brand-yellow focus-within:bg-white transition-all min-w-0">
                 <span class="text-[10px] font-black uppercase text-gray-400 tracking-wider block lang-text" data-ta="புறப்படும் இடம் (From)" data-en="Pickup Location (From)">
                   புறப்படும் இடம் (From)
                 </span>
-                <div class="flex items-center gap-2 mt-1">
+                <div class="flex items-center gap-2 mt-1 min-w-0">
                   <span class="text-emerald-500 font-bold text-base sm:text-lg shrink-0">🟢</span>
-                  <select id="pickupCity" onchange="calculateRoute()" class="w-full bg-transparent font-bold text-sm sm:text-base text-brand-dark focus:outline-none cursor-pointer">
+                  <select id="pickupCity" onchange="calculateRoute()" class="w-full max-w-full bg-transparent font-bold text-sm sm:text-base text-brand-dark focus:outline-none cursor-pointer truncate">
                     <!-- Populated dynamically via JS -->
                   </select>
                 </div>
               </div>
 
               <!-- TO (Destination) -->
-              <div class="relative bg-brand-grayLight/80 hover:bg-brand-grayLight p-3 sm:p-3.5 rounded-2xl border border-gray-200 focus-within:border-brand-yellow focus-within:bg-white transition-all">
+              <div class="relative bg-brand-grayLight/80 hover:bg-brand-grayLight p-3 sm:p-3.5 rounded-2xl border border-gray-200 focus-within:border-brand-yellow focus-within:bg-white transition-all min-w-0">
                 <span class="text-[10px] font-black uppercase text-gray-400 tracking-wider block lang-text" data-ta="செல்லும் இடம் (Destination)" data-en="Drop Location (To)">
                   செல்லும் இடம் (Destination)
                 </span>
-                <div class="flex items-center gap-2 mt-1">
+                <div class="flex items-center gap-2 mt-1 min-w-0">
                   <span class="text-rose-500 font-bold text-base sm:text-lg shrink-0">🏁</span>
-                  <select id="dropCity" onchange="calculateRoute()" class="w-full bg-transparent font-bold text-sm sm:text-base text-brand-dark focus:outline-none cursor-pointer">
+                  <select id="dropCity" onchange="calculateRoute()" class="w-full max-w-full bg-transparent font-bold text-sm sm:text-base text-brand-dark focus:outline-none cursor-pointer truncate">
                     <!-- Populated dynamically via JS -->
                   </select>
                 </div>
@@ -265,26 +277,26 @@ html_content = f'''<!DOCTYPE html>
 
             <!-- Quick Route Preset Chips -->
             <div class="pt-1">
-              <span class="text-[11px] font-bold text-gray-500 block mb-1.5 lang-text" data-ta="அடிக்கடி செல்லும் வழித்தடங்கள் / Quick Routes:" data-en="Popular Quick Routes:">
+              <span class="text-[11px] font-bold text-gray-400 block mb-1.5 lang-text" data-ta="அடிக்கடி செல்லும் வழித்தடங்கள் / Quick Routes:" data-en="Popular Quick Routes:">
                 அடிக்கடி செல்லும் வழித்தடங்கள் / Quick Routes:
               </span>
               <div class="flex flex-wrap gap-1.5">
-                <button type="button" onclick="quickSelectRoute('Perambalur', 'Chennai')" class="px-2.5 sm:px-3 py-1 rounded-full text-[11px] sm:text-xs font-semibold bg-gray-100 hover:bg-brand-yellow hover:text-brand-dark transition-colors">
+                <button type="button" onclick="quickSelectRoute('Perambalur', 'Chennai')" class="px-2.5 sm:px-3 py-1 rounded-full text-[11px] sm:text-xs font-semibold bg-gray-100 hover:bg-brand-yellow hover:text-brand-dark transition-colors cursor-pointer">
                   📍 <span class="lang-text" data-ta="சென்னை (270 km)" data-en="Chennai (270 km)">சென்னை (270 km)</span>
                 </button>
-                <button type="button" onclick="quickSelectRoute('Perambalur', 'Trichy Airport')" class="px-2.5 sm:px-3 py-1 rounded-full text-[11px] sm:text-xs font-semibold bg-gray-100 hover:bg-brand-yellow hover:text-brand-dark transition-colors">
+                <button type="button" onclick="quickSelectRoute('Perambalur', 'Trichy Airport')" class="px-2.5 sm:px-3 py-1 rounded-full text-[11px] sm:text-xs font-semibold bg-gray-100 hover:bg-brand-yellow hover:text-brand-dark transition-colors cursor-pointer">
                   ✈️ <span class="lang-text" data-ta="திருச்சி ஏர்போர்ட் (55 km)" data-en="Trichy Airport (55 km)">திருச்சி ஏர்போர்ட் (55 km)</span>
                 </button>
-                <button type="button" onclick="quickSelectRoute('Perambalur', 'Bangalore')" class="px-2.5 sm:px-3 py-1 rounded-full text-[11px] sm:text-xs font-semibold bg-gray-100 hover:bg-brand-yellow hover:text-brand-dark transition-colors">
+                <button type="button" onclick="quickSelectRoute('Perambalur', 'Bangalore')" class="px-2.5 sm:px-3 py-1 rounded-full text-[11px] sm:text-xs font-semibold bg-gray-100 hover:bg-brand-yellow hover:text-brand-dark transition-colors cursor-pointer">
                   📍 <span class="lang-text" data-ta="பெங்களூர் (340 km)" data-en="Bangalore (340 km)">பெங்களூர் (340 km)</span>
                 </button>
-                <button type="button" onclick="quickSelectRoute('Poolambadi', 'Chennai')" class="px-2.5 sm:px-3 py-1 rounded-full text-[11px] sm:text-xs font-semibold bg-gray-100 hover:bg-brand-yellow hover:text-brand-dark transition-colors">
+                <button type="button" onclick="quickSelectRoute('Poolambadi', 'Chennai')" class="px-2.5 sm:px-3 py-1 rounded-full text-[11px] sm:text-xs font-semibold bg-gray-100 hover:bg-brand-yellow hover:text-brand-dark transition-colors cursor-pointer">
                   📍 <span class="lang-text" data-ta="பூலாம்பாடி → சென்னை" data-en="Poolambadi → Chennai">பூலாம்பாடி → சென்னை</span>
                 </button>
-                <button type="button" onclick="quickSelectRoute('Perambalur', 'Salem')" class="px-2.5 sm:px-3 py-1 rounded-full text-[11px] sm:text-xs font-semibold bg-gray-100 hover:bg-brand-yellow hover:text-brand-dark transition-colors">
+                <button type="button" onclick="quickSelectRoute('Perambalur', 'Salem')" class="px-2.5 sm:px-3 py-1 rounded-full text-[11px] sm:text-xs font-semibold bg-gray-100 hover:bg-brand-yellow hover:text-brand-dark transition-colors cursor-pointer">
                   📍 <span class="lang-text" data-ta="சேலம் (140 km)" data-en="Salem (140 km)">சேலம் (140 km)</span>
                 </button>
-                <button type="button" onclick="quickSelectRoute('Perambalur', 'Tirupati')" class="px-2.5 sm:px-3 py-1 rounded-full text-[11px] sm:text-xs font-semibold bg-gray-100 hover:bg-brand-yellow hover:text-brand-dark transition-colors">
+                <button type="button" onclick="quickSelectRoute('Perambalur', 'Tirupati')" class="px-2.5 sm:px-3 py-1 rounded-full text-[11px] sm:text-xs font-semibold bg-gray-100 hover:bg-brand-yellow hover:text-brand-dark transition-colors cursor-pointer">
                   🛕 <span class="lang-text" data-ta="திருப்பதி (340 km)" data-en="Tirupati (340 km)">திருப்பதி (340 km)</span>
                 </button>
               </div>
@@ -292,8 +304,8 @@ html_content = f'''<!DOCTYPE html>
           </div>
 
           <!-- STEP 2: INDIGO-STYLE 30-DAY HORIZONTAL CALENDAR -->
-          <div class="space-y-2.5 sm:space-y-3 pt-1">
-            <div class="flex items-center justify-between gap-2">
+          <div class="space-y-2.5 sm:space-y-3 pt-1 min-w-0">
+            <div class="flex items-center justify-between gap-2 flex-wrap">
               <label class="text-[11px] sm:text-xs font-black uppercase tracking-wider text-gray-500 flex items-center gap-1.5">
                 <span class="lang-text" data-ta="📅 2. பயண நாள் & நேரம்" data-en="📅 2. Date & Time">📅 2. பயண நாள் & நேரம்</span>
                 <span class="text-gray-400 font-normal">/ Date & Time</span>
@@ -303,170 +315,169 @@ html_content = f'''<!DOCTYPE html>
               </span>
             </div>
 
-            <!-- Horizontal Swipeable 30-Day Strip -->
-            <div id="calendarStrip" class="flex gap-2 overflow-x-auto no-scrollbar py-1.5 px-0.5 scroll-smooth">
-              <!-- Dynamically populated by JS (30 days) -->
+            <!-- Horizontal Swipeable 30-Day Strip (Enclosed in strict container) -->
+            <div class="w-full min-w-0 overflow-hidden">
+              <div id="calendarStrip" class="flex gap-2 overflow-x-auto no-scrollbar py-1.5 px-0.5 scroll-smooth max-w-full">
+                <!-- Dynamically populated by JS (30 days) -->
+              </div>
             </div>
 
             <!-- Departure Time Section: Preset Pills + Custom Time Picker -->
-            <div class="pt-1.5">
+            <div class="pt-1.5 min-w-0">
               <span class="text-[11px] font-bold text-gray-500 block mb-1.5 lang-text" data-ta="புறப்படும் நேரம் / Pickup Time:" data-en="Select Pickup Time:">
                 புறப்படும் நேரம் / Pickup Time:
               </span>
               
               <!-- Quick Time Pills -->
               <div class="grid grid-cols-3 sm:grid-cols-6 gap-1.5 sm:gap-2 mb-2.5">
-                <button type="button" onclick="setTime('04:00 AM')" class="time-pill px-2 py-2 rounded-xl text-xs font-bold border border-gray-200 bg-white hover:border-brand-yellow transition-all text-center">
+                <button type="button" onclick="setTime('04:00 AM')" class="time-pill px-2 py-2 rounded-xl text-xs font-bold border border-gray-200 bg-white hover:border-brand-yellow transition-all text-center cursor-pointer">
                   04:00 AM
                 </button>
-                <button type="button" onclick="setTime('06:00 AM')" class="time-pill px-2 py-2 rounded-xl text-xs font-bold border border-gray-200 bg-white hover:border-brand-yellow transition-all text-center">
+                <button type="button" onclick="setTime('06:00 AM')" class="time-pill px-2 py-2 rounded-xl text-xs font-bold border border-gray-200 bg-white hover:border-brand-yellow transition-all text-center cursor-pointer">
                   06:00 AM
                 </button>
-                <button type="button" onclick="setTime('09:00 AM')" class="time-pill active px-2 py-2 rounded-xl text-xs font-bold border border-brand-yellow bg-brand-yellow text-brand-dark transition-all text-center shadow-sm">
+                <button type="button" onclick="setTime('09:00 AM')" class="time-pill active px-2 py-2 rounded-xl text-xs font-bold border border-brand-yellow bg-brand-yellow text-brand-dark transition-all text-center shadow-sm cursor-pointer">
                   09:00 AM
                 </button>
-                <button type="button" onclick="setTime('02:00 PM')" class="time-pill px-2 py-2 rounded-xl text-xs font-bold border border-gray-200 bg-white hover:border-brand-yellow transition-all text-center">
+                <button type="button" onclick="setTime('02:00 PM')" class="time-pill px-2 py-2 rounded-xl text-xs font-bold border border-gray-200 bg-white hover:border-brand-yellow transition-all text-center cursor-pointer">
                   02:00 PM
                 </button>
-                <button type="button" onclick="setTime('06:00 PM')" class="time-pill px-2 py-2 rounded-xl text-xs font-bold border border-gray-200 bg-white hover:border-brand-yellow transition-all text-center">
+                <button type="button" onclick="setTime('06:00 PM')" class="time-pill px-2 py-2 rounded-xl text-xs font-bold border border-gray-200 bg-white hover:border-brand-yellow transition-all text-center cursor-pointer">
                   06:00 PM
                 </button>
-                <button type="button" onclick="setTime('10:00 PM')" class="time-pill px-2 py-2 rounded-xl text-xs font-bold border border-gray-200 bg-white hover:border-brand-yellow transition-all text-center">
+                <button type="button" onclick="setTime('10:00 PM')" class="time-pill px-2 py-2 rounded-xl text-xs font-bold border border-gray-200 bg-white hover:border-brand-yellow transition-all text-center cursor-pointer">
                   10:00 PM
                 </button>
               </div>
 
               <!-- Custom Interactive Time Selector -->
               <div class="p-2.5 sm:p-3 rounded-2xl bg-brand-grayLight/80 border border-gray-200 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
-                <div class="flex items-center gap-2">
-                  <span class="text-base sm:text-lg">⏰</span>
-                  <div>
-                    <span class="font-black text-xs text-brand-dark block lang-text" data-ta="நீங்கள் விரும்பும் நேரம் (Custom Time):" data-en="Custom Pickup Time:">
+                <div class="flex items-center gap-2 min-w-0">
+                  <span class="text-base sm:text-lg shrink-0">⏰</span>
+                  <div class="min-w-0">
+                    <span class="font-black text-xs text-brand-dark block truncate lang-text" data-ta="நீங்கள் விரும்பும் நேரம் (Custom Time):" data-en="Custom Pickup Time:">
                       நீங்கள் விரும்பும் நேரம் (Custom Time):
                     </span>
-                    <span class="text-[10px] text-gray-500 lang-text" data-ta="துல்லியமான மணி & நிமிடத்தை தேர்வு செய்க" data-en="Pick any exact hour & minute">
+                    <span class="text-[10px] text-gray-500 truncate block lang-text" data-ta="துல்லியமான மணி & நிமிடத்தை தேர்வு செய்க" data-en="Pick any exact hour & minute">
                       துல்லியமான மணி & நிமிடத்தை தேர்வு செய்க
                     </span>
                   </div>
                 </div>
-                <div class="flex items-center gap-2 justify-between sm:justify-end">
-                  <input type="time" id="customTimeInput" value="09:00" onchange="setCustomTime(this.value)" class="p-2 rounded-xl border border-gray-300 font-black text-xs sm:text-sm text-brand-dark bg-white focus:outline-none focus:border-brand-yellow cursor-pointer shadow-sm">
-                  <span id="activeTimeBadge" class="text-xs font-black px-2.5 py-2 rounded-xl bg-brand-yellow text-brand-dark shrink-0">09:00 AM</span>
+                
+                <div class="flex items-center gap-2 self-end sm:self-auto shrink-0">
+                  <input type="time" id="customTimePicker" onchange="setCustomTime(this.value)" value="09:00" class="px-3 py-1.5 rounded-xl border border-gray-300 text-xs sm:text-sm font-black bg-white text-brand-dark focus:outline-none focus:border-brand-yellow cursor-pointer shadow-sm">
+                  <span id="activeTimeBadge" class="text-xs font-black text-brand-dark px-2.5 py-1 rounded-lg bg-brand-yellow">
+                    09:00 AM
+                  </span>
                 </div>
               </div>
 
             </div>
           </div>
 
-          <!-- STEP 3: PASSENGER SELECTION (INDIGO AIRPORT STYLE) -->
-          <div class="space-y-2.5 sm:space-y-3 pt-1">
+          <!-- STEP 3: PASSENGERS & LUGGAGE CONFIGURATOR -->
+          <div class="space-y-3 pt-1 min-w-0">
             <label class="text-[11px] sm:text-xs font-black uppercase tracking-wider text-gray-500 flex items-center gap-1.5">
-              <span class="lang-text" data-ta="👥 3. பயணிகள் எண்ணிக்கை" data-en="👥 3. Number of Passengers">👥 3. பயணிகள் எண்ணிக்கை</span>
-              <span class="text-gray-400 font-normal">/ Passengers (Max 4 Adults)</span>
+              <span class="lang-text" data-ta="👥 3. பயணிகள் & லக்கேஜ்" data-en="👥 3. Passengers & Luggage">👥 3. பயணிகள் & லக்கேஜ்</span>
+              <span class="text-gray-400 font-normal">/ Capacity</span>
             </label>
 
+            <!-- Counter Cards (2 Columns) -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3">
               
-              <!-- Adults Counter -->
-              <div class="flex items-center justify-between p-3 sm:p-3.5 rounded-2xl bg-brand-grayLight/80 border border-gray-200">
+              <!-- Adults -->
+              <div class="p-3 rounded-2xl bg-brand-grayLight/80 border border-gray-200 flex items-center justify-between">
                 <div>
-                  <span class="font-black text-xs sm:text-sm text-brand-dark block lang-text" data-ta="பெரியவர்கள் (Adults)" data-en="Adults (Age 12+)">பெரியவர்கள் (Adults)</span>
-                  <span class="text-[10px] sm:text-[11px] text-gray-500 font-medium lang-text" data-ta="12+ வயது • 12+ years" data-en="Age 12+ years">12+ வயது • 12+ years</span>
+                  <span class="font-bold text-xs sm:text-sm text-brand-dark block lang-text" data-ta="பெரியவர்கள் (Adults)" data-en="Adults (12+ yrs)">
+                    பெரியவர்கள் (Adults)
+                  </span>
+                  <span class="text-[10px] text-gray-400 lang-text" data-ta="அதிகபட்சம் 4 பேர்" data-en="Max 4 seats in Taisor">அதிகபட்சம் 4 பேர்</span>
                 </div>
-                <div class="flex items-center gap-2.5">
-                  <button type="button" onclick="adjustCount('adults', -1)" class="w-8 h-8 rounded-full bg-white hover:bg-gray-100 border border-gray-300 font-black text-base flex items-center justify-center shadow-sm tactile-btn">−</button>
-                  <span id="adultCount" class="font-black text-base w-4 text-center">2</span>
-                  <button type="button" onclick="adjustCount('adults', 1)" class="w-8 h-8 rounded-full bg-white hover:bg-gray-100 border border-gray-300 font-black text-base flex items-center justify-center shadow-sm tactile-btn">+</button>
+                <div class="flex items-center gap-2 bg-white rounded-xl p-1 border border-gray-200 shadow-sm">
+                  <button type="button" onclick="adjustCount('adults', -1)" class="w-7 h-7 rounded-lg bg-gray-100 hover:bg-gray-200 font-black text-sm flex items-center justify-center transition-colors cursor-pointer">-</button>
+                  <span id="adultCount" class="w-6 text-center font-black text-sm text-brand-dark">2</span>
+                  <button type="button" onclick="adjustCount('adults', 1)" class="w-7 h-7 rounded-lg bg-brand-yellow hover:bg-brand-yellowHover font-black text-sm flex items-center justify-center transition-colors cursor-pointer">+</button>
                 </div>
               </div>
 
-              <!-- Children Counter -->
-              <div class="flex items-center justify-between p-3 sm:p-3.5 rounded-2xl bg-brand-grayLight/80 border border-gray-200">
+              <!-- Children -->
+              <div class="p-3 rounded-2xl bg-brand-grayLight/80 border border-gray-200 flex items-center justify-between">
                 <div>
-                  <span class="font-black text-xs sm:text-sm text-brand-dark block lang-text" data-ta="குழந்தைகள் (Children)" data-en="Children (Age 2-12)">குழந்தைகள் (Children)</span>
-                  <span class="text-[10px] sm:text-[11px] text-gray-500 font-medium lang-text" data-ta="2 - 12 வயது • Under 12" data-en="Age 2 - 12 years">2 - 12 வயது • Under 12</span>
+                  <span class="font-bold text-xs sm:text-sm text-brand-dark block lang-text" data-ta="குழந்தைகள் (Children)" data-en="Children (Under 12)">
+                    குழந்தைகள் (Children)
+                  </span>
+                  <span class="text-[10px] text-gray-400 lang-text" data-ta="மடியில் / சீட்டில்" data-en="Infants & kids">மடியில் / சீட்டில்</span>
                 </div>
-                <div class="flex items-center gap-2.5">
-                  <button type="button" onclick="adjustCount('children', -1)" class="w-8 h-8 rounded-full bg-white hover:bg-gray-100 border border-gray-300 font-black text-base flex items-center justify-center shadow-sm tactile-btn">−</button>
-                  <span id="childCount" class="font-black text-base w-4 text-center">0</span>
-                  <button type="button" onclick="adjustCount('children', 1)" class="w-8 h-8 rounded-full bg-white hover:bg-gray-100 border border-gray-300 font-black text-base flex items-center justify-center shadow-sm tactile-btn">+</button>
+                <div class="flex items-center gap-2 bg-white rounded-xl p-1 border border-gray-200 shadow-sm">
+                  <button type="button" onclick="adjustCount('children', -1)" class="w-7 h-7 rounded-lg bg-gray-100 hover:bg-gray-200 font-black text-sm flex items-center justify-center transition-colors cursor-pointer">-</button>
+                  <span id="childCount" class="w-6 text-center font-black text-sm text-brand-dark">0</span>
+                  <button type="button" onclick="adjustCount('children', 1)" class="w-7 h-7 rounded-lg bg-brand-yellow hover:bg-brand-yellowHover font-black text-sm flex items-center justify-center transition-colors cursor-pointer">+</button>
                 </div>
               </div>
 
             </div>
-          </div>
 
-          <!-- STEP 4: LUGGAGE SELECTION (SIMPLE BIG BUTTONS) -->
-          <div class="space-y-2.5 sm:space-y-3 pt-1">
-            <div class="flex items-center justify-between">
-              <label class="text-[11px] sm:text-xs font-black uppercase tracking-wider text-gray-500 flex items-center gap-1.5">
-                <span class="lang-text" data-ta="🧳 4. லக்கேஜ் உள்ளதா?" data-en="🧳 4. Luggage & Bags">🧳 4. லக்கேஜ் உள்ளதா?</span>
-                <span class="text-gray-400 font-normal">/ Luggage & Bags</span>
-              </label>
-            </div>
-
-            <!-- Yes / No Toggle Pills -->
-            <div class="grid grid-cols-2 gap-2.5">
-              <button type="button" id="luggageYesBtn" onclick="setLuggage(true)" class="p-3 rounded-2xl border-2 border-brand-yellow bg-brand-yellowLight text-brand-dark font-black text-xs sm:text-sm flex items-center justify-center gap-1.5 transition-all tactile-btn">
-                <span>🧳</span>
-                <span class="lang-text" data-ta="ஆம், உண்டு (Yes)" data-en="Yes, Have Luggage">ஆம், உண்டு (Yes)</span>
-              </button>
-              <button type="button" id="luggageNoBtn" onclick="setLuggage(false)" class="p-3 rounded-2xl border border-gray-200 bg-white text-gray-600 font-bold text-xs sm:text-sm flex items-center justify-center gap-1.5 transition-all tactile-btn">
-                <span>🎒</span>
-                <span class="lang-text" data-ta="இல்லை (No)" data-en="No Luggage (Small Bags Only)">இல்லை (No)</span>
-              </button>
-            </div>
-
-            <!-- Trolley & Bags Steppers (Visible when Yes is selected) -->
-            <div id="luggageDetailsBox" class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-1">
+            <!-- Luggage Toggle -->
+            <div class="pt-1">
+              <span class="text-[11px] font-bold text-gray-500 block mb-1.5 lang-text" data-ta="பெரிய லக்கேஜ் சூட்கேஸ் உள்ளதா?" data-en="Do you have heavy luggage/suitcases?">
+                பெரிய லக்கேஜ் சூட்கேஸ் உள்ளதா?
+              </span>
               
-              <div class="flex items-center justify-between p-3 rounded-2xl bg-brand-grayLight/80 border border-gray-200">
-                <div class="flex items-center gap-2">
-                  <span class="text-lg">🧳</span>
-                  <div>
-                    <span class="font-black text-xs sm:text-sm text-brand-dark block lang-text" data-ta="பெரிய டிராலி (Trolley)" data-en="Trolley Suitcases">பெரிய டிராலி (Trolley)</span>
-                    <span class="text-[10px] sm:text-[11px] text-gray-500 font-medium lang-text" data-ta="சூட்கேஸ் / Suitcase" data-en="Medium / Large">சூட்கேஸ் / Suitcase</span>
-                  </div>
-                </div>
-                <div class="flex items-center gap-2.5">
-                  <button type="button" onclick="adjustCount('trolleys', -1)" class="w-8 h-8 rounded-full bg-white hover:bg-gray-100 border border-gray-300 font-black text-base flex items-center justify-center shadow-sm tactile-btn">−</button>
-                  <span id="trolleyCount" class="font-black text-base w-4 text-center">1</span>
-                  <button type="button" onclick="adjustCount('trolleys', 1)" class="w-8 h-8 rounded-full bg-white hover:bg-gray-100 border border-gray-300 font-black text-base flex items-center justify-center shadow-sm tactile-btn">+</button>
-                </div>
+              <div class="grid grid-cols-2 gap-2">
+                <button type="button" id="luggageYesBtn" onclick="setLuggage(true)" class="p-3 rounded-2xl border-2 border-brand-yellow bg-brand-yellowLight text-brand-dark font-black text-xs sm:text-sm flex items-center justify-center gap-1.5 transition-all tactile-btn cursor-pointer">
+                  <span>🧳</span>
+                  <span class="lang-text" data-ta="ஆம், லக்கேஜ் உண்டு" data-en="Yes, with Luggage">ஆம், லக்கேஜ் உண்டு</span>
+                </button>
+                <button type="button" id="luggageNoBtn" onclick="setLuggage(false)" class="p-3 rounded-2xl border border-gray-200 bg-white text-gray-600 font-bold text-xs sm:text-sm flex items-center justify-center gap-1.5 transition-all tactile-btn cursor-pointer">
+                  <span>🎒</span>
+                  <span class="lang-text" data-ta="இல்லை (சிறிய பைகள் மட்டும்)" data-en="No (Small Bags Only)">இல்லை (சிறிய பைகள் மட்டும்)</span>
+                </button>
               </div>
 
-              <div class="flex items-center justify-between p-3 rounded-2xl bg-brand-grayLight/80 border border-gray-200">
-                <div class="flex items-center gap-2">
-                  <span class="text-lg">🎒</span>
+              <!-- Expanded Luggage Breakdown -->
+              <div id="luggageDetailsBox" class="mt-2.5 p-3 rounded-2xl bg-amber-50/70 border border-amber-200 grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                <div class="flex items-center justify-between">
                   <div>
-                    <span class="font-black text-xs sm:text-sm text-brand-dark block lang-text" data-ta="கைப்பை (Backpack)" data-en="Handbags / Backpacks">கைப்பை (Backpack)</span>
-                    <span class="text-[10px] sm:text-[11px] text-gray-500 font-medium lang-text" data-ta="சிறிய பேக் / Small bag" data-en="Small Bags">சிறிய பேக் / Small bag</span>
+                    <span class="font-bold text-xs text-amber-950 block lang-text" data-ta="டிராலி சூட்கேஸ் (Trolleys):" data-en="Trolley Suitcases:">டிராலி சூட்கேஸ் (Trolleys):</span>
+                    <span class="text-[10px] text-amber-800/80 lang-text" data-ta="மீடியம் / பெரிய சைஸ்" data-en="Boot holds 2-3 comfortably">மீடியம் / பெரிய சைஸ்</span>
+                  </div>
+                  <div class="flex items-center gap-1.5 bg-white rounded-lg p-1 border border-amber-300">
+                    <button type="button" onclick="adjustCount('trolleys', -1)" class="w-6 h-6 rounded bg-gray-100 font-bold text-xs flex items-center justify-center cursor-pointer">-</button>
+                    <span id="trolleyCount" class="w-5 text-center font-black text-xs text-brand-dark">1</span>
+                    <button type="button" onclick="adjustCount('trolleys', 1)" class="w-6 h-6 rounded bg-brand-yellow font-bold text-xs flex items-center justify-center cursor-pointer">+</button>
                   </div>
                 </div>
-                <div class="flex items-center gap-2.5">
-                  <button type="button" onclick="adjustCount('bags', -1)" class="w-8 h-8 rounded-full bg-white hover:bg-gray-100 border border-gray-300 font-black text-base flex items-center justify-center shadow-sm tactile-btn">−</button>
-                  <span id="bagCount" class="font-black text-base w-4 text-center">1</span>
-                  <button type="button" onclick="adjustCount('bags', 1)" class="w-8 h-8 rounded-full bg-white hover:bg-gray-100 border border-gray-300 font-black text-base flex items-center justify-center shadow-sm tactile-btn">+</button>
+
+                <div class="flex items-center justify-between">
+                  <div>
+                    <span class="font-bold text-xs text-amber-950 block lang-text" data-ta="கைப்பை / பேக்பேக் (Bags):" data-en="Handbags / Backpacks:">கைப்பை / பேக்பேக் (Bags):</span>
+                    <span class="text-[10px] text-amber-800/80 lang-text" data-ta="டிராவல் பேக்ஸ்" data-en="Cabin duffel & backpacks">டிராவல் பேக்ஸ்</span>
+                  </div>
+                  <div class="flex items-center gap-1.5 bg-white rounded-lg p-1 border border-amber-300">
+                    <button type="button" onclick="adjustCount('bags', -1)" class="w-6 h-6 rounded bg-gray-100 font-bold text-xs flex items-center justify-center cursor-pointer">-</button>
+                    <span id="bagCount" class="w-5 text-center font-black text-xs text-brand-dark">1</span>
+                    <button type="button" onclick="adjustCount('bags', 1)" class="w-6 h-6 rounded bg-brand-yellow font-bold text-xs flex items-center justify-center cursor-pointer">+</button>
+                  </div>
                 </div>
               </div>
-
             </div>
+
           </div>
 
-          <!-- REAL-TIME RIDE SUMMARY BANNER -->
-          <div class="bg-gray-50 rounded-2xl p-3 sm:p-4 border border-gray-200/90 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
-            <div>
+          <!-- REAL-TIME RIDE SUMMARY BANNER (Break-words & safe layout) -->
+          <div class="bg-gray-50 rounded-2xl p-3 sm:p-4 border border-gray-200/90 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 min-w-0 break-words">
+            <div class="min-w-0 flex-1">
               <div class="text-[10px] font-black text-gray-400 uppercase tracking-wider lang-text" data-ta="உங்கள் பயண விவரம் / Trip Summary" data-en="Your Trip Summary">
                 உங்கள் பயண விவரம் / Trip Summary
               </div>
-              <div id="summaryRouteText" class="font-black text-brand-dark text-sm sm:text-base mt-0.5">
+              <div id="summaryRouteText" class="font-black text-brand-dark text-sm sm:text-base mt-0.5 break-words">
                 பெரம்பலூர் ➔ சென்னை (~270 KM)
               </div>
-              <div id="summarySubText" class="text-[11px] sm:text-xs text-gray-600 mt-0.5 leading-relaxed">
+              <div id="summarySubText" class="text-[11px] sm:text-xs text-gray-600 mt-0.5 leading-relaxed break-words">
                 2 பயணிகள் • 1 டிராலி • ஒரு வழி • Toyota Taisor SUV
               </div>
             </div>
-            <div class="text-right flex sm:flex-col items-center sm:items-end justify-between border-t sm:border-t-0 pt-2 sm:pt-0 border-gray-200">
+            <div class="text-right flex sm:flex-col items-center sm:items-end justify-between border-t sm:border-t-0 pt-2 sm:pt-0 border-gray-200 shrink-0">
               <span class="text-[10px] text-gray-400 font-semibold lang-text" data-ta="வாகனம்" data-en="Vehicle">வாகனம்</span>
               <span class="text-[11px] sm:text-xs font-black px-2.5 py-0.5 rounded-full bg-brand-yellow text-brand-dark">
                 TN 46 AK 1244
@@ -475,37 +486,36 @@ html_content = f'''<!DOCTYPE html>
           </div>
 
           <!-- GIANT WHATSAPP SUBMIT BUTTON & COPY BUTTON -->
-          <div class="space-y-2 pt-1">
-            <button type="submit" class="w-full py-3.5 sm:py-4 px-4 sm:px-6 rounded-2xl bg-brand-whatsapp hover:bg-brand-whatsappDark text-white font-black text-sm sm:text-lg shadow-wa flex items-center justify-center gap-2 sm:gap-3 tactile-btn group cursor-pointer">
+          <div class="space-y-2 pt-1 min-w-0">
+            <button type="submit" class="w-full py-3.5 sm:py-4 px-4 sm:px-6 rounded-2xl bg-brand-whatsapp hover:bg-brand-whatsappDark text-white font-black text-sm sm:text-lg shadow-wa flex items-center justify-center gap-2 sm:gap-3 tactile-btn group cursor-pointer transition-colors">
               <svg class="w-5 h-5 sm:w-6 sm:h-6 fill-current group-hover:scale-110 transition-transform shrink-0" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.159.57 4.184 1.564 5.938l-1.564 5.714 5.86-1.537c1.704.931 3.659 1.473 5.74 1.473 6.627 0 12-5.373 12-12s-5.373-12-12-12z"/></svg>
-              <span class="lang-text" data-ta="வாட்ஸ்அப் மூலம் புக் செய்க" data-en="Book Instantly via WhatsApp">
-                வாட்ஸ்அப் மூலம் புக் செய்க
+              <span class="lang-text" data-ta="வாட்ஸ்அப்பில் உடனடியாக புக் செய்க (Send to WhatsApp)" data-en="Send Details & Book Cab via WhatsApp">
+                வாட்ஸ்அப்பில் உடனடியாக புக் செய்க (Send to WhatsApp)
               </span>
-              <span class="text-xs sm:text-sm font-semibold opacity-90">• (+91 6385300259)</span>
+              <span class="text-base sm:text-xl group-hover:translate-x-1 transition-transform">➔</span>
             </button>
 
-            <!-- Quick Copy Text Button -->
-            <button type="button" onclick="copyBookingDetails()" class="w-full py-2.5 px-3 rounded-xl border border-gray-200 bg-white hover:bg-gray-50 text-gray-600 font-bold text-xs flex items-center justify-center gap-1.5 tactile-btn shadow-sm">
+            <button type="button" onclick="copyBookingDetails()" class="w-full py-2.5 sm:py-3 px-3 rounded-2xl bg-gray-100 hover:bg-gray-200 text-brand-dark font-bold text-xs sm:text-sm flex items-center justify-center gap-1.5 transition-colors tactile-btn cursor-pointer">
               <span>📋</span>
-              <span id="copyBtnText" class="lang-text" data-ta="விவரங்களை காப்பி செய்ய (Copy Details)" data-en="Copy Details to Clipboard">
-                விவரங்களை காப்பி செய்ய (Copy Details)
+              <span id="copyBtnText" class="lang-text" data-ta="விவரங்களை காப்பி செய்க (Copy Trip Info)" data-en="Copy Trip Details to Clipboard">
+                விவரங்களை காப்பி செய்க (Copy Trip Info)
               </span>
             </button>
-            
-            <p class="text-center text-[10px] sm:text-[11px] text-gray-500 font-medium pt-0.5 lang-text" data-ta="🔒 விவரங்கள் நேரடியாக உரிமையாளர் செல்வபாரதி வாட்ஸ்அப்பிற்கு மட்டுமே அனுப்பப்படும்." data-en="🔒 Direct booking with owner Selvabarathi. Zero agent commission.">
-              🔒 விவரங்கள் நேரடியாக உரிமையாளர் செல்வபாரதி வாட்ஸ்அப்பிற்கு மட்டுமே அனுப்பப்படும்.
-            </p>
           </div>
+
+          <p class="text-center text-[10px] sm:text-xs text-gray-500 font-medium pt-1 lang-text" data-ta="⚡ கட்டண விவரங்கள் & கார் உறுதிப்படுத்தல் உடனே வாட்ஸ்அப்பில் அனுப்பப்படும்." data-en="⚡ You will receive instant ride confirmation and best quote directly on WhatsApp.">
+            ⚡ கட்டண விவரங்கள் & கார் உறுதிப்படுத்தல் உடனே வாட்ஸ்அப்பில் அனுப்பப்படும்.
+          </p>
 
         </form>
 
       </div>
 
       <!-- ================= RIGHT: TOYOTA TAISOR 3D SHOWCASE & BENTO TRUST (5 COLS) ================= -->
-      <div class="lg:col-span-5 space-y-5 sm:space-y-6">
+      <div class="lg:col-span-5 space-y-5 sm:space-y-6 min-w-0 w-full overflow-hidden">
 
         <!-- 3D CAR SPOTLIGHT CARD -->
-        <div class="bg-white rounded-3xl p-5 sm:p-6 shadow-bento border border-gray-100 relative overflow-hidden text-center">
+        <div class="bg-white rounded-3xl p-5 sm:p-6 shadow-bento border border-gray-100 relative overflow-hidden text-center min-w-0">
           
           <!-- Badge -->
           <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-brand-yellow/20 text-brand-dark text-xs font-black mb-2">
@@ -527,12 +537,12 @@ html_content = f'''<!DOCTYPE html>
             <div class="absolute inset-0 bg-brand-yellow/15 rounded-full blur-2xl glow-pedestal"></div>
             <img 
               src="{b64_car_hero}" 
-              alt="White Toyota Urban Cruiser Taisor - Prabhakala Travels (TN 46 AK 1244)"
+              alt="White Toyota Urban Cruiser Taisor - Prabakala Travels (TN 46 AK 1244)"
               class="relative z-10 w-full h-auto max-h-[220px] sm:max-h-[260px] object-contain mx-auto drop-shadow-2xl group-hover:scale-105 transition-transform duration-300"
             >
           </div>
 
-          <!-- Feature Badges Bento Strip (3 Clean Spacious Pills - 308L Boot Removed) -->
+          <!-- Feature Badges Bento Strip (3 Clean Spacious Pills) -->
           <div class="grid grid-cols-3 gap-2.5 pt-2 border-t border-gray-100 text-center">
             <div class="p-2.5 rounded-2xl bg-gray-50 border border-gray-100">
               <span class="block text-lg">❄️</span>
@@ -550,12 +560,12 @@ html_content = f'''<!DOCTYPE html>
 
         </div>
 
-        <!-- BENTO CARD: WHY CHOOSE PRABHAKALA TRAVELS OVER OLA / UBER? -->
-        <div class="bg-brand-dark text-white rounded-3xl p-5 sm:p-6 shadow-bento relative overflow-hidden">
+        <!-- BENTO CARD: WHY CHOOSE PRABAKALA TRAVELS OVER OLA / UBER? -->
+        <div class="bg-brand-dark text-white rounded-3xl p-5 sm:p-6 shadow-bento relative overflow-hidden min-w-0">
           <div class="flex items-center gap-2 mb-4">
-            <span class="w-8 h-8 rounded-xl bg-brand-yellow text-brand-dark flex items-center justify-center font-bold text-sm">★</span>
+            <span class="w-8 h-8 rounded-xl bg-brand-yellow text-brand-dark flex items-center justify-center font-bold text-sm shrink-0">★</span>
             <div>
-              <h4 class="font-black text-sm sm:text-base text-white lang-text" data-ta="ஓலா / ஊபரை விட பிரபாகலா டிராவல்ஸ் ஏன் சிறந்தது?" data-en="Why Choose Prabhakala Travels Over Ola / Uber?">
+              <h4 class="font-black text-sm sm:text-base text-white lang-text" data-ta="ஓலா / ஊபரை விட பிரபாகலா டிராவல்ஸ் ஏன் சிறந்தது?" data-en="Why Choose Prabakala Travels Over Ola / Uber?">
                 ஓலா / ஊபரை விட பிரபாகலா டிராவல்ஸ் ஏன் சிறந்தது?
               </h4>
               <p class="text-[11px] text-gray-400 font-medium lang-text" data-ta="சொந்த கார் • குடும்பப் பயணம் • நியாயமான கட்டணம்" data-en="Owner Driven • Safe Family Ride • Transparent Fares">
@@ -567,7 +577,7 @@ html_content = f'''<!DOCTYPE html>
           <ul class="space-y-3 text-xs sm:text-sm">
             <li class="flex items-start gap-2.5">
               <span class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">✓</span>
-              <div>
+              <div class="min-w-0 break-words">
                 <strong class="text-brand-yellow block leading-tight lang-text" data-ta="டிரைவர் கேன்சல் செய்யும் தொல்லை இல்லை" data-en="Zero Booking Cancellations">
                   டிரைவர் கேன்சல் செய்யும் தொல்லை இல்லை
                 </strong>
@@ -578,7 +588,7 @@ html_content = f'''<!DOCTYPE html>
             </li>
             <li class="flex items-start gap-2.5">
               <span class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">✓</span>
-              <div>
+              <div class="min-w-0 break-words">
                 <strong class="text-brand-yellow block leading-tight lang-text" data-ta="குடும்பங்களுக்கு 100% பாதுகாப்பான பயணம்" data-en="100% Safe For Families & Elders">
                   குடும்பங்களுக்கு 100% பாதுகாப்பான பயணம்
                 </strong>
@@ -589,7 +599,7 @@ html_content = f'''<!DOCTYPE html>
             </li>
             <li class="flex items-start gap-2.5">
               <span class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">✓</span>
-              <div>
+              <div class="min-w-0 break-words">
                 <strong class="text-brand-yellow block leading-tight lang-text" data-ta="தெளிவான வெளிப்படையான கட்டணம்" data-en="Transparent & Fair Kilometre Rates">
                   தெளிவான வெளிப்படையான கட்டணம்
                 </strong>
@@ -608,14 +618,14 @@ html_content = f'''<!DOCTYPE html>
               </div>
               <a href="tel:+916385300259" class="font-black text-sm sm:text-base text-brand-yellow hover:underline">+91 6385300259</a>
             </div>
-            <a href="tel:+916385300259" class="px-3.5 py-1.5 rounded-xl bg-white text-brand-dark font-black text-xs tactile-btn hover:bg-brand-yellow">
+            <a href="tel:+916385300259" class="px-3.5 py-1.5 rounded-xl bg-white text-brand-dark font-black text-xs tactile-btn hover:bg-brand-yellow cursor-pointer">
               <span class="lang-text" data-ta="📞 அழைக்கவும்" data-en="📞 Call Now">📞 அழைக்கவும்</span>
             </a>
           </div>
         </div>
 
         <!-- POPULAR DESTINATIONS FROM PERAMBALUR DISTRICT -->
-        <div class="bg-white rounded-3xl p-5 sm:p-6 shadow-bento border border-gray-100">
+        <div class="bg-white rounded-3xl p-5 sm:p-6 shadow-bento border border-gray-100 min-w-0">
           <h4 class="font-black text-sm sm:text-base text-brand-dark mb-3 flex items-center gap-2">
             <span>🗺️</span>
             <span class="lang-text" data-ta="பெரம்பலூர் மாவட்டத்திலிருந்து முக்கிய ஊர்கள் (KM)" data-en="Popular Destinations from Perambalur District">
@@ -656,7 +666,7 @@ html_content = f'''<!DOCTYPE html>
     </div>
 
     <!-- ================= CUSTOMER TRUST & REVIEWS SECTION ================= -->
-    <section class="mt-10 sm:mt-14 mb-8">
+    <section class="mt-10 sm:mt-14 mb-8 min-w-0">
       <div class="text-center mb-6 sm:mb-8">
         <h3 class="text-xl sm:text-2xl font-black text-brand-dark lang-text" data-ta="மக்களின் மனமார்ந்த கருத்துக்கள்" data-en="What Our Travelers Say">
           மக்களின் மனமார்ந்த கருத்துக்கள்
@@ -666,11 +676,11 @@ html_content = f'''<!DOCTYPE html>
         </p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-5">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-5 min-w-0">
         
-        <div class="bg-white p-4 sm:p-5 rounded-3xl shadow-bento border border-gray-100">
+        <div class="bg-white p-4 sm:p-5 rounded-3xl shadow-bento border border-gray-100 min-w-0">
           <div class="flex items-center gap-1 text-amber-400 text-sm mb-2">★★★★★</div>
-          <p class="text-xs sm:text-sm text-gray-700 leading-relaxed font-medium lang-text" 
+          <p class="text-xs sm:text-sm text-gray-700 leading-relaxed font-medium break-words lang-text" 
             data-ta="&ldquo;சென்னை ஏர்போர்ட்டிற்கு அதிகாலை 3 மணிக்கு புக் செய்திருந்தோம். சொன்ன நேரத்திற்கு 10 நிமிடம் முன்பே வந்து நின்றார் செல்வபாரதி. கார் மிகவும் சுத்தமாகவும் ஏசி அருமையாகவும் இருந்தது.&rdquo;" 
             data-en="&ldquo;We booked a cab to Chennai Airport at 3:00 AM. Selvabarathi arrived 10 minutes early. The brand new Toyota Taisor was spotless and the AC was excellent!&rdquo;">
             &ldquo;சென்னை ஏர்போர்ட்டிற்கு அதிகாலை 3 மணிக்கு புக் செய்திருந்தோம். சொன்ன நேரத்திற்கு 10 நிமிடம் முன்பே வந்து நின்றார் செல்வபாரதி. கார் மிகவும் சுத்தமாகவும் ஏசி அருமையாகவும் இருந்தது.&rdquo;
@@ -681,9 +691,9 @@ html_content = f'''<!DOCTYPE html>
           </div>
         </div>
 
-        <div class="bg-white p-4 sm:p-5 rounded-3xl shadow-bento border border-gray-100">
+        <div class="bg-white p-4 sm:p-5 rounded-3xl shadow-bento border border-gray-100 min-w-0">
           <div class="flex items-center gap-1 text-amber-400 text-sm mb-2">★★★★★</div>
-          <p class="text-xs sm:text-sm text-gray-700 leading-relaxed font-medium lang-text" 
+          <p class="text-xs sm:text-sm text-gray-700 leading-relaxed font-medium break-words lang-text" 
             data-ta="&ldquo;டொயோட்டா டைசர் கார் மிகவும் சௌகரியமாக இருந்தது. குடும்பத்துடன் திருப்பதி சென்றோம். பெரியவர்கள் ஏற இறங்க எளிதாக இருந்தது. டிரைவரின் பக்குவமான அணுகுமுறை பிடித்திருந்தது.&rdquo;" 
             data-en="&ldquo;The Toyota Taisor SUV was extremely comfortable. We traveled with our family to Tirupati. Smooth ingress for elders and very courteous driving.&rdquo;">
             &ldquo;டொயோட்டா டைசர் கார் மிகவும் சௌகரியமாக இருந்தது. குடும்பத்துடன் திருப்பதி சென்றோம். பெரியவர்கள் ஏற இறங்க எளிதாக இருந்தது. டிரைவரின் பக்குவமான அணுகுமுறை பிடித்திருந்தது.&rdquo;
@@ -694,9 +704,9 @@ html_content = f'''<!DOCTYPE html>
           </div>
         </div>
 
-        <div class="bg-white p-4 sm:p-5 rounded-3xl shadow-bento border border-gray-100">
+        <div class="bg-white p-4 sm:p-5 rounded-3xl shadow-bento border border-gray-100 min-w-0">
           <div class="flex items-center gap-1 text-amber-400 text-sm mb-2">★★★★★</div>
-          <p class="text-xs sm:text-sm text-gray-700 leading-relaxed font-medium lang-text" 
+          <p class="text-xs sm:text-sm text-gray-700 leading-relaxed font-medium break-words lang-text" 
             data-ta="&ldquo;அவசர மருத்துவ தேவைக்காக திருச்சி மருத்துவமனை செல்ல வேண்டியிருந்தது. வாட்ஸ்அப்பில் மெசேஜ் செய்த உடனே வந்து அழைத்துச் சென்றார். நம்பகமான சேவை!&rdquo;" 
             data-en="&ldquo;Needed an urgent ride to Trichy Hospital. As soon as I sent a WhatsApp message, he responded and arrived immediately. Truly trustworthy service!&rdquo;">
             &ldquo;அவசர மருத்துவ தேவைக்காக திருச்சி மருத்துவமனை செல்ல வேண்டியிருந்தது. வாட்ஸ்அப்பில் மெசேஜ் செய்த உடனே வந்து அழைத்துச் சென்றார். நம்பகமான சேவை!&rdquo;
@@ -713,26 +723,26 @@ html_content = f'''<!DOCTYPE html>
   </main>
 
   <!-- ================= STICKY MOBILE BOTTOM BAR ================= -->
-  <div class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-gray-200 px-3 py-2.5 shadow-2xl flex items-center gap-2">
+  <div class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-gray-200 px-3 py-2.5 shadow-2xl flex items-center gap-2 max-w-full overflow-hidden">
     <a href="tel:+916385300259" class="flex-1 py-3 px-2 rounded-2xl bg-gray-100 text-brand-dark font-black text-xs flex items-center justify-center gap-1.5 tactile-btn border border-gray-300">
       <span>📞</span>
       <span class="lang-text" data-ta="அழைக்க: 6385300259" data-en="Call: 6385300259">அழைக்க: 6385300259</span>
     </a>
-    <button onclick="scrollToBookingForm()" class="flex-1 py-3 px-2 rounded-2xl bg-brand-whatsapp text-white font-black text-xs flex items-center justify-center gap-1.5 tactile-btn shadow-wa">
+    <button onclick="scrollToBookingForm()" class="flex-1 py-3 px-2 rounded-2xl bg-brand-whatsapp text-white font-black text-xs flex items-center justify-center gap-1.5 tactile-btn shadow-wa cursor-pointer">
       <span>🟢</span>
       <span class="lang-text" data-ta="WhatsApp புக்" data-en="WhatsApp Book">WhatsApp புக்</span>
     </button>
   </div>
 
   <!-- ================= FOOTER ================= -->
-  <footer class="bg-white border-t border-gray-200 py-6 sm:py-8 px-4 text-center text-xs text-gray-500">
+  <footer class="bg-white border-t border-gray-200 py-6 sm:py-8 px-4 text-center sm:text-left text-xs text-gray-500 w-full overflow-hidden">
     <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4">
-      <div class="flex items-center gap-2.5">
-        <img src="{b64_logo_badge}" alt="Logo" class="w-6 h-6 rounded-md">
-        <span class="font-black text-brand-dark text-xs sm:text-sm">பிரபாகலா டிராவல்ஸ் (Prabhakala Travels)</span>
+      <div class="flex flex-wrap items-center justify-center sm:justify-start gap-2 max-w-full">
+        <img src="{b64_logo_badge}" alt="Logo" class="w-6 h-6 rounded-md shrink-0">
+        <span class="font-black text-brand-dark text-xs sm:text-sm">பிரபாகலா டிராவல்ஸ் (Prabakala Travels)</span>
         <span class="lang-text" data-ta="• பெரம்பலூர் மாவட்டம்" data-en="• Perambalur District">• பெரம்பலூர் மாவட்டம்</span>
       </div>
-      <p class="font-medium text-[11px] sm:text-xs">
+      <p class="font-medium text-[11px] sm:text-xs text-center sm:text-right">
         <span class="lang-text" data-ta="ஒயிட் டொயோட்டா டெய்சர் (TN 46 AK 1244) • நேரடி தொடர்பு:" data-en="White Toyota Taisor (TN 46 AK 1244) • Direct Line:">
           ஒயிட் டொயோட்டா டெய்சர் (TN 46 AK 1244) • நேரடி தொடர்பு:
         </span>
@@ -896,7 +906,7 @@ html_content = f'''<!DOCTYPE html>
 
         const btn = document.createElement('button');
         btn.type = 'button';
-        btn.className = `date-pill flex-shrink-0 w-15 py-2.5 px-1.5 rounded-2xl border text-center transition-all tactile-btn flex flex-col items-center justify-center ${{
+        btn.className = `date-pill flex-shrink-0 w-15 py-2.5 px-1.5 rounded-2xl border text-center transition-all tactile-btn flex flex-col items-center justify-center cursor-pointer ${{
           i === 0 ? 'bg-brand-yellow border-brand-yellow text-brand-dark shadow-sm font-black scale-105' : 'bg-white border-gray-200 text-gray-700 hover:border-brand-yellow font-bold'
         }}`;
 
@@ -923,10 +933,10 @@ html_content = f'''<!DOCTYPE html>
       state.selectedDate = dateStr;
       
       document.querySelectorAll('.date-pill').forEach(b => {{
-        b.className = 'date-pill flex-shrink-0 w-15 py-2.5 px-1.5 rounded-2xl border text-center transition-all tactile-btn flex flex-col items-center justify-center bg-white border-gray-200 text-gray-700 hover:border-brand-yellow font-bold';
+        b.className = 'date-pill flex-shrink-0 w-15 py-2.5 px-1.5 rounded-2xl border text-center transition-all tactile-btn flex flex-col items-center justify-center bg-white border-gray-200 text-gray-700 hover:border-brand-yellow font-bold cursor-pointer';
       }});
 
-      btnElement.className = 'date-pill flex-shrink-0 w-15 py-2.5 px-1.5 rounded-2xl border text-center transition-all tactile-btn flex flex-col items-center justify-center bg-brand-yellow border-brand-yellow text-brand-dark shadow-sm font-black scale-105';
+      btnElement.className = 'date-pill flex-shrink-0 w-15 py-2.5 px-1.5 rounded-2xl border text-center transition-all tactile-btn flex flex-col items-center justify-center bg-brand-yellow border-brand-yellow text-brand-dark shadow-sm font-black scale-105 cursor-pointer';
 
       const todayPrefix = state.lang === 'ta' ? 'இன்று' : 'Today';
       document.getElementById('selectedDateDisplay').textContent = isToday ? `${{todayPrefix}} (${{dateStr}})` : dateStr;
@@ -939,9 +949,9 @@ html_content = f'''<!DOCTYPE html>
       
       document.querySelectorAll('.time-pill').forEach(btn => {{
         if (btn.textContent.includes(timeStr)) {{
-          btn.className = 'time-pill active px-2 py-2 rounded-xl text-xs font-bold border border-brand-yellow bg-brand-yellow text-brand-dark transition-all text-center shadow-sm';
+          btn.className = 'time-pill active px-2 py-2 rounded-xl text-xs font-bold border border-brand-yellow bg-brand-yellow text-brand-dark transition-all text-center shadow-sm cursor-pointer';
         }} else {{
-          btn.className = 'time-pill px-2 py-2 rounded-xl text-xs font-bold border border-gray-200 bg-white hover:border-brand-yellow transition-all text-center';
+          btn.className = 'time-pill px-2 py-2 rounded-xl text-xs font-bold border border-gray-200 bg-white hover:border-brand-yellow transition-all text-center cursor-pointer';
         }}
       }});
 
@@ -963,7 +973,7 @@ html_content = f'''<!DOCTYPE html>
       document.getElementById('activeTimeBadge').textContent = formattedTime;
 
       document.querySelectorAll('.time-pill').forEach(btn => {{
-        btn.className = 'time-pill px-2 py-2 rounded-xl text-xs font-bold border border-gray-200 bg-white hover:border-brand-yellow transition-all text-center';
+        btn.className = 'time-pill px-2 py-2 rounded-xl text-xs font-bold border border-gray-200 bg-white hover:border-brand-yellow transition-all text-center cursor-pointer';
       }});
 
       updateSummary();
@@ -976,11 +986,11 @@ html_content = f'''<!DOCTYPE html>
       const roundBtn = document.getElementById('tripRound');
 
       if (type === 'oneway') {{
-        oneWayBtn.className = 'flex-1 sm:flex-initial px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all bg-brand-yellow text-brand-dark shadow-sm text-center';
-        roundBtn.className = 'flex-1 sm:flex-initial px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all text-gray-600 hover:text-brand-dark text-center';
+        oneWayBtn.className = 'flex-1 sm:flex-initial px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all bg-brand-yellow text-brand-dark shadow-sm text-center cursor-pointer';
+        roundBtn.className = 'flex-1 sm:flex-initial px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all text-gray-600 hover:text-brand-dark text-center cursor-pointer';
       }} else {{
-        roundBtn.className = 'flex-1 sm:flex-initial px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all bg-brand-yellow text-brand-dark shadow-sm text-center';
-        oneWayBtn.className = 'flex-1 sm:flex-initial px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all text-gray-600 hover:text-brand-dark text-center';
+        roundBtn.className = 'flex-1 sm:flex-initial px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all bg-brand-yellow text-brand-dark shadow-sm text-center cursor-pointer';
+        oneWayBtn.className = 'flex-1 sm:flex-initial px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all text-gray-600 hover:text-brand-dark text-center cursor-pointer';
       }}
       calculateRoute();
     }}
@@ -1059,12 +1069,12 @@ html_content = f'''<!DOCTYPE html>
       const detailsBox = document.getElementById('luggageDetailsBox');
 
       if (val) {{
-        yesBtn.className = 'p-3 rounded-2xl border-2 border-brand-yellow bg-brand-yellowLight text-brand-dark font-black text-xs sm:text-sm flex items-center justify-center gap-1.5 transition-all tactile-btn';
-        noBtn.className = 'p-3 rounded-2xl border border-gray-200 bg-white text-gray-600 font-bold text-xs sm:text-sm flex items-center justify-center gap-1.5 transition-all tactile-btn';
+        yesBtn.className = 'p-3 rounded-2xl border-2 border-brand-yellow bg-brand-yellowLight text-brand-dark font-black text-xs sm:text-sm flex items-center justify-center gap-1.5 transition-all tactile-btn cursor-pointer';
+        noBtn.className = 'p-3 rounded-2xl border border-gray-200 bg-white text-gray-600 font-bold text-xs sm:text-sm flex items-center justify-center gap-1.5 transition-all tactile-btn cursor-pointer';
         detailsBox.classList.remove('hidden');
       }} else {{
-        noBtn.className = 'p-3 rounded-2xl border-2 border-brand-yellow bg-brand-yellowLight text-brand-dark font-black text-xs sm:text-sm flex items-center justify-center gap-1.5 transition-all tactile-btn';
-        yesBtn.className = 'p-3 rounded-2xl border border-gray-200 bg-white text-gray-600 font-bold text-xs sm:text-sm flex items-center justify-center gap-1.5 transition-all tactile-btn';
+        noBtn.className = 'p-3 rounded-2xl border-2 border-brand-yellow bg-brand-yellowLight text-brand-dark font-black text-xs sm:text-sm flex items-center justify-center gap-1.5 transition-all tactile-btn cursor-pointer';
+        yesBtn.className = 'p-3 rounded-2xl border border-gray-200 bg-white text-gray-600 font-bold text-xs sm:text-sm flex items-center justify-center gap-1.5 transition-all tactile-btn cursor-pointer';
         detailsBox.classList.add('hidden');
         state.trolleys = 0;
         state.bags = 0;
@@ -1072,7 +1082,7 @@ html_content = f'''<!DOCTYPE html>
       updateSummary();
     }}
 
-    // Update Summary Box (Fully Bilingual)
+    // Update Summary Box (Fully Bilingual & Word-wrapped)
     function updateSummary() {{
       const pObj = CITIES.pickup.find(c => c.val === state.pickup);
       const dObj = CITIES.drop.find(c => c.val === state.drop);
@@ -1125,7 +1135,7 @@ html_content = f'''<!DOCTYPE html>
         : 'No Luggage (Small Bags Only)';
 
       return [
-        'வணக்கம்! I would like to book a cab ride with *Prabhakala Travels*:',
+        'வணக்கம்! I would like to book a cab ride with *Prabakala Travels*:',
         '',
         `${{EMOJIS.pin}} *From:* ${{fromName}}`,
         `${{EMOJIS.flag}} *To:* ${{dropName}}`,
@@ -1223,4 +1233,4 @@ output_path = '/Users/madhavan/.gemini/antigravity/scratch/perambalur-taisor-cab
 with open(output_path, 'w', encoding='utf-8') as f:
     f.write(html_content)
 
-print(f"Updated index.html: Perambalur District Premier Cab Service & 3-pill feature grid (308L Boot removed). Size: {os.path.getsize(output_path)} bytes")
+print(f"Generated clean customer landing page index.html! Size: {os.path.getsize(output_path)} bytes")

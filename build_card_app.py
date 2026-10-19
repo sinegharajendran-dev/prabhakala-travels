@@ -13,7 +13,7 @@ def get_card_html(relative_prefix=""):
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prabhakala Travels — Visiting Card Studio (Selvabarathi)</title>
+  <title>Prabakala Travels — Visiting Card Studio (Selvabarathi)</title>
   
   <!-- Google Fonts: Plus Jakarta Sans & Noto Sans Tamil -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -396,7 +396,7 @@ def get_card_html(relative_prefix=""):
     // Default Card Settings Data
     const DEFAULT_CARD_DATA = {{
       brandTa: "பிரபாகலா டிராவல்ஸ்",
-      brandEn: "PRABHAKALA TRAVELS",
+      brandEn: "PRABAKALA TRAVELS",
       omShakti: "॥ ஓம் சக்தி ॥",
       ownerTa: "செல்வபாரதி",
       ownerEn: "SELVABARATHI",
@@ -415,12 +415,15 @@ def get_card_html(relative_prefix=""):
     // Load from LocalStorage on Startup
     function loadSavedCardData() {{
       try {{
-        const saved = localStorage.getItem('prabhakala_card_data');
+        const saved = localStorage.getItem('prabhakala_card_data') || localStorage.getItem('prabakala_card_data');
         if (saved) {{
           const parsed = JSON.parse(saved);
           cardData = Object.assign({{}}, DEFAULT_CARD_DATA, parsed);
+          if (cardData.brandEn === 'PRABHAKALA TRAVELS') {{
+            cardData.brandEn = 'PRABAKALA TRAVELS';
+          }}
         }}
-        const savedLang = localStorage.getItem('prabhakala_card_lang');
+        const savedLang = localStorage.getItem('prabhakala_card_lang') || localStorage.getItem('prabakala_card_lang');
         if (savedLang) {{
           cardLang = savedLang;
         }}
@@ -609,7 +612,7 @@ def get_card_html(relative_prefix=""):
     function renderCardBack() {{
       const d = cardData;
       const cleanPhone = d.phone.replace(/[^0-9]/g, '');
-      const waLink = `https://wa.me/${{cleanPhone}}?text=%E0%AE%B5%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%AE%E0%AF%8D!%20I%20would%20like%20to%20book%20Prabhakala%20Travels%20cab%20(${{encodeURIComponent(d.carReg)}})`;
+      const waLink = `https://wa.me/${{cleanPhone}}?text=%E0%AE%B5%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%AE%E0%AF%8D!%20I%20would%20like%20to%20book%20Prabakala%20Travels%20cab%20(${{encodeURIComponent(d.carReg)}})`;
       const qrImgUrl = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&margin=1&data=${{encodeURIComponent(waLink)}}`;
 
       let ownerTitle = '';
@@ -745,7 +748,7 @@ def get_card_html(relative_prefix=""):
     function getCardSVG(type) {{
       const d = cardData;
       const cleanPhone = d.phone.replace(/[^0-9]/g, '');
-      const waLink = `https://wa.me/${{cleanPhone}}?text=%E0%AE%B5%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%AE%E0%AF%8D!%20Prabhakala%20Travels%20(${{encodeURIComponent(d.carReg)}})`;
+      const waLink = `https://wa.me/${{cleanPhone}}?text=%E0%AE%B5%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%AE%E0%AF%8D!%20Prabakala%20Travels%20(${{encodeURIComponent(d.carReg)}})`;
       const qrImgUrl = `https://api.qrserver.com/v1/create-qr-code/?size=240x240&margin=1&data=${{encodeURIComponent(waLink)}}`;
 
       if (type === 'front') {{
@@ -859,7 +862,7 @@ def get_card_html(relative_prefix=""):
     // Direct SVG, PNG, JPG Exporter
     function downloadCard(type, format) {{
       const svgString = getCardSVG(type);
-      const filename = `prabhakala_travels_card_${{type}}_${{cardLang}}`;
+      const filename = `prabakala_travels_card_${{type}}_${{cardLang}}`;
 
       if (format === 'svg') {{
         const blob = new Blob([svgString], {{ type: 'image/svg+xml;charset=utf-8' }});
@@ -899,7 +902,7 @@ def get_card_html(relative_prefix=""):
     function downloadCombined(format) {{
       const svgFront = getCardSVG('front');
       const svgBack = getCardSVG('back');
-      const filename = `prabhakala_travels_visiting_cards_pair_${{cardLang}}`;
+      const filename = `prabakala_travels_visiting_cards_pair_${{cardLang}}`;
 
       const canvas = document.getElementById('exportCanvas');
       canvas.width = 2084;
