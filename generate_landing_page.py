@@ -14,8 +14,8 @@ html_content = f'''<!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <title>Prabhakala Travels — Poolambadi & Perambalur Cabs | White Toyota Taisor SUV (TN 46 AK 1244)</title>
-  <meta name="description" content="Official cab service by Selvabarathi. Clean White Toyota Urban Cruiser Taisor AC SUV (TN46AK1244). Doorstep pickup from Poolambadi, Perambalur, Ariyalur to Trichy Airport, Chennai, Bangalore.">
+  <title>Prabhakala Travels — Perambalur District Premier Cab Service | White Toyota Taisor SUV (TN 46 AK 1244)</title>
+  <meta name="description" content="Official cab service by Selvabarathi. Clean White Toyota Urban Cruiser Taisor AC SUV (TN46AK1244). Doorstep pickup from Perambalur district to Chennai, Trichy, Bangalore, Coimbatore, Madurai & all destinations.">
   
   <!-- Google Fonts: Plus Jakarta Sans & Noto Sans Tamil -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -81,8 +81,8 @@ html_content = f'''<!DOCTYPE html>
   <div class="bg-brand-dark text-white text-[11px] sm:text-xs py-2 px-3 sm:px-4 text-center font-medium">
     <div class="max-w-7xl mx-auto flex items-center justify-center gap-2 flex-wrap">
       <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-ping shrink-0"></span>
-      <span class="lang-text" data-ta="பூலாம்பாடி & பெரம்பலூர் பிரத்யேக கார் சேவை" data-en="Exclusive Cab Service from Poolambadi & Perambalur">
-        பூலாம்பாடி & பெரம்பலூர் பிரத்யேக கார் சேவை
+      <span class="lang-text" data-ta="பெரம்பலூர் மாவட்டத்தின் பிரத்யேக கார் சேவை" data-en="Exclusive Cab Service in Perambalur District">
+        பெரம்பலூர் மாவட்டத்தின் பிரத்யேக கார் சேவை
       </span>
       <span class="text-gray-400">•</span>
       <span class="text-brand-yellow font-bold lang-text" data-ta="100% சொன்ன நேரத்தில் புறப்பாடு • TN 46 AK 1244" data-en="100% Punctual Doorstep Pickup • TN 46 AK 1244">
@@ -108,12 +108,12 @@ html_content = f'''<!DOCTYPE html>
             <span class="font-black text-base sm:text-xl md:text-2xl tracking-tight text-brand-dark truncate leading-tight lang-text" data-ta="பிரபாகலா டிராவல்ஸ்" data-en="PRABHAKALA TRAVELS">
               பிரபாகலா டிராவல்ஸ்
             </span>
-            <span class="text-[9px] sm:text-[10px] font-black uppercase tracking-wider px-1.5 py-0.5 rounded-md bg-brand-yellow text-brand-dark shrink-0">
-              Poolambadi
+            <span class="text-[9px] sm:text-[10px] font-black tracking-wider px-2 py-0.5 rounded-md bg-brand-yellow text-brand-dark shrink-0 lang-text" data-ta="பெரம்பலூர் மாவட்டம்" data-en="Perambalur District">
+              பெரம்பலூர் மாவட்டம்
             </span>
           </div>
-          <p class="text-[10px] sm:text-xs text-gray-500 font-medium truncate mt-0.5 lang-text" data-ta="டொயோட்டா டெய்சர் (TN46AK1244) • பூலாம்பாடி & பெரம்பலூர்" data-en="Toyota Taisor (TN46AK1244) • Poolambadi & Perambalur">
-            டொயோட்டா டெய்சர் (TN46AK1244) • பூலாம்பாடி & பெரம்பலூர்
+          <p class="text-[10px] sm:text-xs text-gray-500 font-medium truncate mt-0.5 lang-text" data-ta="டொயோட்டா டெய்சர் (TN46AK1244) • பெரம்பலூர் மாவட்டம்" data-en="Toyota Taisor (TN46AK1244) • Perambalur District">
+            டொயோட்டா டெய்சர் (TN46AK1244) • பெரம்பலூர் மாவட்டம்
           </p>
         </div>
       </a>
@@ -150,9 +150,9 @@ html_content = f'''<!DOCTYPE html>
       
       <!-- Responsive Pill Tag -->
       <div class="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 rounded-full bg-brand-yellowLight border border-brand-yellow/40 text-brand-dark text-xs sm:text-sm font-bold mb-3 shadow-sm max-w-full">
-        <span>⭐</span>
-        <span class="lang-text truncate" data-ta="பூலாம்பாடி & பெரம்பலூரின் தனிநபர் கார் சேவை" data-en="Poolambadi & Perambalur's Premier Cab Service">
-          பூலாம்பாடி & பெரம்பலூரின் தனிநபர் கார் சேவை
+        <span>✨</span>
+        <span class="lang-text truncate" data-ta="பெரம்பலூர் மாவட்டத்தின் முதன்மையான கார் சேவை" data-en="Perambalur District Premier Cab Service">
+          பெரம்பலூர் மாவட்டத்தின் முதன்மையான கார் சேவை
         </span>
         <span class="text-[10px] sm:text-xs bg-brand-yellow text-brand-dark px-2 py-0.5 rounded-full font-black uppercase shrink-0">
           PRABHAKALA
@@ -169,9 +169,9 @@ html_content = f'''<!DOCTYPE html>
       <!-- Subtitle -->
       <p class="mt-2.5 sm:mt-3 text-xs sm:text-base text-gray-600 font-medium max-w-2xl mx-auto leading-relaxed px-2">
         <span class="lang-text" 
-          data-ta="பூலாம்பாடி & பெரம்பலூரிலிருந்து சென்னை, திருச்சி, பெங்களூர், கோவை, மதுரை & அனைத்து ஊர்களுக்கும் 100% சொன்ன நேரத்தில் புறப்படும் நம்பகமான ஏசி கார்." 
-          data-en="Doorstep pickup from Poolambadi & Perambalur to Chennai, Trichy, Bangalore, Coimbatore, Madurai & all destinations with 100% on-time guarantee.">
-          பூலாம்பாடி & பெரம்பலூரிலிருந்து சென்னை, திருச்சி, பெங்களூர், கோவை, மதுரை & அனைத்து ஊர்களுக்கும் 100% சொன்ன நேரத்தில் புறப்படும் நம்பகமான ஏசி கார்.
+          data-ta="பெரம்பலூர் மாவட்டத்திலிருந்து சென்னை, திருச்சி, பெங்களூர், கோவை, மதுரை & அனைத்து ஊர்களுக்கும் 100% சொன்ன நேரத்தில் புறப்படும் நம்பகமான ஏசி கார்." 
+          data-en="Doorstep pickup from Perambalur district to Chennai, Trichy, Bangalore, Coimbatore, Madurai & all destinations with 100% on-time guarantee.">
+          பெரம்பலூர் மாவட்டத்திலிருந்து சென்னை, திருச்சி, பெங்களூர், கோவை, மதுரை & அனைத்து ஊர்களுக்கும் 100% சொன்ன நேரத்தில் புறப்படும் நம்பகமான ஏசி கார்.
         </span>
       </p>
     </div>
@@ -226,7 +226,7 @@ html_content = f'''<!DOCTYPE html>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3">
-              <!-- FROM (Default Poolambadi) -->
+              <!-- FROM (Default Poolambadi / Perambalur) -->
               <div class="relative bg-brand-grayLight/80 hover:bg-brand-grayLight p-3 sm:p-3.5 rounded-2xl border border-gray-200 focus-within:border-brand-yellow focus-within:bg-white transition-all">
                 <span class="text-[10px] font-black uppercase text-gray-400 tracking-wider block lang-text" data-ta="புறப்படும் இடம் (From)" data-en="Pickup Location (From)">
                   புறப்படும் இடம் (From)
@@ -269,22 +269,22 @@ html_content = f'''<!DOCTYPE html>
                 அடிக்கடி செல்லும் வழித்தடங்கள் / Quick Routes:
               </span>
               <div class="flex flex-wrap gap-1.5">
-                <button type="button" onclick="quickSelectRoute('Poolambadi', 'Chennai')" class="px-2.5 sm:px-3 py-1 rounded-full text-[11px] sm:text-xs font-semibold bg-gray-100 hover:bg-brand-yellow hover:text-brand-dark transition-colors">
+                <button type="button" onclick="quickSelectRoute('Perambalur', 'Chennai')" class="px-2.5 sm:px-3 py-1 rounded-full text-[11px] sm:text-xs font-semibold bg-gray-100 hover:bg-brand-yellow hover:text-brand-dark transition-colors">
                   📍 <span class="lang-text" data-ta="சென்னை (270 km)" data-en="Chennai (270 km)">சென்னை (270 km)</span>
                 </button>
-                <button type="button" onclick="quickSelectRoute('Poolambadi', 'Trichy Airport')" class="px-2.5 sm:px-3 py-1 rounded-full text-[11px] sm:text-xs font-semibold bg-gray-100 hover:bg-brand-yellow hover:text-brand-dark transition-colors">
-                  ✈️ <span class="lang-text" data-ta="திருச்சி ஏர்போர்ட் (75 km)" data-en="Trichy Airport (75 km)">திருச்சி ஏர்போர்ட் (75 km)</span>
+                <button type="button" onclick="quickSelectRoute('Perambalur', 'Trichy Airport')" class="px-2.5 sm:px-3 py-1 rounded-full text-[11px] sm:text-xs font-semibold bg-gray-100 hover:bg-brand-yellow hover:text-brand-dark transition-colors">
+                  ✈️ <span class="lang-text" data-ta="திருச்சி ஏர்போர்ட் (55 km)" data-en="Trichy Airport (55 km)">திருச்சி ஏர்போர்ட் (55 km)</span>
                 </button>
-                <button type="button" onclick="quickSelectRoute('Poolambadi', 'Bangalore')" class="px-2.5 sm:px-3 py-1 rounded-full text-[11px] sm:text-xs font-semibold bg-gray-100 hover:bg-brand-yellow hover:text-brand-dark transition-colors">
-                  📍 <span class="lang-text" data-ta="பெங்களூர் (310 km)" data-en="Bangalore (310 km)">பெங்களூர் (310 km)</span>
+                <button type="button" onclick="quickSelectRoute('Perambalur', 'Bangalore')" class="px-2.5 sm:px-3 py-1 rounded-full text-[11px] sm:text-xs font-semibold bg-gray-100 hover:bg-brand-yellow hover:text-brand-dark transition-colors">
+                  📍 <span class="lang-text" data-ta="பெங்களூர் (340 km)" data-en="Bangalore (340 km)">பெங்களூர் (340 km)</span>
                 </button>
-                <button type="button" onclick="quickSelectRoute('Poolambadi', 'Perambalur')" class="px-2.5 sm:px-3 py-1 rounded-full text-[11px] sm:text-xs font-semibold bg-gray-100 hover:bg-brand-yellow hover:text-brand-dark transition-colors">
-                  📍 <span class="lang-text" data-ta="பெரம்பலூர் (28 km)" data-en="Perambalur (28 km)">பெரம்பலூர் (28 km)</span>
+                <button type="button" onclick="quickSelectRoute('Poolambadi', 'Chennai')" class="px-2.5 sm:px-3 py-1 rounded-full text-[11px] sm:text-xs font-semibold bg-gray-100 hover:bg-brand-yellow hover:text-brand-dark transition-colors">
+                  📍 <span class="lang-text" data-ta="பூலாம்பாடி → சென்னை" data-en="Poolambadi → Chennai">பூலாம்பாடி → சென்னை</span>
                 </button>
-                <button type="button" onclick="quickSelectRoute('Poolambadi', 'Salem')" class="px-2.5 sm:px-3 py-1 rounded-full text-[11px] sm:text-xs font-semibold bg-gray-100 hover:bg-brand-yellow hover:text-brand-dark transition-colors">
-                  📍 <span class="lang-text" data-ta="சேலம் (115 km)" data-en="Salem (115 km)">சேலம் (115 km)</span>
+                <button type="button" onclick="quickSelectRoute('Perambalur', 'Salem')" class="px-2.5 sm:px-3 py-1 rounded-full text-[11px] sm:text-xs font-semibold bg-gray-100 hover:bg-brand-yellow hover:text-brand-dark transition-colors">
+                  📍 <span class="lang-text" data-ta="சேலம் (140 km)" data-en="Salem (140 km)">சேலம் (140 km)</span>
                 </button>
-                <button type="button" onclick="quickSelectRoute('Poolambadi', 'Tirupati')" class="px-2.5 sm:px-3 py-1 rounded-full text-[11px] sm:text-xs font-semibold bg-gray-100 hover:bg-brand-yellow hover:text-brand-dark transition-colors">
+                <button type="button" onclick="quickSelectRoute('Perambalur', 'Tirupati')" class="px-2.5 sm:px-3 py-1 rounded-full text-[11px] sm:text-xs font-semibold bg-gray-100 hover:bg-brand-yellow hover:text-brand-dark transition-colors">
                   🛕 <span class="lang-text" data-ta="திருப்பதி (340 km)" data-en="Tirupati (340 km)">திருப்பதி (340 km)</span>
                 </button>
               </div>
@@ -460,7 +460,7 @@ html_content = f'''<!DOCTYPE html>
                 உங்கள் பயண விவரம் / Trip Summary
               </div>
               <div id="summaryRouteText" class="font-black text-brand-dark text-sm sm:text-base mt-0.5">
-                பூலாம்பாடி ➔ சென்னை (~270 KM)
+                பெரம்பலூர் ➔ சென்னை (~270 KM)
               </div>
               <div id="summarySubText" class="text-[11px] sm:text-xs text-gray-600 mt-0.5 leading-relaxed">
                 2 பயணிகள் • 1 டிராலி • ஒரு வழி • Toyota Taisor SUV
@@ -518,8 +518,8 @@ html_content = f'''<!DOCTYPE html>
           <h3 class="font-black text-xl sm:text-2xl text-brand-dark tracking-tight leading-tight">
             White Toyota Taisor
           </h3>
-          <p class="text-xs text-gray-500 font-medium lang-text" data-ta="பதிவு எண்: TN 46 AK 1244 • பூலாம்பாடி & பெரம்பலூர்" data-en="Registration: TN 46 AK 1244 • Poolambadi & Perambalur">
-            பதிவு எண்: TN 46 AK 1244 • பூலாம்பாடி & பெரம்பலூர்
+          <p class="text-xs text-gray-500 font-medium lang-text" data-ta="பதிவு எண்: TN 46 AK 1244 • பெரம்பலூர் மாவட்டம்" data-en="Registration: TN 46 AK 1244 • Perambalur District">
+            பதிவு எண்: TN 46 AK 1244 • பெரம்பலூர் மாவட்டம்
           </p>
 
           <!-- The Rendered 3D Isometric Toyota Taisor Image -->
@@ -532,23 +532,19 @@ html_content = f'''<!DOCTYPE html>
             >
           </div>
 
-          <!-- Feature Badges Bento Strip -->
-          <div class="grid grid-cols-4 gap-2 pt-2 border-t border-gray-100 text-center">
-            <div class="p-2 rounded-xl bg-gray-50">
-              <span class="block text-base">❄️</span>
-              <span class="text-[10px] font-bold text-gray-700 block mt-0.5 lang-text" data-ta="குளிர் ஏசி" data-en="Chilled AC">குளிர் ஏசி</span>
+          <!-- Feature Badges Bento Strip (3 Clean Spacious Pills - 308L Boot Removed) -->
+          <div class="grid grid-cols-3 gap-2.5 pt-2 border-t border-gray-100 text-center">
+            <div class="p-2.5 rounded-2xl bg-gray-50 border border-gray-100">
+              <span class="block text-lg">❄️</span>
+              <span class="text-[11px] font-bold text-gray-800 block mt-0.5 lang-text" data-ta="குளிர் ஏசி" data-en="Chilled AC">குளிர் ஏசி</span>
             </div>
-            <div class="p-2 rounded-xl bg-gray-50">
-              <span class="block text-base">⛰️</span>
-              <span class="text-[10px] font-bold text-gray-700 block mt-0.5 lang-text" data-ta="190mm மேடு" data-en="190mm Clearance">190mm மேடு</span>
+            <div class="p-2.5 rounded-2xl bg-gray-50 border border-gray-100">
+              <span class="block text-lg">⛰️</span>
+              <span class="text-[11px] font-bold text-gray-800 block mt-0.5 lang-text" data-ta="190mm மேடு" data-en="190mm Clearance">190mm மேடு</span>
             </div>
-            <div class="p-2 rounded-xl bg-gray-50">
-              <span class="block text-base">👥</span>
-              <span class="text-[10px] font-bold text-gray-700 block mt-0.5 lang-text" data-ta="4 பயணிகள்" data-en="4 Passengers">4 பயணிகள்</span>
-            </div>
-            <div class="p-2 rounded-xl bg-gray-50">
-              <span class="block text-base">🧳</span>
-              <span class="text-[10px] font-bold text-gray-700 block mt-0.5 lang-text" data-ta="308L பூட்" data-en="308L Boot">308L பூட்</span>
+            <div class="p-2.5 rounded-2xl bg-gray-50 border border-gray-100">
+              <span class="block text-lg">👥</span>
+              <span class="text-[11px] font-bold text-gray-800 block mt-0.5 lang-text" data-ta="4 பயணிகள்" data-en="4 Passengers">4 பயணிகள்</span>
             </div>
           </div>
 
@@ -618,12 +614,12 @@ html_content = f'''<!DOCTYPE html>
           </div>
         </div>
 
-        <!-- POPULAR DESTINATIONS FROM POOLAMBADI & PERAMBALUR -->
+        <!-- POPULAR DESTINATIONS FROM PERAMBALUR DISTRICT -->
         <div class="bg-white rounded-3xl p-5 sm:p-6 shadow-bento border border-gray-100">
           <h4 class="font-black text-sm sm:text-base text-brand-dark mb-3 flex items-center gap-2">
             <span>🗺️</span>
-            <span class="lang-text" data-ta="பூலாம்பாடியிலிருந்து முக்கிய ஊர்கள் (KM)" data-en="Popular Destinations from Poolambadi & Perambalur">
-              பூலாம்பாடியிலிருந்து முக்கிய ஊர்கள் (KM)
+            <span class="lang-text" data-ta="பெரம்பலூர் மாவட்டத்திலிருந்து முக்கிய ஊர்கள் (KM)" data-en="Popular Destinations from Perambalur District">
+              பெரம்பலூர் மாவட்டத்திலிருந்து முக்கிய ஊர்கள் (KM)
             </span>
           </h4>
 
@@ -634,19 +630,19 @@ html_content = f'''<!DOCTYPE html>
             </div>
             <div class="p-2.5 rounded-xl bg-gray-50 border border-gray-100 flex justify-between items-center">
               <span class="font-bold text-gray-700 lang-text" data-ta="திருச்சி ஏர்போர்ட்" data-en="Trichy Airport">திருச்சி ஏர்போர்ட்</span>
-              <span class="font-black text-brand-dark">75 KM</span>
+              <span class="font-black text-brand-dark">55 KM</span>
             </div>
             <div class="p-2.5 rounded-xl bg-gray-50 border border-gray-100 flex justify-between items-center">
               <span class="font-bold text-gray-700 lang-text" data-ta="பெங்களூர்" data-en="Bangalore">பெங்களூர்</span>
-              <span class="font-black text-brand-dark">310 KM</span>
+              <span class="font-black text-brand-dark">340 KM</span>
             </div>
             <div class="p-2.5 rounded-xl bg-gray-50 border border-gray-100 flex justify-between items-center">
-              <span class="font-bold text-gray-700 lang-text" data-ta="பெரம்பலூர்" data-en="Perambalur">பெரம்பலூர்</span>
+              <span class="font-bold text-gray-700 lang-text" data-ta="பூலாம்பாடி" data-en="Poolambadi">பூலாம்பாடி</span>
               <span class="font-black text-brand-dark">28 KM</span>
             </div>
             <div class="p-2.5 rounded-xl bg-gray-50 border border-gray-100 flex justify-between items-center">
               <span class="font-bold text-gray-700 lang-text" data-ta="சேலம் / ஆத்தூர்" data-en="Salem / Attur">சேலம் / ஆத்தூர்</span>
-              <span class="font-black text-brand-dark">115 KM</span>
+              <span class="font-black text-brand-dark">140 KM</span>
             </div>
             <div class="p-2.5 rounded-xl bg-gray-50 border border-gray-100 flex justify-between items-center">
               <span class="font-bold text-gray-700 lang-text" data-ta="திருப்பதி" data-en="Tirupati">திருப்பதி</span>
@@ -665,8 +661,8 @@ html_content = f'''<!DOCTYPE html>
         <h3 class="text-xl sm:text-2xl font-black text-brand-dark lang-text" data-ta="மக்களின் மனமார்ந்த கருத்துக்கள்" data-en="What Our Travelers Say">
           மக்களின் மனமார்ந்த கருத்துக்கள்
         </h3>
-        <p class="text-xs sm:text-sm text-gray-500 font-medium lang-text" data-ta="பூலாம்பாடி, பெரம்பலூர் மற்றும் சுற்றுவட்டார மக்களின் நற்சான்றிதழ்கள்" data-en="Verified traveler reviews from Poolambadi, Perambalur & surrounding towns">
-          பூலாம்பாடி, பெரம்பலூர் மற்றும் சுற்றுவட்டார மக்களின் நற்சான்றிதழ்கள்
+        <p class="text-xs sm:text-sm text-gray-500 font-medium lang-text" data-ta="பெரம்பலூர் மாவட்டம் மற்றும் சுற்றுவட்டார மக்களின் நற்சான்றிதழ்கள்" data-en="Verified traveler reviews across Perambalur District & surrounding towns">
+          பெரம்பலூர் மாவட்டம் மற்றும் சுற்றுவட்டார மக்களின் நற்சான்றிதழ்கள்
         </p>
       </div>
 
@@ -675,9 +671,9 @@ html_content = f'''<!DOCTYPE html>
         <div class="bg-white p-4 sm:p-5 rounded-3xl shadow-bento border border-gray-100">
           <div class="flex items-center gap-1 text-amber-400 text-sm mb-2">★★★★★</div>
           <p class="text-xs sm:text-sm text-gray-700 leading-relaxed font-medium lang-text" 
-            data-ta="&ldquo;பூலாம்பாடியிலிருந்து சென்னை ஏர்போர்ட்டிற்கு அதிகாலை 3 மணிக்கு புக் செய்திருந்தோம். சொன்ன நேரத்திற்கு 10 நிமிடம் முன்பே வந்து நின்றார். கார் மிகவும் சுத்தமாகவும் ஏசி அருமையாகவும் இருந்தது.&rdquo;" 
-            data-en="&ldquo;We booked a cab from Poolambadi to Chennai Airport at 3:00 AM. Selvabarathi arrived 10 minutes early. The brand new Toyota Taisor was spotless and the AC was excellent!&rdquo;">
-            &ldquo;பூலாம்பாடியிலிருந்து சென்னை ஏர்போர்ட்டிற்கு அதிகாலை 3 மணிக்கு புக் செய்திருந்தோம். சொன்ன நேரத்திற்கு 10 நிமிடம் முன்பே வந்து நின்றார். கார் மிகவும் சுத்தமாகவும் ஏசி அருமையாகவும் இருந்தது.&rdquo;
+            data-ta="&ldquo;சென்னை ஏர்போர்ட்டிற்கு அதிகாலை 3 மணிக்கு புக் செய்திருந்தோம். சொன்ன நேரத்திற்கு 10 நிமிடம் முன்பே வந்து நின்றார் செல்வபாரதி. கார் மிகவும் சுத்தமாகவும் ஏசி அருமையாகவும் இருந்தது.&rdquo;" 
+            data-en="&ldquo;We booked a cab to Chennai Airport at 3:00 AM. Selvabarathi arrived 10 minutes early. The brand new Toyota Taisor was spotless and the AC was excellent!&rdquo;">
+            &ldquo;சென்னை ஏர்போர்ட்டிற்கு அதிகாலை 3 மணிக்கு புக் செய்திருந்தோம். சொன்ன நேரத்திற்கு 10 நிமிடம் முன்பே வந்து நின்றார் செல்வபாரதி. கார் மிகவும் சுத்தமாகவும் ஏசி அருமையாகவும் இருந்தது.&rdquo;
           </p>
           <div class="mt-3.5 pt-2.5 border-t border-gray-100 flex items-center justify-between text-xs">
             <span class="font-black text-brand-dark lang-text" data-ta="சரவணன், பூலாம்பாடி" data-en="Saravanan, Poolambadi">சரவணன், பூலாம்பாடி</span>
@@ -734,7 +730,7 @@ html_content = f'''<!DOCTYPE html>
       <div class="flex items-center gap-2.5">
         <img src="{b64_logo_badge}" alt="Logo" class="w-6 h-6 rounded-md">
         <span class="font-black text-brand-dark text-xs sm:text-sm">பிரபாகலா டிராவல்ஸ் (Prabhakala Travels)</span>
-        <span class="lang-text" data-ta="• பூலாம்பாடி & பெரம்பலூர்" data-en="• Poolambadi & Perambalur">• பூலாம்பாடி & பெரம்பலூர்</span>
+        <span class="lang-text" data-ta="• பெரம்பலூர் மாவட்டம்" data-en="• Perambalur District">• பெரம்பலூர் மாவட்டம்</span>
       </div>
       <p class="font-medium text-[11px] sm:text-xs">
         <span class="lang-text" data-ta="ஒயிட் டொயோட்டா டெய்சர் (TN 46 AK 1244) • நேரடி தொடர்பு:" data-en="White Toyota Taisor (TN 46 AK 1244) • Direct Line:">
@@ -765,8 +761,8 @@ html_content = f'''<!DOCTYPE html>
     // City Dictionary for Dropdowns
     const CITIES = {{
       pickup: [
+        {{ val: 'Perambalur', ta: 'பெரம்பலூர் (Perambalur City / Bus Stand)', en: 'Perambalur (City / Bus Stand)' }},
         {{ val: 'Poolambadi', ta: 'பூலாம்பாடி (Poolambadi Home Base)', en: 'Poolambadi (Home Base)' }},
-        {{ val: 'Perambalur', ta: 'பெரம்பலூர் (Perambalur)', en: 'Perambalur (Bus Stand / City)' }},
         {{ val: 'Veppanthattai', ta: 'வேப்பந்தட்டை (Veppanthattai)', en: 'Veppanthattai' }},
         {{ val: 'Ariyalur', ta: 'அரியலூர் (Ariyalur Rly Junction)', en: 'Ariyalur (Railway Junction / City)' }},
         {{ val: 'Trichy', ta: 'திருச்சி (Trichy City/Junction)', en: 'Trichy (City / Junction)' }},
@@ -800,7 +796,7 @@ html_content = f'''<!DOCTYPE html>
     const state = {{
       lang: 'ta',
       tripType: 'oneway',
-      pickup: 'Poolambadi',
+      pickup: 'Perambalur',
       customPickup: '',
       drop: 'Chennai',
       customDrop: '',
@@ -815,24 +811,8 @@ html_content = f'''<!DOCTYPE html>
       phone: '916385300259'
     }};
 
-    // Distance Matrix from Poolambadi & Perambalur (One-Way KM)
+    // Distance Matrix from Perambalur District (One-Way KM)
     const distanceMatrix = {{
-      'Poolambadi-Chennai': 270,
-      'Poolambadi-Trichy Airport': 75,
-      'Poolambadi-Trichy': 75,
-      'Poolambadi-Bangalore': 310,
-      'Poolambadi-Coimbatore': 225,
-      'Poolambadi-Madurai': 205,
-      'Poolambadi-Salem': 115,
-      'Poolambadi-Attur': 35,
-      'Poolambadi-Perambalur': 28,
-      'Poolambadi-Thanjavur': 105,
-      'Poolambadi-Kumbakonam': 110,
-      'Poolambadi-Pondicherry': 150,
-      'Poolambadi-Tirupati': 340,
-      'Poolambadi-Velankanni': 170,
-      'Poolambadi-Ooty': 295,
-      'Poolambadi-Kodaikanal': 260,
       'Perambalur-Chennai': 270,
       'Perambalur-Trichy Airport': 55,
       'Perambalur-Trichy': 55,
@@ -849,6 +829,22 @@ html_content = f'''<!DOCTYPE html>
       'Perambalur-Velankanni': 150,
       'Perambalur-Ooty': 310,
       'Perambalur-Kodaikanal': 250,
+      'Poolambadi-Chennai': 270,
+      'Poolambadi-Trichy Airport': 75,
+      'Poolambadi-Trichy': 75,
+      'Poolambadi-Bangalore': 310,
+      'Poolambadi-Coimbatore': 225,
+      'Poolambadi-Madurai': 205,
+      'Poolambadi-Salem': 115,
+      'Poolambadi-Attur': 35,
+      'Poolambadi-Perambalur': 28,
+      'Poolambadi-Thanjavur': 105,
+      'Poolambadi-Kumbakonam': 110,
+      'Poolambadi-Pondicherry': 150,
+      'Poolambadi-Tirupati': 340,
+      'Poolambadi-Velankanni': 170,
+      'Poolambadi-Ooty': 295,
+      'Poolambadi-Kodaikanal': 260,
       'Veppanthattai-Chennai': 275,
       'Ariyalur-Chennai': 290,
       'Siruvachur-Chennai': 260
@@ -1024,7 +1020,7 @@ html_content = f'''<!DOCTYPE html>
       state.drop = to;
 
       let key = `${{from}}-${{to}}`;
-      let baseKM = distanceMatrix[key] || distanceMatrix[`Poolambadi-${{to}}`] || distanceMatrix[`Perambalur-${{to}}`] || 250;
+      let baseKM = distanceMatrix[key] || distanceMatrix[`Perambalur-${{to}}`] || distanceMatrix[`Poolambadi-${{to}}`] || 250;
 
       if (to === 'Custom' || from === 'Custom') {{
         baseKM = 220;
@@ -1227,4 +1223,4 @@ output_path = '/Users/madhavan/.gemini/antigravity/scratch/perambalur-taisor-cab
 with open(output_path, 'w', encoding='utf-8') as f:
     f.write(html_content)
 
-print(f"Generated clean customer landing page index.html! Visiting card is completely removed from public view. File size: {os.path.getsize(output_path)} bytes")
+print(f"Updated index.html: Perambalur District Premier Cab Service & 3-pill feature grid (308L Boot removed). Size: {os.path.getsize(output_path)} bytes")
