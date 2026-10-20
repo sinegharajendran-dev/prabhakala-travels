@@ -225,7 +225,7 @@ html_content = f'''<!DOCTYPE html>
             
             <div class="flex items-center justify-between gap-2 flex-wrap">
               <label class="text-[11px] sm:text-xs font-black uppercase tracking-wider text-gray-500 flex items-center gap-1.5">
-                <span class="lang-text" data-ta="📍 1. பயணம் விவரம்" data-en="📍 1. Route Details">📍 1. பயணம் விவரம்</span>
+                <span class="lang-text" data-ta="📍 வழித்தடம் விவரங்கள்" data-en="📍 Route Details">📍 வழித்தடம் விவரங்கள்</span>
                 <span class="text-gray-400 font-normal">/ Pickup & Drop</span>
               </label>
               
@@ -300,88 +300,16 @@ html_content = f'''<!DOCTYPE html>
             </div>
           </div>
 
-          <!-- STEP 2: INDIGO-STYLE 30-DAY HORIZONTAL CALENDAR -->
-          <div class="space-y-2.5 sm:space-y-3 pt-1 min-w-0">
-            <div class="flex items-center justify-between gap-2 flex-wrap">
-              <label class="text-[11px] sm:text-xs font-black uppercase tracking-wider text-gray-500 flex items-center gap-1.5">
-                <span class="lang-text" data-ta="📅 2. பயண நாள் & நேரம்" data-en="📅 2. Date & Time">📅 2. பயண நாள் & நேரம்</span>
-                <span class="text-gray-400 font-normal">/ Date & Time</span>
-              </label>
-              <span id="selectedDateDisplay" class="text-[11px] sm:text-xs font-black text-brand-dark bg-gray-100 px-2.5 py-1 rounded-full shrink-0">
-                இன்று (Today)
-              </span>
-            </div>
-
-            <!-- Horizontal Swipeable 30-Day Strip (Enclosed in strict container) -->
-            <div class="w-full min-w-0 overflow-hidden">
-              <div id="calendarStrip" class="flex gap-2 overflow-x-auto no-scrollbar py-1.5 px-0.5 scroll-smooth max-w-full">
-                <!-- Dynamically populated by JS (30 days) -->
-              </div>
-            </div>
-
-            <!-- Departure Time Section: Preset Pills + Custom Time Picker -->
-            <div class="pt-1.5 min-w-0">
-              <span class="text-[11px] font-bold text-gray-500 block mb-1.5 lang-text" data-ta="புறப்படும் நேரம் / Pickup Time:" data-en="Select Pickup Time:">
-                புறப்படும் நேரம் / Pickup Time:
-              </span>
-              
-              <!-- Quick Time Pills -->
-              <div class="grid grid-cols-3 sm:grid-cols-6 gap-1.5 sm:gap-2 mb-2.5">
-                <button type="button" onclick="setTime('04:00 AM')" class="time-pill px-2 py-2 rounded-xl text-xs font-bold border border-gray-200 bg-white hover:border-brand-yellow transition-all text-center cursor-pointer">
-                  04:00 AM
-                </button>
-                <button type="button" onclick="setTime('06:00 AM')" class="time-pill px-2 py-2 rounded-xl text-xs font-bold border border-gray-200 bg-white hover:border-brand-yellow transition-all text-center cursor-pointer">
-                  06:00 AM
-                </button>
-                <button type="button" onclick="setTime('09:00 AM')" class="time-pill active px-2 py-2 rounded-xl text-xs font-bold border border-brand-yellow bg-brand-yellow text-brand-dark transition-all text-center shadow-sm cursor-pointer">
-                  09:00 AM
-                </button>
-                <button type="button" onclick="setTime('02:00 PM')" class="time-pill px-2 py-2 rounded-xl text-xs font-bold border border-gray-200 bg-white hover:border-brand-yellow transition-all text-center cursor-pointer">
-                  02:00 PM
-                </button>
-                <button type="button" onclick="setTime('06:00 PM')" class="time-pill px-2 py-2 rounded-xl text-xs font-bold border border-gray-200 bg-white hover:border-brand-yellow transition-all text-center cursor-pointer">
-                  06:00 PM
-                </button>
-                <button type="button" onclick="setTime('10:00 PM')" class="time-pill px-2 py-2 rounded-xl text-xs font-bold border border-gray-200 bg-white hover:border-brand-yellow transition-all text-center cursor-pointer">
-                  10:00 PM
-                </button>
-              </div>
-
-              <!-- Custom Interactive Time Selector -->
-              <div class="p-2.5 sm:p-3 rounded-2xl bg-brand-grayLight/80 border border-gray-200 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
-                <div class="flex items-center gap-2 min-w-0">
-                  <span class="text-base sm:text-lg shrink-0">⏰</span>
-                  <div class="min-w-0">
-                    <span class="font-black text-xs text-brand-dark block truncate lang-text" data-ta="நீங்கள் விரும்பும் நேரம் (Custom Time):" data-en="Custom Pickup Time:">
-                      நீங்கள் விரும்பும் நேரம் (Custom Time):
-                    </span>
-                    <span class="text-[10px] text-gray-500 truncate block lang-text" data-ta="துல்லியமான மணி & நிமிடத்தை தேர்வு செய்க" data-en="Pick any exact hour & minute">
-                      துல்லியமான மணி & நிமிடத்தை தேர்வு செய்க
-                    </span>
-                  </div>
-                </div>
-                
-                <div class="flex items-center gap-2 self-end sm:self-auto shrink-0">
-                  <input type="time" id="customTimePicker" onchange="setCustomTime(this.value)" value="09:00" class="px-3 py-1.5 rounded-xl border border-gray-300 text-xs sm:text-sm font-black bg-white text-brand-dark focus:outline-none focus:border-brand-yellow cursor-pointer shadow-sm">
-                  <span id="activeTimeBadge" class="text-xs font-black text-brand-dark px-2.5 py-1 rounded-lg bg-brand-yellow">
-                    09:00 AM
-                  </span>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          <!-- STREAMLINED ACTION: CONTINUE TO PASSENGERS & BOOKING -->
+          <!-- STREAMLINED ACTION: CONTINUE TO DATE, TIME & DETAILS -->
           <div class="pt-2 min-w-0">
-            <button type="button" onclick="openBookingSheet()" class="w-full py-4 px-6 rounded-2xl bg-brand-yellow hover:bg-brand-yellowHover text-brand-dark font-black text-base sm:text-lg shadow-wa flex items-center justify-center gap-2 sm:gap-3 tactile-btn group cursor-pointer transition-all border border-brand-yellowHover">
-              <span class="lang-text" data-ta="தொடரவும் (பயணிகள் & லக்கேஜ் விவரங்கள்)" data-en="Continue (Passengers & Luggage)">
-                தொடரவும் (பயணிகள் & லக்கேஜ் விவரங்கள்)
+            <button type="button" onclick="openStep1Modal()" class="w-full py-4 px-6 rounded-2xl bg-brand-yellow hover:bg-brand-yellowHover text-brand-dark font-black text-base sm:text-lg shadow-wa flex items-center justify-center gap-2 sm:gap-3 tactile-btn group cursor-pointer transition-all border border-brand-yellowHover">
+              <span class="lang-text" data-ta="தொடரவும்" data-en="Continue">
+                தொடரவும்
               </span>
               <span class="text-lg sm:text-xl group-hover:translate-x-1.5 transition-transform">➔</span>
             </button>
-            <p class="text-center text-[10px] sm:text-xs text-gray-500 font-medium pt-2 lang-text" data-ta="⚡ அடுத்த படியில் பயணிகள் & லக்கேஜ் தேர்வு செய்து வாட்ஸ்அப்பில் புக் செய்யலாம்." data-en="⚡ Select passengers & luggage in the next step to confirm on WhatsApp.">
-              ⚡ அடுத்த படியில் பயணிகள் & லக்கேஜ் தேர்வு செய்து வாட்ஸ்அப்பில் புக் செய்யலாம்.
+            <p class="text-center text-[10px] sm:text-xs text-gray-500 font-medium pt-2 lang-text" data-ta="⚡ பயண நாள், நேரம் & பயணிகளை தேர்வு செய்து வாட்ஸ்அப்பில் புக் செய்யலாம்." data-en="⚡ Select travel date, time & passengers to confirm on WhatsApp.">
+              ⚡ பயண நாள், நேரம் & பயணிகளை தேர்வு செய்து வாட்ஸ்அப்பில் புக் செய்யலாம்.
             </p>
           </div>
         </form>
@@ -599,32 +527,172 @@ html_content = f'''<!DOCTYPE html>
 
   </main>
 
-    <!-- ================= PASSENGERS & BOOKING MODAL / BOTTOM SHEET ================= -->
-  <div id="bookingModalBackdrop" class="fixed inset-0 z-[70] bg-black/60 backdrop-blur-sm transition-opacity duration-300 opacity-0 pointer-events-none flex items-end sm:items-center justify-center p-0 sm:p-4">
+    <!-- ================= STEP 1: DATE & TIME MODAL / BOTTOM SHEET ================= -->
+  <div id="dateModalBackdrop" class="fixed inset-0 z-[70] bg-black/60 backdrop-blur-sm transition-opacity duration-300 opacity-0 pointer-events-none flex items-end sm:items-center justify-center p-0 sm:p-4">
     <!-- Overlay Click Dismiss Area -->
-    <div class="absolute inset-0" onclick="closeBookingSheet()"></div>
+    <div class="absolute inset-0" onclick="closeAllModals()"></div>
 
-    <!-- Sheet Card (Bottom Sheet on Mobile, Centered Modal on Tablet/Desktop) -->
-    <div id="bookingModalContent" class="relative z-10 w-full max-w-lg bg-white rounded-t-3xl sm:rounded-3xl shadow-2xl border border-gray-100 max-h-[90vh] sm:max-h-[85vh] flex flex-col transform transition-transform duration-300 translate-y-full sm:translate-y-8 sm:scale-95 opacity-0">
+    <!-- Sheet Card -->
+    <div id="dateModalContent" class="relative z-10 w-full max-w-lg bg-white rounded-t-3xl sm:rounded-3xl shadow-2xl border border-gray-100 max-h-[92vh] sm:max-h-[85vh] flex flex-col transform transition-transform duration-300 translate-y-full sm:translate-y-8 sm:scale-95 opacity-0">
       
-      <!-- Drag handle indicator for mobile sheet -->
-      <div class="sm:hidden flex justify-center pt-3 pb-1 cursor-pointer" onclick="closeBookingSheet()">
+      <!-- Drag handle for mobile -->
+      <div class="sm:hidden flex justify-center pt-3 pb-1 cursor-pointer" onclick="closeAllModals()">
         <div class="w-12 h-1.5 bg-gray-300 rounded-full"></div>
       </div>
 
       <!-- Header with Close Button -->
-      <div class="px-5 sm:px-6 pt-3 sm:pt-5 pb-3 border-b border-gray-100 flex items-center justify-between shrink-0">
+      <div class="px-5 sm:px-6 pt-3 sm:pt-4 pb-3 border-b border-gray-100 flex items-center justify-between shrink-0">
         <div>
           <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-brand-yellow/30 text-brand-dark text-[11px] font-black uppercase tracking-wider">
-            <span>✨</span>
-            <span class="lang-text" data-ta="படி 2: பயணிகள் & லக்கேஜ்" data-en="Step 2: Passengers & Luggage">படி 2: பயணிகள் & லக்கேஜ்</span>
+            <span>📅</span>
+            <span class="lang-text" data-ta="படி 1: பயண நாள் & நேரம்" data-en="Step 1: Date & Time">படி 1: பயண நாள் & நேரம்</span>
           </span>
           <h3 class="text-base sm:text-lg font-black text-brand-dark mt-1">
-            <span class="lang-text" data-ta="பயண விவரங்களை உறுதி செய்க" data-en="Confirm Trip & Passengers">பயண விவரங்களை உறுதி செய்க</span>
+            <span class="lang-text" data-ta="புறப்படும் நாள் & நேரத்தை தேர்வு செய்க" data-en="Select Travel Date & Time">புறப்படும் நாள் & நேரத்தை தேர்வு செய்க</span>
           </h3>
         </div>
 
-        <button type="button" onclick="closeBookingSheet()" class="w-9 h-9 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-700 font-bold text-base flex items-center justify-center transition-colors cursor-pointer" aria-label="Close">
+        <button type="button" onclick="closeAllModals()" class="w-9 h-9 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-700 font-bold text-base flex items-center justify-center transition-colors cursor-pointer" aria-label="Close">
+          ✕
+        </button>
+      </div>
+
+      <!-- Scrollable Sheet Content -->
+      <div class="px-5 sm:px-6 py-4 overflow-y-auto space-y-4">
+        
+        <!-- Route Summary Pill -->
+        <div class="bg-gray-50 rounded-2xl p-3 border border-gray-200/90 flex items-center justify-between gap-2">
+          <div class="min-w-0 flex-1">
+            <div id="dateModalRoute" class="font-black text-brand-dark text-xs sm:text-sm truncate">
+              பெரம்பலூர் ➔ சென்னை (~270 KM)
+            </div>
+            <div id="dateModalTripType" class="text-[11px] text-gray-500 font-bold mt-0.5">
+              ஒரு வழிப் பயணம் (One-Way)
+            </div>
+          </div>
+          <div class="text-right shrink-0">
+            <span class="text-[10px] font-black px-2.5 py-1 rounded-full bg-brand-yellow text-brand-dark block">
+              TN 46 AK 1244
+            </span>
+          </div>
+        </div>
+
+        <!-- 30-Day Horizontal Calendar Strip -->
+        <div class="space-y-2">
+          <div class="flex items-center justify-between gap-2">
+            <label class="text-[11px] sm:text-xs font-black uppercase tracking-wider text-gray-500 flex items-center gap-1.5">
+              <span class="lang-text" data-ta="📅 பயண நாள்" data-en="📅 Travel Date">📅 பயண நாள்</span>
+            </label>
+            <span id="selectedDateDisplay" class="text-[11px] font-black text-brand-dark bg-gray-100 px-2.5 py-0.5 rounded-full shrink-0">
+              இன்று (Today)
+            </span>
+          </div>
+
+          <div class="w-full min-w-0 overflow-hidden">
+            <div id="calendarStrip" class="flex gap-2 overflow-x-auto no-scrollbar py-1.5 px-0.5 scroll-smooth max-w-full">
+              <!-- Dynamically populated by JS (30 days) -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Departure Time Section: Preset Pills + Custom Time Picker -->
+        <div class="space-y-2 pt-1">
+          <span class="text-[11px] font-bold text-gray-500 block lang-text" data-ta="புறப்படும் நேரம் / Pickup Time:" data-en="Select Pickup Time:">
+            புறப்படும் நேரம் / Pickup Time:
+          </span>
+          
+          <!-- Quick Time Pills -->
+          <div class="grid grid-cols-3 gap-1.5 sm:gap-2">
+            <button type="button" onclick="setTime('04:00 AM')" class="time-pill px-2 py-2 rounded-xl text-xs font-bold border border-gray-200 bg-white hover:border-brand-yellow transition-all text-center cursor-pointer">
+              04:00 AM
+            </button>
+            <button type="button" onclick="setTime('06:00 AM')" class="time-pill px-2 py-2 rounded-xl text-xs font-bold border border-gray-200 bg-white hover:border-brand-yellow transition-all text-center cursor-pointer">
+              06:00 AM
+            </button>
+            <button type="button" onclick="setTime('09:00 AM')" class="time-pill active px-2 py-2 rounded-xl text-xs font-bold border border-brand-yellow bg-brand-yellow text-brand-dark transition-all text-center shadow-sm cursor-pointer">
+              09:00 AM
+            </button>
+            <button type="button" onclick="setTime('02:00 PM')" class="time-pill px-2 py-2 rounded-xl text-xs font-bold border border-gray-200 bg-white hover:border-brand-yellow transition-all text-center cursor-pointer">
+              02:00 PM
+            </button>
+            <button type="button" onclick="setTime('06:00 PM')" class="time-pill px-2 py-2 rounded-xl text-xs font-bold border border-gray-200 bg-white hover:border-brand-yellow transition-all text-center cursor-pointer">
+              06:00 PM
+            </button>
+            <button type="button" onclick="setTime('10:00 PM')" class="time-pill px-2 py-2 rounded-xl text-xs font-bold border border-gray-200 bg-white hover:border-brand-yellow transition-all text-center cursor-pointer">
+              10:00 PM
+            </button>
+          </div>
+
+          <!-- Custom Interactive Time Selector -->
+          <div class="p-2.5 sm:p-3 rounded-2xl bg-brand-grayLight/80 border border-gray-200 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 mt-2">
+            <div class="flex items-center gap-2 min-w-0">
+              <span class="text-base sm:text-lg shrink-0">⏰</span>
+              <div class="min-w-0">
+                <span class="font-black text-xs text-brand-dark block truncate lang-text" data-ta="விருப்பமான நேரம் (Custom Time):" data-en="Custom Pickup Time:">
+                  விருப்பமான நேரம் (Custom Time):
+                </span>
+                <span class="text-[10px] text-gray-500 truncate block lang-text" data-ta="துல்லியமான நேரத்தை தேர்வு செய்க" data-en="Pick any exact hour & minute">
+                  துல்லியமான நேரத்தை தேர்வு செய்க
+                </span>
+              </div>
+            </div>
+            
+            <div class="flex items-center gap-2 self-end sm:self-auto shrink-0">
+              <input type="time" id="customTimePicker" onchange="setCustomTime(this.value)" value="09:00" class="px-3 py-1.5 rounded-xl border border-gray-300 text-xs sm:text-sm font-black bg-white text-brand-dark focus:outline-none focus:border-brand-yellow cursor-pointer shadow-sm">
+              <span id="activeTimeBadge" class="text-xs font-black text-brand-dark px-2.5 py-1 rounded-lg bg-brand-yellow">
+                09:00 AM
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Sheet Footer: Continue to Step 2 -->
+      <div class="p-4 sm:p-5 border-t border-gray-100 bg-white rounded-b-3xl shrink-0">
+        <button type="button" onclick="goToStep2Modal()" class="w-full py-4 px-6 rounded-2xl bg-brand-yellow hover:bg-brand-yellowHover text-brand-dark font-black text-sm sm:text-base shadow-wa flex items-center justify-center gap-2 tactile-btn group cursor-pointer transition-all border border-brand-yellowHover">
+          <span class="lang-text" data-ta="தொடரவும்" data-en="Continue">
+            தொடரவும்
+          </span>
+          <span class="text-base sm:text-lg group-hover:translate-x-1.5 transition-transform">➔</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= STEP 2: PASSENGERS & BOOKING MODAL / BOTTOM SHEET ================= -->
+  <div id="bookingModalBackdrop" class="fixed inset-0 z-[70] bg-black/60 backdrop-blur-sm transition-opacity duration-300 opacity-0 pointer-events-none flex items-end sm:items-center justify-center p-0 sm:p-4">
+    <!-- Overlay Click Dismiss Area -->
+    <div class="absolute inset-0" onclick="closeAllModals()"></div>
+
+    <!-- Sheet Card -->
+    <div id="bookingModalContent" class="relative z-10 w-full max-w-lg bg-white rounded-t-3xl sm:rounded-3xl shadow-2xl border border-gray-100 max-h-[92vh] sm:max-h-[85vh] flex flex-col transform transition-transform duration-300 translate-y-full sm:translate-y-8 sm:scale-95 opacity-0">
+      
+      <!-- Drag handle indicator for mobile sheet -->
+      <div class="sm:hidden flex justify-center pt-3 pb-1 cursor-pointer" onclick="closeAllModals()">
+        <div class="w-12 h-1.5 bg-gray-300 rounded-full"></div>
+      </div>
+
+      <!-- Header with Back & Close Buttons -->
+      <div class="px-5 sm:px-6 pt-3 sm:pt-4 pb-3 border-b border-gray-100 flex items-center justify-between shrink-0">
+        <div class="flex items-center gap-2">
+          <button type="button" onclick="backToStep1Modal()" class="w-8 h-8 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-700 font-bold text-sm flex items-center justify-center transition-colors cursor-pointer" title="Back">
+            ←
+          </button>
+          <div>
+            <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-brand-yellow/30 text-brand-dark text-[11px] font-black uppercase tracking-wider">
+              <span>👥</span>
+              <span class="lang-text" data-ta="படி 2: பயணிகள் & லக்கேஜ்" data-en="Step 2: Passengers & Luggage">படி 2: பயணிகள் & லக்கேஜ்</span>
+            </span>
+            <h3 class="text-base sm:text-lg font-black text-brand-dark mt-0.5">
+              <span class="lang-text" data-ta="பயண விவரங்களை உறுதி செய்க" data-en="Confirm Trip & Passengers">பயண விவரங்களை உறுதி செய்க</span>
+            </h3>
+          </div>
+        </div>
+
+        <button type="button" onclick="closeAllModals()" class="w-9 h-9 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-700 font-bold text-base flex items-center justify-center transition-colors cursor-pointer" aria-label="Close">
           ✕
         </button>
       </div>
@@ -1201,11 +1269,11 @@ html_content = f'''<!DOCTYPE html>
       ].join('\\n');
     }}
 
-    // Open Step 2 Bottom Sheet / Modal
-    function openBookingSheet() {{
+    // Open Step 1 (Date & Time) Modal / Bottom Sheet
+    function openStep1Modal() {{
       updateSummary();
-      const backdrop = document.getElementById('bookingModalBackdrop');
-      const content = document.getElementById('bookingModalContent');
+      const backdrop = document.getElementById('dateModalBackdrop');
+      const content = document.getElementById('dateModalContent');
       const stickyBar = document.getElementById('mobileStickyBar');
       
       backdrop.classList.remove('opacity-0', 'pointer-events-none');
@@ -1214,37 +1282,80 @@ html_content = f'''<!DOCTYPE html>
       content.classList.remove('translate-y-full', 'sm:translate-y-8', 'sm:scale-95', 'opacity-0');
       content.classList.add('translate-y-0', 'sm:translate-y-0', 'sm:scale-100', 'opacity-100');
       
-      // Hide bottom sticky bar when sheet is open
       if (stickyBar) {{
         stickyBar.classList.add('translate-y-full', 'opacity-0', 'pointer-events-none');
       }}
-
-      // Prevent background scroll
       document.body.style.overflow = 'hidden';
     }}
 
-    // Close Step 2 Bottom Sheet / Modal
-    function closeBookingSheet() {{
-      const backdrop = document.getElementById('bookingModalBackdrop');
-      const content = document.getElementById('bookingModalContent');
+    // Move from Step 1 to Step 2 (Passengers & Luggage)
+    function goToStep2Modal() {{
+      const dateBackdrop = document.getElementById('dateModalBackdrop');
+      const dateContent = document.getElementById('dateModalContent');
+      
+      dateBackdrop.classList.add('opacity-0', 'pointer-events-none');
+      dateBackdrop.classList.remove('opacity-100');
+      dateContent.classList.add('translate-y-full', 'sm:translate-y-8', 'sm:scale-95', 'opacity-0');
+      dateContent.classList.remove('translate-y-0', 'sm:translate-y-0', 'sm:scale-100', 'opacity-100');
+
+      setTimeout(() => {{
+        const bookBackdrop = document.getElementById('bookingModalBackdrop');
+        const bookContent = document.getElementById('bookingModalContent');
+        
+        bookBackdrop.classList.remove('opacity-0', 'pointer-events-none');
+        bookBackdrop.classList.add('opacity-100');
+        bookContent.classList.remove('translate-y-full', 'sm:translate-y-8', 'sm:scale-95', 'opacity-0');
+        bookContent.classList.add('translate-y-0', 'sm:translate-y-0', 'sm:scale-100', 'opacity-100');
+      }}, 150);
+    }}
+
+    // Go back from Step 2 to Step 1
+    function backToStep1Modal() {{
+      const bookBackdrop = document.getElementById('bookingModalBackdrop');
+      const bookContent = document.getElementById('bookingModalContent');
+      
+      bookBackdrop.classList.add('opacity-0', 'pointer-events-none');
+      bookBackdrop.classList.remove('opacity-100');
+      bookContent.classList.add('translate-y-full', 'sm:translate-y-8', 'sm:scale-95', 'opacity-0');
+      bookContent.classList.remove('translate-y-0', 'sm:translate-y-0', 'sm:scale-100', 'opacity-100');
+
+      setTimeout(() => {{
+        openStep1Modal();
+      }}, 150);
+    }}
+
+    // Close any open modal
+    function closeAllModals() {{
+      const dateBackdrop = document.getElementById('dateModalBackdrop');
+      const dateContent = document.getElementById('dateModalContent');
+      const bookBackdrop = document.getElementById('bookingModalBackdrop');
+      const bookContent = document.getElementById('bookingModalContent');
       const stickyBar = document.getElementById('mobileStickyBar');
       
-      backdrop.classList.add('opacity-0', 'pointer-events-none');
-      backdrop.classList.remove('opacity-100');
+      if (dateBackdrop) {{
+        dateBackdrop.classList.add('opacity-0', 'pointer-events-none');
+        dateBackdrop.classList.remove('opacity-100');
+      }}
+      if (dateContent) {{
+        dateContent.classList.add('translate-y-full', 'sm:translate-y-8', 'sm:scale-95', 'opacity-0');
+        dateContent.classList.remove('translate-y-0', 'sm:translate-y-0', 'sm:scale-100', 'opacity-100');
+      }}
+      if (bookBackdrop) {{
+        bookBackdrop.classList.add('opacity-0', 'pointer-events-none');
+        bookBackdrop.classList.remove('opacity-100');
+      }}
+      if (bookContent) {{
+        bookContent.classList.add('translate-y-full', 'sm:translate-y-8', 'sm:scale-95', 'opacity-0');
+        bookContent.classList.remove('translate-y-0', 'sm:translate-y-0', 'sm:scale-100', 'opacity-100');
+      }}
       
-      content.classList.add('translate-y-full', 'sm:translate-y-8', 'sm:scale-95', 'opacity-0');
-      content.classList.remove('translate-y-0', 'sm:translate-y-0', 'sm:scale-100', 'opacity-100');
-      
-      // Restore bottom sticky bar when sheet closes
       if (stickyBar) {{
         stickyBar.classList.remove('translate-y-full', 'opacity-0', 'pointer-events-none');
       }}
-
-      // Restore scroll
       document.body.style.overflow = '';
     }}
 
-    // Submit Booking to WhatsApp from Modal
+        // Submit Booking to WhatsApp from Modal
     function submitBookingToWhatsApp() {{
       const fullMessage = getBookingText();
       const waUrl = 'https://api.whatsapp.com/send?phone=' + state.phone + '&text=' + encodeURIComponent(fullMessage);
