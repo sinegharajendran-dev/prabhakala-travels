@@ -589,7 +589,7 @@
   </main>
 
     <!-- ================= PASSENGERS & BOOKING MODAL / BOTTOM SHEET ================= -->
-  <div id="bookingModalBackdrop" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm transition-opacity duration-300 opacity-0 pointer-events-none flex items-end sm:items-center justify-center p-0 sm:p-4">
+  <div id="bookingModalBackdrop" class="fixed inset-0 z-[70] bg-black/60 backdrop-blur-sm transition-opacity duration-300 opacity-0 pointer-events-none flex items-end sm:items-center justify-center p-0 sm:p-4">
     <!-- Overlay Click Dismiss Area -->
     <div class="absolute inset-0" onclick="closeBookingSheet()"></div>
 
@@ -756,7 +756,7 @@
   </div>
 
   <!-- ================= STICKY MOBILE BOTTOM BAR ================= -->
-  <div class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-gray-200 px-3 py-2.5 shadow-2xl flex items-center gap-2 max-w-full overflow-hidden">
+  <div id="mobileStickyBar" class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-gray-200 px-3 py-2.5 shadow-2xl flex items-center gap-2 max-w-full overflow-hidden transition-all duration-300">
     <a href="tel:+916385300259" class="flex-1 py-3 px-2 rounded-2xl bg-gray-100 text-brand-dark font-black text-xs sm:text-sm flex items-center justify-center gap-1.5 tactile-btn border border-gray-300">
       <span>📞</span>
       <span>6385300259</span>
@@ -1195,6 +1195,7 @@
       updateSummary();
       const backdrop = document.getElementById('bookingModalBackdrop');
       const content = document.getElementById('bookingModalContent');
+      const stickyBar = document.getElementById('mobileStickyBar');
       
       backdrop.classList.remove('opacity-0', 'pointer-events-none');
       backdrop.classList.add('opacity-100');
@@ -1202,6 +1203,11 @@
       content.classList.remove('translate-y-full', 'sm:translate-y-8', 'sm:scale-95', 'opacity-0');
       content.classList.add('translate-y-0', 'sm:translate-y-0', 'sm:scale-100', 'opacity-100');
       
+      // Hide bottom sticky bar when sheet is open
+      if (stickyBar) {
+        stickyBar.classList.add('translate-y-full', 'opacity-0', 'pointer-events-none');
+      }
+
       // Prevent background scroll
       document.body.style.overflow = 'hidden';
     }
@@ -1210,6 +1216,7 @@
     function closeBookingSheet() {
       const backdrop = document.getElementById('bookingModalBackdrop');
       const content = document.getElementById('bookingModalContent');
+      const stickyBar = document.getElementById('mobileStickyBar');
       
       backdrop.classList.add('opacity-0', 'pointer-events-none');
       backdrop.classList.remove('opacity-100');
@@ -1217,6 +1224,11 @@
       content.classList.add('translate-y-full', 'sm:translate-y-8', 'sm:scale-95', 'opacity-0');
       content.classList.remove('translate-y-0', 'sm:translate-y-0', 'sm:scale-100', 'opacity-100');
       
+      // Restore bottom sticky bar when sheet closes
+      if (stickyBar) {
+        stickyBar.classList.remove('translate-y-full', 'opacity-0', 'pointer-events-none');
+      }
+
       // Restore scroll
       document.body.style.overflow = '';
     }
