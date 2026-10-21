@@ -588,7 +588,7 @@
           </div>
         </div>
 
-        <!-- Departure Time Section: Exactly 6 Sleek Pills -->
+        <!-- Departure Time Section: Exactly 6 Sleek Pills + Expandable Picker -->
         <div class="space-y-2 pt-1">
           <div class="flex items-center justify-between">
             <span class="text-[11px] font-bold text-gray-500 lang-text" data-ta="புறப்படும் நேரம் / Pickup Time:" data-en="Select Pickup Time:">
@@ -599,7 +599,7 @@
             </span>
           </div>
           
-          <!-- 6 Time Pills Grid: 5 Popular Times + 1 Interactive Other Time Pill -->
+          <!-- 6 Time Pills Grid -->
           <div class="grid grid-cols-3 gap-2">
             <button type="button" onclick="setTime('04:00 AM')" class="time-pill px-2.5 py-3 rounded-2xl text-xs sm:text-sm font-bold border border-gray-200 bg-white hover:border-brand-yellow transition-all text-center cursor-pointer shadow-sm">
               04:00 AM
@@ -617,14 +617,60 @@
               06:00 PM
             </button>
 
-            <!-- 6th Pill: Interactive Other Time -->
-            <label id="customTimePill" class="time-pill relative flex items-center justify-center px-2 py-3 rounded-2xl text-xs sm:text-sm font-bold border border-gray-200 bg-white hover:border-brand-yellow transition-all text-center cursor-pointer shadow-sm overflow-hidden">
+            <!-- 6th Pill: Other Time Button -->
+            <button type="button" id="customTimePill" onclick="toggleOtherTimeSelector()" class="time-pill px-2 py-3 rounded-2xl text-xs sm:text-sm font-bold border border-gray-200 bg-white hover:border-brand-yellow transition-all text-center cursor-pointer shadow-sm flex items-center justify-center gap-1">
               <span id="customTimePillText" class="truncate flex items-center justify-center gap-1">
                 <span>🕒</span>
                 <span class="lang-text" data-ta="வேறு நேரம்" data-en="Other Time">Other Time</span>
               </span>
-              <input type="time" id="hiddenTimePicker" onchange="handlePillTimeChange(this.value)" class="absolute inset-0 opacity-0 w-full h-full cursor-pointer">
-            </label>
+            </button>
+          </div>
+
+          <!-- Expandable Inline Other Time Picker Drawer -->
+          <div id="inlineOtherTimeBox" class="hidden mt-2.5 p-3 rounded-2xl bg-amber-50/70 border border-amber-200 space-y-2.5 transition-all">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-black text-amber-950 flex items-center gap-1.5">
+                <span>⏰</span>
+                <span class="lang-text" data-ta="நேரத்தை தேர்வு செய்க:" data-en="Pick Custom Time:">Pick Custom Time:</span>
+              </span>
+              <span class="text-[10px] text-amber-800 font-medium lang-text" data-ta="24 மணி நேர சேவை" data-en="24/7 Available">24/7 Available</span>
+            </div>
+
+            <!-- Sleek Selectors: Hour, Minute, AM/PM -->
+            <div class="flex items-center justify-center gap-2">
+              <select id="pickHour" onchange="applyInlineTime()" class="px-3 py-2 rounded-xl bg-white border border-amber-300 font-black text-sm text-brand-dark focus:outline-none focus:border-brand-yellow cursor-pointer shadow-sm">
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07" selected>07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+
+              <span class="font-black text-base text-amber-900">:</span>
+
+              <select id="pickMinute" onchange="applyInlineTime()" class="px-3 py-2 rounded-xl bg-white border border-amber-300 font-black text-sm text-brand-dark focus:outline-none focus:border-brand-yellow cursor-pointer shadow-sm">
+                <option value="00" selected>00</option>
+                <option value="15">15</option>
+                <option value="30">30</option>
+                <option value="45">45</option>
+              </select>
+
+              <div class="flex rounded-xl overflow-hidden border border-amber-300 bg-white">
+                <button type="button" id="btnAM" onclick="setInlineAmPm('AM')" class="px-3 py-2 text-xs font-black bg-brand-yellow text-brand-dark cursor-pointer transition-colors">
+                  AM
+                </button>
+                <button type="button" id="btnPM" onclick="setInlineAmPm('PM')" class="px-3 py-2 text-xs font-black text-gray-500 hover:text-brand-dark bg-white cursor-pointer transition-colors">
+                  PM
+                </button>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -1036,17 +1082,23 @@
       updateSummary();
     }
 
-    // Select Pickup Time from 6-Pill Grid
+    let inlineAmPm = 'AM';
+
+    // Select Pickup Time from Preset Pills
     function setTime(timeStr) {
       state.selectedTime = timeStr;
       
       const badge = document.getElementById('activeTimeDisplayBadge');
       if (badge) badge.textContent = timeStr;
 
-      // Update pill classes
+      // Close inline picker box
+      const box = document.getElementById('inlineOtherTimeBox');
+      if (box) box.classList.add('hidden');
+
+      // Reset Other Time pill text & active states
       document.querySelectorAll('.time-pill').forEach(btn => {
         if (btn.id === 'customTimePill') {
-          btn.className = 'time-pill relative flex items-center justify-center px-2 py-3 rounded-2xl text-xs sm:text-sm font-bold border border-gray-200 bg-white hover:border-brand-yellow transition-all text-center cursor-pointer shadow-sm overflow-hidden';
+          btn.className = 'time-pill px-2 py-3 rounded-2xl text-xs sm:text-sm font-bold border border-gray-200 bg-white hover:border-brand-yellow transition-all text-center cursor-pointer shadow-sm flex items-center justify-center gap-1';
           const defaultLabel = state.lang === 'ta' ? 'வேறு நேரம்' : 'Other Time';
           const textSpan = document.getElementById('customTimePillText');
           if (textSpan) {
@@ -1062,24 +1114,49 @@
       updateSummary();
     }
 
-    // Handle 6th Pill (Other Time) Picker
-    function handlePillTimeChange(time24) {
-      if (!time24) return;
-      const [hours, minutes] = time24.split(':');
-      let h = parseInt(hours, 10);
-      const ampm = h >= 12 ? 'PM' : 'AM';
-      h = h % 12;
-      h = h ? h : 12;
-      const formattedTime = `${String(h).padStart(2, '0')}:${minutes} ${ampm}`;
+    // Toggle Other Time Selector Drawer
+    function toggleOtherTimeSelector() {
+      const box = document.getElementById('inlineOtherTimeBox');
+      const isHidden = box.classList.contains('hidden');
+
+      if (isHidden) {
+        box.classList.remove('hidden');
+        applyInlineTime();
+      } else {
+        box.classList.add('hidden');
+      }
+    }
+
+    // Set AM/PM in inline picker
+    function setInlineAmPm(ampm) {
+      inlineAmPm = ampm;
+      const btnAM = document.getElementById('btnAM');
+      const btnPM = document.getElementById('btnPM');
+
+      if (ampm === 'AM') {
+        btnAM.className = 'px-3 py-2 text-xs font-black bg-brand-yellow text-brand-dark cursor-pointer transition-colors';
+        btnPM.className = 'px-3 py-2 text-xs font-black text-gray-500 hover:text-brand-dark bg-white cursor-pointer transition-colors';
+      } else {
+        btnPM.className = 'px-3 py-2 text-xs font-black bg-brand-yellow text-brand-dark cursor-pointer transition-colors';
+        btnAM.className = 'px-3 py-2 text-xs font-black text-gray-500 hover:text-brand-dark bg-white cursor-pointer transition-colors';
+      }
+      applyInlineTime();
+    }
+
+    // Apply time from inline hour/minute/ampm pickers
+    function applyInlineTime() {
+      const h = document.getElementById('pickHour').value;
+      const m = document.getElementById('pickMinute').value;
+      const formattedTime = `${h}:${m} ${inlineAmPm}`;
 
       state.selectedTime = formattedTime;
       const badge = document.getElementById('activeTimeDisplayBadge');
       if (badge) badge.textContent = formattedTime;
 
-      // De-activate standard buttons and activate 6th pill
+      // Highlight the 6th pill as active with the chosen time
       document.querySelectorAll('.time-pill').forEach(btn => {
         if (btn.id === 'customTimePill') {
-          btn.className = 'time-pill active relative flex items-center justify-center px-2 py-3 rounded-2xl text-xs sm:text-sm font-bold border-2 border-brand-yellow bg-brand-yellow text-brand-dark transition-all text-center shadow-sm cursor-pointer overflow-hidden';
+          btn.className = 'time-pill active px-2 py-3 rounded-2xl text-xs sm:text-sm font-bold border-2 border-brand-yellow bg-brand-yellow text-brand-dark transition-all text-center shadow-sm flex items-center justify-center gap-1';
           const textSpan = document.getElementById('customTimePillText');
           if (textSpan) {
             textSpan.innerHTML = `<span>🕒</span> ${formattedTime}`;
