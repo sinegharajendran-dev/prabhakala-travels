@@ -588,56 +588,44 @@
           </div>
         </div>
 
-        <!-- Departure Time Section: Preset Pills + Custom Time Picker -->
+        <!-- Departure Time Section: Exactly 6 Sleek Pills -->
         <div class="space-y-2 pt-1">
-          <span class="text-[11px] font-bold text-gray-500 block lang-text" data-ta="புறப்படும் நேரம் / Pickup Time:" data-en="Select Pickup Time:">
-            புறப்படும் நேரம் / Pickup Time:
-          </span>
+          <div class="flex items-center justify-between">
+            <span class="text-[11px] font-bold text-gray-500 lang-text" data-ta="புறப்படும் நேரம் / Pickup Time:" data-en="Select Pickup Time:">
+              புறப்படும் நேரம் / Pickup Time:
+            </span>
+            <span id="activeTimeDisplayBadge" class="text-xs font-black text-brand-dark bg-brand-yellow/30 px-2.5 py-0.5 rounded-full">
+              09:00 AM
+            </span>
+          </div>
           
-          <!-- Quick Time Pills -->
-          <div class="grid grid-cols-3 gap-1.5 sm:gap-2">
-            <button type="button" onclick="setTime('04:00 AM')" class="time-pill px-2 py-2 rounded-xl text-xs font-bold border border-gray-200 bg-white hover:border-brand-yellow transition-all text-center cursor-pointer">
+          <!-- 6 Time Pills Grid: 5 Popular Times + 1 Interactive Other Time Pill -->
+          <div class="grid grid-cols-3 gap-2">
+            <button type="button" onclick="setTime('04:00 AM')" class="time-pill px-2.5 py-3 rounded-2xl text-xs sm:text-sm font-bold border border-gray-200 bg-white hover:border-brand-yellow transition-all text-center cursor-pointer shadow-sm">
               04:00 AM
             </button>
-            <button type="button" onclick="setTime('06:00 AM')" class="time-pill px-2 py-2 rounded-xl text-xs font-bold border border-gray-200 bg-white hover:border-brand-yellow transition-all text-center cursor-pointer">
+            <button type="button" onclick="setTime('06:00 AM')" class="time-pill px-2.5 py-3 rounded-2xl text-xs sm:text-sm font-bold border border-gray-200 bg-white hover:border-brand-yellow transition-all text-center cursor-pointer shadow-sm">
               06:00 AM
             </button>
-            <button type="button" onclick="setTime('09:00 AM')" class="time-pill active px-2 py-2 rounded-xl text-xs font-bold border border-brand-yellow bg-brand-yellow text-brand-dark transition-all text-center shadow-sm cursor-pointer">
+            <button type="button" onclick="setTime('09:00 AM')" class="time-pill active px-2.5 py-3 rounded-2xl text-xs sm:text-sm font-bold border-2 border-brand-yellow bg-brand-yellow text-brand-dark transition-all text-center shadow-sm cursor-pointer">
               09:00 AM
             </button>
-            <button type="button" onclick="setTime('02:00 PM')" class="time-pill px-2 py-2 rounded-xl text-xs font-bold border border-gray-200 bg-white hover:border-brand-yellow transition-all text-center cursor-pointer">
+            <button type="button" onclick="setTime('02:00 PM')" class="time-pill px-2.5 py-3 rounded-2xl text-xs sm:text-sm font-bold border border-gray-200 bg-white hover:border-brand-yellow transition-all text-center cursor-pointer shadow-sm">
               02:00 PM
             </button>
-            <button type="button" onclick="setTime('06:00 PM')" class="time-pill px-2 py-2 rounded-xl text-xs font-bold border border-gray-200 bg-white hover:border-brand-yellow transition-all text-center cursor-pointer">
+            <button type="button" onclick="setTime('06:00 PM')" class="time-pill px-2.5 py-3 rounded-2xl text-xs sm:text-sm font-bold border border-gray-200 bg-white hover:border-brand-yellow transition-all text-center cursor-pointer shadow-sm">
               06:00 PM
             </button>
-            <button type="button" onclick="setTime('10:00 PM')" class="time-pill px-2 py-2 rounded-xl text-xs font-bold border border-gray-200 bg-white hover:border-brand-yellow transition-all text-center cursor-pointer">
-              10:00 PM
-            </button>
-          </div>
 
-          <!-- Custom Interactive Time Selector -->
-          <div class="p-2.5 sm:p-3 rounded-2xl bg-brand-grayLight/80 border border-gray-200 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 mt-2">
-            <div class="flex items-center gap-2 min-w-0">
-              <span class="text-base sm:text-lg shrink-0">⏰</span>
-              <div class="min-w-0">
-                <span class="font-black text-xs text-brand-dark block truncate lang-text" data-ta="விருப்பமான நேரம் (Custom Time):" data-en="Custom Pickup Time:">
-                  விருப்பமான நேரம் (Custom Time):
-                </span>
-                <span class="text-[10px] text-gray-500 truncate block lang-text" data-ta="துல்லியமான நேரத்தை தேர்வு செய்க" data-en="Pick any exact hour & minute">
-                  துல்லியமான நேரத்தை தேர்வு செய்க
-                </span>
-              </div>
-            </div>
-            
-            <div class="flex items-center gap-2 self-end sm:self-auto shrink-0">
-              <input type="time" id="customTimePicker" onchange="setCustomTime(this.value)" value="09:00" class="px-3 py-1.5 rounded-xl border border-gray-300 text-xs sm:text-sm font-black bg-white text-brand-dark focus:outline-none focus:border-brand-yellow cursor-pointer shadow-sm">
-              <span id="activeTimeBadge" class="text-xs font-black text-brand-dark px-2.5 py-1 rounded-lg bg-brand-yellow">
-                09:00 AM
+            <!-- 6th Pill: Interactive Other Time -->
+            <label id="customTimePill" class="time-pill relative flex items-center justify-center px-2 py-3 rounded-2xl text-xs sm:text-sm font-bold border border-gray-200 bg-white hover:border-brand-yellow transition-all text-center cursor-pointer shadow-sm overflow-hidden">
+              <span id="customTimePillText" class="truncate flex items-center justify-center gap-1">
+                <span>🕒</span>
+                <span class="lang-text" data-ta="வேறு நேரம்" data-en="Other Time">Other Time</span>
               </span>
-            </div>
+              <input type="time" id="hiddenTimePicker" onchange="handlePillTimeChange(this.value)" class="absolute inset-0 opacity-0 w-full h-full cursor-pointer">
+            </label>
           </div>
-
         </div>
 
       </div>
@@ -1048,24 +1036,34 @@
       updateSummary();
     }
 
-    // Select Preset Time
+    // Select Pickup Time from 6-Pill Grid
     function setTime(timeStr) {
       state.selectedTime = timeStr;
       
+      const badge = document.getElementById('activeTimeDisplayBadge');
+      if (badge) badge.textContent = timeStr;
+
+      // Update pill classes
       document.querySelectorAll('.time-pill').forEach(btn => {
-        if (btn.textContent.includes(timeStr)) {
-          btn.className = 'time-pill active px-2 py-2 rounded-xl text-xs font-bold border border-brand-yellow bg-brand-yellow text-brand-dark transition-all text-center shadow-sm cursor-pointer';
+        if (btn.id === 'customTimePill') {
+          btn.className = 'time-pill relative flex items-center justify-center px-2 py-3 rounded-2xl text-xs sm:text-sm font-bold border border-gray-200 bg-white hover:border-brand-yellow transition-all text-center cursor-pointer shadow-sm overflow-hidden';
+          const defaultLabel = state.lang === 'ta' ? 'வேறு நேரம்' : 'Other Time';
+          const textSpan = document.getElementById('customTimePillText');
+          if (textSpan) {
+            textSpan.innerHTML = `<span>🕒</span> <span class="lang-text" data-ta="வேறு நேரம்" data-en="Other Time">${defaultLabel}</span>`;
+          }
+        } else if (btn.textContent.trim() === timeStr) {
+          btn.className = 'time-pill active px-2.5 py-3 rounded-2xl text-xs sm:text-sm font-bold border-2 border-brand-yellow bg-brand-yellow text-brand-dark transition-all text-center shadow-sm cursor-pointer';
         } else {
-          btn.className = 'time-pill px-2 py-2 rounded-xl text-xs font-bold border border-gray-200 bg-white hover:border-brand-yellow transition-all text-center cursor-pointer';
+          btn.className = 'time-pill px-2.5 py-3 rounded-2xl text-xs sm:text-sm font-bold border border-gray-200 bg-white hover:border-brand-yellow transition-all text-center cursor-pointer shadow-sm';
         }
       });
 
-      document.getElementById('activeTimeBadge').textContent = timeStr;
       updateSummary();
     }
 
-    // Custom Time Picker Handler
-    function setCustomTime(time24) {
+    // Handle 6th Pill (Other Time) Picker
+    function handlePillTimeChange(time24) {
       if (!time24) return;
       const [hours, minutes] = time24.split(':');
       let h = parseInt(hours, 10);
@@ -1075,16 +1073,26 @@
       const formattedTime = `${String(h).padStart(2, '0')}:${minutes} ${ampm}`;
 
       state.selectedTime = formattedTime;
-      document.getElementById('activeTimeBadge').textContent = formattedTime;
+      const badge = document.getElementById('activeTimeDisplayBadge');
+      if (badge) badge.textContent = formattedTime;
 
+      // De-activate standard buttons and activate 6th pill
       document.querySelectorAll('.time-pill').forEach(btn => {
-        btn.className = 'time-pill px-2 py-2 rounded-xl text-xs font-bold border border-gray-200 bg-white hover:border-brand-yellow transition-all text-center cursor-pointer';
+        if (btn.id === 'customTimePill') {
+          btn.className = 'time-pill active relative flex items-center justify-center px-2 py-3 rounded-2xl text-xs sm:text-sm font-bold border-2 border-brand-yellow bg-brand-yellow text-brand-dark transition-all text-center shadow-sm cursor-pointer overflow-hidden';
+          const textSpan = document.getElementById('customTimePillText');
+          if (textSpan) {
+            textSpan.innerHTML = `<span>🕒</span> ${formattedTime}`;
+          }
+        } else {
+          btn.className = 'time-pill px-2.5 py-3 rounded-2xl text-xs sm:text-sm font-bold border border-gray-200 bg-white hover:border-brand-yellow transition-all text-center cursor-pointer shadow-sm';
+        }
       });
 
       updateSummary();
     }
 
-    // Set Trip Type (One-Way or Round-Trip)
+        // Set Trip Type (One-Way or Round-Trip)
     function setTripType(type) {
       state.tripType = type;
       const oneWayBtn = document.getElementById('tripOneWay');
