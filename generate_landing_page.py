@@ -15,7 +15,7 @@ html_content = f'''<!DOCTYPE html>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   <title>PKS Travels — Premier Cab Service | White Toyota Taisor SUV (TN 46 AK 1244)</title>
-  <meta name="description" content="Official cab service by Selvabarathi. Clean White Toyota Urban Cruiser Taisor AC SUV (TN46AK1244). Doorstep pickup from Perambalur district to Chennai, Trichy, Bangalore, Coimbatore, Madurai & all destinations.">
+  <meta name="description" content="Official cab service by Madhavan. Clean White Toyota Urban Cruiser Taisor AC SUV (TN46AK1244). Doorstep pickup from Perambalur district to Chennai, Trichy, Bangalore, Coimbatore, Madurai & all destinations.">
   
   <!-- Google Fonts: Plus Jakarta Sans & Noto Sans Tamil -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -142,13 +142,13 @@ html_content = f'''<!DOCTYPE html>
         </button>
 
         <!-- Call Button (Desktop / Tablet) -->
-        <a href="tel:+916385300259" class="hidden md:flex items-center gap-2 px-3.5 py-2 rounded-full bg-brand-grayLight hover:bg-gray-200 text-brand-dark font-bold text-xs tactile-btn border border-gray-200">
+        <a href="tel:+918056057393" class="hidden md:flex items-center gap-2 px-3.5 py-2 rounded-full bg-brand-grayLight hover:bg-gray-200 text-brand-dark font-bold text-xs tactile-btn border border-gray-200">
           <svg class="w-3.5 h-3.5 text-brand-dark" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.72 11.72 0 003.68.59 1 1 0 011 1v3.5a1 1 0 01-1 1A16 16 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.72 11.72 0 00.59 3.68 1 1 0 01-.24 1.02l-2.23 2.09z"/></svg>
-          <span>6385300259</span>
+          <span>8056057393</span>
         </a>
 
         <!-- WhatsApp Quick Link (Desktop & Tablet only, hidden on mobile) -->
-        <a href="https://api.whatsapp.com/send?phone=916385300259&text=%E0%AE%B5%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%AE%E0%AF%8D!%20I%20want%20to%20enquire%20about%20booking%20a%20cab%20with%20PKS%20Travels." target="_blank" class="hidden sm:flex px-3.5 py-2 rounded-full bg-brand-whatsapp hover:bg-brand-whatsappDark text-white font-bold text-xs shadow-wa tactile-btn items-center gap-1.5">
+        <a href="https://api.whatsapp.com/send?phone=918056057393&text=%E0%AE%B5%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%AE%E0%AF%8D!%20I%20want%20to%20enquire%20about%20booking%20a%20cab%20with%20PKS%20Travels." target="_blank" class="hidden sm:flex px-3.5 py-2 rounded-full bg-brand-whatsapp hover:bg-brand-whatsappDark text-white font-bold text-xs shadow-wa tactile-btn items-center gap-1.5">
           <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.159.57 4.184 1.564 5.938l-1.564 5.714 5.86-1.537c1.704.931 3.659 1.473 5.74 1.473 6.627 0 12-5.373 12-12s-5.373-12-12-12z"/></svg>
           <span>WhatsApp</span>
         </a>
@@ -422,12 +422,12 @@ html_content = f'''<!DOCTYPE html>
           <!-- Call Chauffeur Button -->
           <div class="mt-4 pt-4 border-t border-gray-800 flex items-center justify-between">
             <div>
-              <div class="text-[10px] uppercase font-bold text-gray-400 lang-text" data-ta="நேரடி தொடர்பு (செல்வபாரதி)" data-en="Direct Contact (Selvabarathi)">
-                நேரடி தொடர்பு (செல்வபாரதி)
+              <div class="text-[10px] uppercase font-bold text-gray-400 lang-text" data-ta="நேரடி தொடர்பு (மாதவன்)" data-en="Direct Contact (Madhavan)">
+                நேரடி தொடர்பு (மாதவன்)
               </div>
-              <a href="tel:+916385300259" class="font-black text-sm sm:text-base text-brand-yellow hover:underline">+91 6385300259</a>
+              <a href="tel:+918056057393" class="font-black text-sm sm:text-base text-brand-yellow hover:underline">+91 8056057393</a>
             </div>
-            <a href="tel:+916385300259" class="px-3.5 py-1.5 rounded-xl bg-white text-brand-dark font-black text-xs tactile-btn hover:bg-brand-yellow cursor-pointer">
+            <a href="tel:+918056057393" class="px-3.5 py-1.5 rounded-xl bg-white text-brand-dark font-black text-xs tactile-btn hover:bg-brand-yellow cursor-pointer">
               <span class="lang-text" data-ta="📞 அழைக்கவும்" data-en="📞 Call Now">📞 அழைக்கவும்</span>
             </a>
           </div>
@@ -490,9 +490,9 @@ html_content = f'''<!DOCTYPE html>
         <div class="bg-white p-4 sm:p-5 rounded-3xl shadow-bento border border-gray-100 min-w-0">
           <div class="flex items-center gap-1 text-amber-400 text-sm mb-2">★★★★★</div>
           <p class="text-xs sm:text-sm text-gray-700 leading-relaxed font-medium break-words lang-text" 
-            data-ta="&ldquo;சென்னை ஏர்போர்ட்டிற்கு அதிகாலை 3 மணிக்கு புக் செய்திருந்தோம். சொன்ன நேரத்திற்கு 10 நிமிடம் முன்பே வந்து நின்றார் செல்வபாரதி. கார் மிகவும் சுத்தமாகவும் ஏசி அருமையாகவும் இருந்தது.&rdquo;" 
-            data-en="&ldquo;We booked a cab to Chennai Airport at 3:00 AM. Selvabarathi arrived 10 minutes early. The brand new Toyota Taisor was spotless and the AC was excellent!&rdquo;">
-            &ldquo;சென்னை ஏர்போர்ட்டிற்கு அதிகாலை 3 மணிக்கு புக் செய்திருந்தோம். சொன்ன நேரத்திற்கு 10 நிமிடம் முன்பே வந்து நின்றார் செல்வபாரதி. கார் மிகவும் சுத்தமாகவும் ஏசி அருமையாகவும் இருந்தது.&rdquo;
+            data-ta="&ldquo;சென்னை ஏர்போர்ட்டிற்கு அதிகாலை 3 மணிக்கு புக் செய்திருந்தோம். சொன்ன நேரத்திற்கு 10 நிமிடம் முன்பே வந்து நின்றார் மாதவன். கார் மிகவும் சுத்தமாகவும் ஏசி அருமையாகவும் இருந்தது.&rdquo;" 
+            data-en="&ldquo;We booked a cab to Chennai Airport at 3:00 AM. Madhavan arrived 10 minutes early. The brand new Toyota Taisor was spotless and the AC was excellent!&rdquo;">
+            &ldquo;சென்னை ஏர்போர்ட்டிற்கு அதிகாலை 3 மணிக்கு புக் செய்திருந்தோம். சொன்ன நேரத்திற்கு 10 நிமிடம் முன்பே வந்து நின்றார் மாதவன். கார் மிகவும் சுத்தமாகவும் ஏசி அருமையாகவும் இருந்தது.&rdquo;
           </p>
           <div class="mt-3.5 pt-2.5 border-t border-gray-100 flex items-center justify-between text-xs">
             <span class="font-black text-brand-dark lang-text" data-ta="சரவணன், பூலாம்பாடி" data-en="Saravanan, Poolambadi">சரவணன், பூலாம்பாடி</span>
@@ -874,11 +874,11 @@ html_content = f'''<!DOCTYPE html>
 
   <!-- ================= STICKY MOBILE BOTTOM BAR ================= -->
   <div id="mobileStickyBar" class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-gray-200 px-3 py-2.5 shadow-2xl flex items-center gap-2 max-w-full overflow-hidden transition-all duration-300">
-    <a href="tel:+916385300259" class="flex-1 py-3 px-2 rounded-2xl bg-gray-100 text-brand-dark font-black text-xs sm:text-sm flex items-center justify-center gap-1.5 tactile-btn border border-gray-300">
+    <a href="tel:+918056057393" class="flex-1 py-3 px-2 rounded-2xl bg-gray-100 text-brand-dark font-black text-xs sm:text-sm flex items-center justify-center gap-1.5 tactile-btn border border-gray-300">
       <span>📞</span>
-      <span>6385300259</span>
+      <span>8056057393</span>
     </a>
-    <a href="https://api.whatsapp.com/send?phone=916385300259&text=%E0%AE%B5%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%AE%E0%AF%8D!%20I%20want%20to%20enquire%20about%20booking%20a%20cab%20with%20PKS%20Travels." target="_blank" class="flex-1 py-3 px-2 rounded-2xl bg-brand-whatsapp text-white font-black text-xs sm:text-sm flex items-center justify-center gap-1.5 tactile-btn shadow-wa cursor-pointer">
+    <a href="https://api.whatsapp.com/send?phone=918056057393&text=%E0%AE%B5%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%AE%E0%AF%8D!%20I%20want%20to%20enquire%20about%20booking%20a%20cab%20with%20PKS%20Travels." target="_blank" class="flex-1 py-3 px-2 rounded-2xl bg-brand-whatsapp text-white font-black text-xs sm:text-sm flex items-center justify-center gap-1.5 tactile-btn shadow-wa cursor-pointer">
       <span>🟢</span>
       <span class="lang-text" data-ta="WhatsApp புக்" data-en="WhatsApp Book">WhatsApp புக்</span>
     </a>
@@ -896,7 +896,7 @@ html_content = f'''<!DOCTYPE html>
         <span class="lang-text" data-ta="ஒயிட் டொயோட்டா டெய்சர் (TN 46 AK 1244) • நேரடி தொடர்பு:" data-en="White Toyota Taisor (TN 46 AK 1244) • Direct Line:">
           ஒயிட் டொயோட்டா டெய்சர் (TN 46 AK 1244) • நேரடி தொடர்பு:
         </span>
-        <a href="tel:+916385300259" class="font-bold text-brand-dark hover:underline">+91 6385300259</a>
+        <a href="tel:+918056057393" class="font-bold text-brand-dark hover:underline">+91 8056057393</a>
       </p>
     </div>
   </footer>
@@ -968,7 +968,7 @@ html_content = f'''<!DOCTYPE html>
       hasLuggage: true,
       trolleys: 1,
       bags: 1,
-      phone: '916385300259'
+      phone: '918056057393'
     }};
 
     // Distance Matrix from Perambalur District (One-Way KM)
