@@ -341,13 +341,10 @@ html_content = f'''<!DOCTYPE html>
             செடான் & SUV கார்கள் • அனுபவமிக்க டிரைவர்கள் • குளிர் ஏசி
           </p>
 
-          <!-- Lifestyle Travel Image -->
-          <div class="relative my-3 sm:my-4 rounded-2xl overflow-hidden shadow-md group cursor-pointer border border-gray-100">
-            <img 
-              src="{b64_lifestyle_hero}" 
-              alt="PKS Travels - Safe & Comfortable Outstation Cab Service"
-              class="w-full h-auto max-h-[220px] sm:max-h-[260px] object-cover mx-auto group-hover:scale-105 transition-transform duration-300"
-            >
+          <!-- Placeholder while user picks the new image -->
+          <div class="my-4 p-6 rounded-2xl bg-amber-50/50 border-2 border-dashed border-amber-200 text-center">
+            <div class="text-3xl mb-1">🚕</div>
+            <div class="text-xs font-bold text-brand-dark">Selecting Perfect Family Travel Visual...</div>
           </div>
 
           <!-- Feature Badges Bento Strip (3 Trust Badges) -->
