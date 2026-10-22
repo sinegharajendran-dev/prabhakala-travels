@@ -5,9 +5,9 @@ logo_badge_path = '/Users/madhavan/.gemini/antigravity/scratch/perambalur-taisor
 with open(logo_badge_path, 'rb') as f:
     b64_logo_badge = 'data:image/jpeg;base64,' + base64.b64encode(f.read()).decode('utf-8')
 
-lifestyle_hero_path = '/Users/madhavan/.gemini/antigravity/scratch/perambalur-taisor-cabs/assets/outstation_happy_travel.jpg'
-with open(lifestyle_hero_path, 'rb') as f:
-    b64_lifestyle_hero = 'data:image/jpeg;base64,' + base64.b64encode(f.read()).decode('utf-8')
+showcase_hero_path = '/Users/madhavan/.gemini/antigravity/scratch/perambalur-taisor-cabs/assets/hero_chauffeur_showcase.jpg'
+with open(showcase_hero_path, 'rb') as f:
+    b64_showcase_hero = 'data:image/jpeg;base64,' + base64.b64encode(f.read()).decode('utf-8')
 
 html_content = f'''<!DOCTYPE html>
 <html lang="ta" class="scroll-smooth">
@@ -341,10 +341,18 @@ html_content = f'''<!DOCTYPE html>
             செடான் & SUV கார்கள் • அனுபவமிக்க டிரைவர்கள் • குளிர் ஏசி
           </p>
 
-          <!-- Placeholder while user picks the new image -->
-          <div class="my-4 p-6 rounded-2xl bg-amber-50/50 border-2 border-dashed border-amber-200 text-center">
-            <div class="text-3xl mb-1">🚕</div>
-            <div class="text-xs font-bold text-brand-dark">Selecting Perfect Family Travel Visual...</div>
+          <!-- ZOOMED HERO SHOWCASE: CHAUFFEUR HOSPITALITY & FAMILY CAB -->
+          <div class="my-4 rounded-2xl overflow-hidden shadow-md border border-gray-200/80 group relative">
+            <img src="{b64_showcase_hero}" alt="PKS Travels Chauffeur Hospitality" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500 block">
+            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/75 via-black/30 to-transparent p-3 pt-8 text-left flex items-center justify-between">
+              <span class="text-white text-[11px] sm:text-xs font-bold flex items-center gap-1.5 drop-shadow">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span class="lang-text" data-ta="அனுபவமிக்க டிரைவர் • குடும்பப் பாதுகாப்பு" data-en="Verified Chauffeur • Safe Family Ride">அனுபவமிக்க டிரைவர் • குடும்பப் பாதுகாப்பு</span>
+              </span>
+              <span class="bg-brand-yellow text-brand-dark text-[10px] sm:text-[11px] font-black px-2.5 py-0.5 rounded-full shadow">
+                Clean AC Cab
+              </span>
+            </div>
           </div>
 
           <!-- Feature Badges Bento Strip (3 Trust Badges) -->
