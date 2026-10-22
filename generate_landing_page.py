@@ -16,6 +16,7 @@ html_content = f'''<!DOCTYPE html>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   <title>PKS Travels — Premier Cab & Taxi Service | Perambalur District</title>
   <meta name="description" content="Official cab and taxi service in Perambalur by Selvabarathi. Clean AC Sedans & SUVs for outstation, airport transfers and family travel across Tamil Nadu & Bangalore.">
+  <meta name="google-site-verification" content="tqvIdVWB3i0uT5pFGFkHW9k2tYQJqg9T_vb77Ksb3jc">
   
   <!-- Google Fonts: Plus Jakarta Sans & Noto Sans Tamil -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
