@@ -14,9 +14,78 @@ html_content = f'''<!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <title>PKS Travels — Premier Cab & Taxi Service | Perambalur District</title>
-  <meta name="description" content="Official cab and taxi service in Perambalur by Selvabarathi. Clean AC Sedans & SUVs for outstation, airport transfers and family travel across Tamil Nadu & Bangalore.">
+  <title>PKS Travels — Best Cab & Taxi Service in Perambalur | 24/7 Outstation & Airport Cabs</title>
+  <meta name="description" content="Official cab & taxi service in Perambalur by Selvabarathi (+91 6385300259). Reliable AC cabs for Chennai, Trichy Airport, Bangalore, Coimbatore & temple tours. Doorstep pickup across Perambalur district.">
+  <meta name="keywords" content="Perambalur cab service, Perambalur taxi service, Perambalur to Trichy airport taxi, Perambalur to Chennai cab, Perambalur car rental, Poolambadi taxi, PKS travels Perambalur, outstation cab perambalur, பெரம்பலூர் டாக்ஸி சர்வீஸ், பெரம்பலூர் கார் வாடகை">
+  <meta name="author" content="PKS Travels">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://perambalurcabs.vercel.app/">
+
+  <!-- Open Graph / Facebook / WhatsApp Preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://perambalurcabs.vercel.app/">
+  <meta property="og:title" content="PKS Travels — Best Cab & Taxi Service in Perambalur">
+  <meta property="og:description" content="Reliable 24/7 outstation & airport taxi service in Perambalur District. Clean AC Sedans & SUVs with verified courteous chauffeurs.">
+  <meta property="og:image" content="https://perambalurcabs.vercel.app/assets/hero_chauffeur_showcase.jpg">
+
+  <!-- Twitter Meta -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PKS Travels — Cab & Taxi Service | Perambalur District">
+  <meta name="twitter:description" content="Doorstep 24/7 cab booking in Perambalur. Outstation travel to Chennai, Bangalore, Trichy & temple tours. Call +91 6385300259.">
+  <meta name="twitter:image" content="https://perambalurcabs.vercel.app/assets/hero_chauffeur_showcase.jpg">
+
   <meta name="google-site-verification" content="tqvIdVWB3i0uT5pFGFkHW9k2tYQJqg9T_vb77Ksb3jc">
+
+  <!-- Schema.org Structured Data: LocalBusiness & TaxiService for Google Search -->
+  <script type="application/ld+json">
+  {{
+    "@context": "https://schema.org",
+    "@type": "TaxiService",
+    "name": "PKS Travels Perambalur",
+    "alternateName": "PKS டிராவல்ஸ் பெரம்பலூர்",
+    "description": "Premier 24/7 commercial cab and outstation taxi service based in Perambalur District, Tamil Nadu. Clean AC Sedans and SUVs for airport drops, family vacation, and temple pilgrimage tours.",
+    "url": "https://perambalurcabs.vercel.app/",
+    "telephone": "+916385300259",
+    "priceRange": "₹₹",
+    "image": "https://perambalurcabs.vercel.app/assets/hero_chauffeur_showcase.jpg",
+    "address": {{
+      "@type": "PostalAddress",
+      "addressLocality": "Perambalur",
+      "addressRegion": "Tamil Nadu",
+      "postalCode": "621212",
+      "addressCountry": "IN"
+    }},
+    "geo": {{
+      "@type": "GeoCoordinates",
+      "latitude": 11.2333,
+      "longitude": 78.8833
+    }},
+    "areaServed": [
+      "Perambalur",
+      "Poolambadi",
+      "Veppanthattai",
+      "Kunnam",
+      "Ariyalur",
+      "Tiruchirappalli",
+      "Chennai",
+      "Bangalore"
+    ],
+    "provider": {{
+      "@type": "Person",
+      "name": "Selvabarathi",
+      "jobTitle": "Owner & Lead Chauffeur",
+      "telephone": "+916385300259"
+    }},
+    "openingHoursSpecification": {{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+      ],
+      "opens": "00:00",
+      "closes": "23:59"
+    }}
+  }}
+  </script>
   
   <!-- Google Fonts: Plus Jakarta Sans & Noto Sans Tamil -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -531,6 +600,84 @@ html_content = f'''<!DOCTYPE html>
           </div>
         </div>
 
+      </div>
+    </section>
+
+    <!-- ================= SEO FAQ & TRAVEL GUIDE ACCORDION ================= -->
+    <section class="mt-10 sm:mt-14 mb-10 min-w-0">
+      <div class="text-center mb-6 sm:mb-8">
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-brand-yellow/20 text-brand-dark text-xs font-black mb-2">
+          <span>❓</span>
+          <span class="lang-text" data-ta="அடிக்கடி கேட்கப்படும் கேள்விகள்" data-en="Frequently Asked Questions (FAQ)">அடிக்கடி கேட்கப்படும் கேள்விகள்</span>
+        </span>
+        <h3 class="text-xl sm:text-2xl font-black text-brand-dark tracking-tight lang-text" data-ta="பெரம்பலூர் டாக்ஸி முன்பதிவு வழிகாட்டி" data-en="Perambalur Cab Service & Travel Guide">
+          பெரம்பலூர் டாக்ஸி முன்பதிவு வழிகாட்டி
+        </h3>
+        <p class="text-xs sm:text-sm text-gray-500 font-medium mt-1 lang-text" data-ta="உங்கள் பயணத்திற்கான பொதுவான கேள்விகளுக்கான விடைகள்" data-en="Everything you need to know about outstation taxi booking with PKS Travels">
+          உங்கள் பயணத்திற்கான பொதுவான கேள்விகளுக்கான விடைகள்
+        </p>
+      </div>
+
+      <div class="max-w-3xl mx-auto space-y-3 sm:space-y-4">
+        <!-- FAQ 1 -->
+        <div class="bg-white rounded-2xl p-4 sm:p-5 border border-gray-100 shadow-sm">
+          <h4 class="font-black text-xs sm:text-sm text-brand-dark flex items-center gap-2">
+            <span class="text-brand-yellow font-black text-base">Q.</span>
+            <span class="lang-text" data-ta="பெரம்பலூரிலிருந்து கார் முன்பதிவு செய்வது எப்படி?" data-en="How can I book a cab from Perambalur?">
+              பெரம்பலூரிலிருந்து கார் முன்பதிவு செய்வது எப்படி?
+            </span>
+          </h4>
+          <p class="text-xs sm:text-sm text-gray-600 font-medium mt-2 leading-relaxed pl-5 lang-text" 
+            data-ta="எங்கள் இணையதளத்தில் உங்கள் புறப்படும் இடம், சேருமிடம் மற்றும் பயணத் தேதியைத் தேர்வு செய்து ஒரு கிளிக்கில் வாட்ஸ்அப் அல்லது நேரடி அழைப்பு (+91 6385300259) மூலம் உடனடி முன்பதிவு செய்யலாம்." 
+            data-en="Simply select your pickup point, destination, date and time using our quick form and confirm directly on WhatsApp or call +91 6385300259 for instant doorstep cab arrangement.">
+            எங்கள் இணையதளத்தில் உங்கள் புறப்படும் இடம், சேருமிடம் மற்றும் பயணத் தேதியைத் தேர்வு செய்து ஒரு கிளிக்கில் வாட்ஸ்அப் அல்லது நேரடி அழைப்பு (+91 6385300259) மூலம் உடனடி முன்பதிவு செய்யலாம்.
+          </p>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="bg-white rounded-2xl p-4 sm:p-5 border border-gray-100 shadow-sm">
+          <h4 class="font-black text-xs sm:text-sm text-brand-dark flex items-center gap-2">
+            <span class="text-brand-yellow font-black text-base">Q.</span>
+            <span class="lang-text" data-ta="திருச்சி விமான நிலையத்திற்கு (Trichy Airport) 24/7 கார் சேவை கிடைக்குமா?" data-en="Do you provide 24/7 taxi service to Trichy Airport?">
+              திருச்சி விமான நிலையத்திற்கு (Trichy Airport) 24/7 கார் சேவை கிடைக்குமா?
+            </span>
+          </h4>
+          <p class="text-xs sm:text-sm text-gray-600 font-medium mt-2 leading-relaxed pl-5 lang-text" 
+            data-ta="ஆம், பெரம்பலூர் மற்றும் சுற்றுவட்டாரப் பகுதிகளிலிருந்து திருச்சி விமான நிலையத்திற்கு (TRZ) அதிகாலை மற்றும் நள்ளிரவு விமானப் பயணங்களுக்கு பிரத்யேக 24/7 டோர்ஸ்டெப் பிக்கப் சேவை உண்டு." 
+            data-en="Yes, we operate 24/7 airport transfer cabs between Perambalur District and Tiruchirappalli International Airport (TRZ) for early morning and late night flights.">
+            ஆம், பெரம்பலூர் மற்றும் சுற்றுவட்டாரப் பகுதிகளிலிருந்து திருச்சி விமான நிலையத்திற்கு (TRZ) அதிகாலை மற்றும் நள்ளிரவு விமானப் பயணங்களுக்கு பிரத்யேக 24/7 டோர்ஸ்டெப் பிக்கப் சேவை உண்டு.
+          </p>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="bg-white rounded-2xl p-4 sm:p-5 border border-gray-100 shadow-sm">
+          <h4 class="font-black text-xs sm:text-sm text-brand-dark flex items-center gap-2">
+            <span class="text-brand-yellow font-black text-base">Q.</span>
+            <span class="lang-text" data-ta="ஒரு வழி பயணம் (One-Way Trip) மற்றும் இரு வழி பயணம் (Round-Trip) சாத்தியமா?" data-en="Are both one-way and round-trip outstation cabs available?">
+              ஒரு வழி பயணம் (One-Way Trip) மற்றும் இரு வழி பயணம் (Round-Trip) சாத்தியமா?
+            </span>
+          </h4>
+          <p class="text-xs sm:text-sm text-gray-600 font-medium mt-2 leading-relaxed pl-5 lang-text" 
+            data-ta="நிச்சயமாக! சென்னை, பெங்களூர், மதுரை, திருப்பதி, கோவை உள்ளிட்ட அனைத்து முக்கிய நகரங்களுக்கும் ஒரு வழி அல்லது இரு வழி கட்டண முறைப்படி நியாயமான மற்றும் மறைமுக கட்டணமில்லா சேவை வழங்குகிறோம்." 
+            data-en="Yes! We provide transparent one-way and round-trip cab packages for Chennai, Bangalore, Madurai, Tirupati, Coimbatore, and all outstation routes across Tamil Nadu.">
+            நிச்சயமாக! சென்னை, பெங்களூர், மதுரை, திருப்பதி, கோவை உள்ளிட்ட அனைத்து முக்கிய நகரங்களுக்கும் ஒரு வழி அல்லது இரு வழி கட்டண முறைப்படி நியாயமான மற்றும் மறைமுக கட்டணமில்லா சேவை வழங்குகிறோம்.
+          </p>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="bg-white rounded-2xl p-4 sm:p-5 border border-gray-100 shadow-sm">
+          <h4 class="font-black text-xs sm:text-sm text-brand-dark flex items-center gap-2">
+            <span class="text-brand-yellow font-black text-base">Q.</span>
+            <span class="lang-text" data-ta="குடும்பங்கள் மற்றும் முதியோர்களுக்கு பயணம் பாதுகாப்பானதா?" data-en="Is the ride safe for families, women, and elders?">
+              குடும்பங்கள் மற்றும் முதியோர்களுக்கு பயணம் பாதுகாப்பானதா?
+            </span>
+          </h4>
+          <p class="text-xs sm:text-sm text-gray-600 font-medium mt-2 leading-relaxed pl-5 lang-text" 
+            data-ta="எங்களின் சொந்த கார்கள், அனுபவமிக்க கண்ணியமான டிரைவர்கள் மற்றும் குளிர் ஏசி வசதியுடன் இயங்குவதால் பெண்கள், குழந்தைகள் மற்றும் முதியோர்களுக்கு 100% பாதுகாப்பான மற்றும் சௌகரியமான பயண அனுபவம் உறுதி." 
+            data-en="100% safe. Our fleet features clean, well-maintained AC vehicles operated by verified, courteous chauffeurs, guaranteeing maximum comfort for families, women, and seniors.">
+            எங்களின் சொந்த கார்கள், அனுபவமிக்க கண்ணியமான டிரைவர்கள் மற்றும் குளிர் ஏசி வசதியுடன் இயங்குவதால் பெண்கள், குழந்தைகள் மற்றும் முதியோர்களுக்கு 100% பாதுகாப்பான மற்றும் சௌகரியமான பயண அனுபவம் உறுதி.
+          </p>
+        </div>
       </div>
     </section>
 
