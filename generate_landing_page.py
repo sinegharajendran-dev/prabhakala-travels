@@ -5,17 +5,17 @@ logo_badge_path = '/Users/madhavan/.gemini/antigravity/scratch/perambalur-taisor
 with open(logo_badge_path, 'rb') as f:
     b64_logo_badge = 'data:image/jpeg;base64,' + base64.b64encode(f.read()).decode('utf-8')
 
-car_hero_path = '/Users/madhavan/.gemini/antigravity/scratch/perambalur-taisor-cabs/assets/toyota_taisor_hero.jpg'
-with open(car_hero_path, 'rb') as f:
-    b64_car_hero = 'data:image/jpeg;base64,' + base64.b64encode(f.read()).decode('utf-8')
+lifestyle_hero_path = '/Users/madhavan/.gemini/antigravity/scratch/perambalur-taisor-cabs/assets/outstation_happy_travel.jpg'
+with open(lifestyle_hero_path, 'rb') as f:
+    b64_lifestyle_hero = 'data:image/jpeg;base64,' + base64.b64encode(f.read()).decode('utf-8')
 
 html_content = f'''<!DOCTYPE html>
 <html lang="ta" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <title>PKS Travels — Premier Cab Service | White Toyota Taisor SUV (TN 46 AK 1244)</title>
-  <meta name="description" content="Official cab service by Selvabarathi. Clean White Toyota Urban Cruiser Taisor AC SUV (TN46AK1244). Doorstep pickup from Perambalur district to Chennai, Trichy, Bangalore, Coimbatore, Madurai & all destinations.">
+  <title>PKS Travels — Premier Cab & Taxi Service | Perambalur District</title>
+  <meta name="description" content="Official cab and taxi service in Perambalur by Selvabarathi. Clean AC Sedans & SUVs for outstation, airport transfers and family travel across Tamil Nadu & Bangalore.">
   
   <!-- Google Fonts: Plus Jakarta Sans & Noto Sans Tamil -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -100,8 +100,8 @@ html_content = f'''<!DOCTYPE html>
         பெரம்பலூர் மாவட்டத்தின் பிரத்யேக கார் சேவை
       </span>
       <span class="text-gray-400 hidden xs:inline">•</span>
-      <span class="text-brand-yellow font-bold lang-text" data-ta="100% சொன்ன நேரத்தில் புறப்பாடு • TN 46 AK 1244" data-en="100% Punctual Doorstep Pickup • TN 46 AK 1244">
-        100% சொன்ன நேரத்தில் புறப்பாடு • TN 46 AK 1244
+      <span class="text-brand-yellow font-bold lang-text" data-ta="⚡ பெரம்பலூர் மாவட்டம் முழுவதும் 24/7 டோர்ஸ்டெப் பிக்கப்" data-en="⚡ 24/7 Doorstep Pickup Across Perambalur District">
+        ⚡ பெரம்பலூர் மாவட்டம் முழுவதும் 24/7 டோர்ஸ்டெப் பிக்கப்
       </span>
     </div>
   </div>
@@ -127,8 +127,8 @@ html_content = f'''<!DOCTYPE html>
               பெரம்பலூர் மாவட்டம்
             </span>
           </div>
-          <p class="text-[11px] sm:text-xs text-gray-500 font-semibold leading-tight mt-0.5 truncate lang-text" data-ta="பெரம்பலூர் மாவட்டம் • TN 46 AK 1244" data-en="Perambalur District • TN 46 AK 1244">
-            பெரம்பலூர் மாவட்டம் • TN 46 AK 1244
+          <p class="text-[11px] sm:text-xs text-gray-500 font-semibold leading-tight mt-0.5 truncate lang-text" data-ta="பெரம்பலூர் மாவட்டம் • 24/7 டாக்ஸி சேவை" data-en="Perambalur District • 24/7 Taxi Service">
+            பெரம்பலூர் மாவட்டம் • 24/7 டாக்ஸி சேவை
           </p>
         </div>
       </a>
@@ -188,7 +188,7 @@ html_content = f'''<!DOCTYPE html>
       </p>
     </div>
 
-    <!-- MAIN GRID: Left (Interactive IndiGo-Style Booking Engine) | Right (Toyota Taisor 3D Showcase & Bento Stats) -->
+    <!-- MAIN GRID: Left (Interactive Booking Engine) | Right (Outstation Travel Showcase & Bento Stats) -->
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-start w-full min-w-0">
 
       <!-- ================= LEFT: INDIGO-STYLE BOOKING WIDGET (7 COLS) ================= -->
@@ -323,47 +323,46 @@ html_content = f'''<!DOCTYPE html>
       <!-- ================= RIGHT: TOYOTA TAISOR 3D SHOWCASE & BENTO TRUST (5 COLS) ================= -->
       <div class="lg:col-span-5 space-y-5 sm:space-y-6 min-w-0 w-full overflow-hidden">
 
-        <!-- 3D CAR SPOTLIGHT CARD -->
+        <!-- OUTSTATION TRAVEL LIFESTYLE SPOTLIGHT CARD -->
         <div class="bg-white rounded-3xl p-5 sm:p-6 shadow-bento border border-gray-100 relative overflow-hidden text-center min-w-0">
           
           <!-- Badge -->
           <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-brand-yellow/20 text-brand-dark text-xs font-black mb-2">
             <span>✨</span>
-            <span class="lang-text" data-ta="அதிநவீன டொயோட்டா டெய்சர் SUV" data-en="Brand New Toyota Taisor SUV">
-              அதிநவீன டொயோட்டா டெய்சர் SUV
+            <span class="lang-text" data-ta="குடும்பங்களுக்கான நம்பகமான டிராவல்ஸ்" data-en="Safe & Comfortable Outstation Cabs">
+              குடும்பங்களுக்கான நம்பகமான டிராவல்ஸ்
             </span>
           </div>
 
-          <h3 class="font-black text-xl sm:text-2xl text-brand-dark tracking-tight leading-tight">
-            White Toyota Taisor
+          <h3 class="font-black text-xl sm:text-2xl text-brand-dark tracking-tight leading-tight lang-text" data-ta="நிம்மதியான வெளியூர் பயணம்" data-en="Ride Out of Town in Comfort">
+            நிம்மதியான வெளியூர் பயணம்
           </h3>
-          <p class="text-xs text-gray-500 font-medium lang-text" data-ta="பதிவு எண்: TN 46 AK 1244 • பெரம்பலூர் மாவட்டம்" data-en="Registration: TN 46 AK 1244 • Perambalur District">
-            பதிவு எண்: TN 46 AK 1244 • பெரம்பலூர் மாவட்டம்
+          <p class="text-xs text-gray-500 font-medium mt-1 lang-text" data-ta="செடான் & SUV கார்கள் • அனுபவமிக்க டிரைவர்கள் • குளிர் ஏசி" data-en="Sedan & SUV Fleet • Verified Chauffeurs • Chilled AC">
+            செடான் & SUV கார்கள் • அனுபவமிக்க டிரைவர்கள் • குளிர் ஏசி
           </p>
 
-          <!-- The Rendered 3D Isometric Toyota Taisor Image -->
-          <div class="relative my-3 sm:my-4 group cursor-pointer">
-            <div class="absolute inset-0 bg-brand-yellow/15 rounded-full blur-2xl glow-pedestal"></div>
+          <!-- Lifestyle Travel Image -->
+          <div class="relative my-3 sm:my-4 rounded-2xl overflow-hidden shadow-md group cursor-pointer border border-gray-100">
             <img 
-              src="{b64_car_hero}" 
-              alt="White Toyota Urban Cruiser Taisor - PKS Travels (TN 46 AK 1244)"
-              class="relative z-10 w-full h-auto max-h-[220px] sm:max-h-[260px] object-contain mx-auto drop-shadow-2xl group-hover:scale-105 transition-transform duration-300"
+              src="{b64_lifestyle_hero}" 
+              alt="PKS Travels - Safe & Comfortable Outstation Cab Service"
+              class="w-full h-auto max-h-[220px] sm:max-h-[260px] object-cover mx-auto group-hover:scale-105 transition-transform duration-300"
             >
           </div>
 
-          <!-- Feature Badges Bento Strip (3 Clean Spacious Pills) -->
+          <!-- Feature Badges Bento Strip (3 Trust Badges) -->
           <div class="grid grid-cols-3 gap-2.5 pt-2 border-t border-gray-100 text-center">
+            <div class="p-2.5 rounded-2xl bg-gray-50 border border-gray-100">
+              <span class="block text-lg">🛡️</span>
+              <span class="text-[11px] font-bold text-gray-800 block mt-0.5 lang-text" data-ta="பாதுகாப்பானது" data-en="100% Safe">பாதுகாப்பானது</span>
+            </div>
             <div class="p-2.5 rounded-2xl bg-gray-50 border border-gray-100">
               <span class="block text-lg">❄️</span>
               <span class="text-[11px] font-bold text-gray-800 block mt-0.5 lang-text" data-ta="குளிர் ஏசி" data-en="Chilled AC">குளிர் ஏசி</span>
             </div>
             <div class="p-2.5 rounded-2xl bg-gray-50 border border-gray-100">
-              <span class="block text-lg">⛰️</span>
-              <span class="text-[11px] font-bold text-gray-800 block mt-0.5 lang-text" data-ta="190mm மேடு" data-en="190mm Clearance">190mm மேடு</span>
-            </div>
-            <div class="p-2.5 rounded-2xl bg-gray-50 border border-gray-100">
-              <span class="block text-lg">👥</span>
-              <span class="text-[11px] font-bold text-gray-800 block mt-0.5 lang-text" data-ta="4 பயணிகள்" data-en="4 Passengers">4 பயணிகள்</span>
+              <span class="block text-lg">💰</span>
+              <span class="text-[11px] font-bold text-gray-800 block mt-0.5 lang-text" data-ta="நேர்மையான கட்டணம்" data-en="Fair Pricing">நேர்மையான கட்டணம்</span>
             </div>
           </div>
 
@@ -491,7 +490,7 @@ html_content = f'''<!DOCTYPE html>
           <div class="flex items-center gap-1 text-amber-400 text-sm mb-2">★★★★★</div>
           <p class="text-xs sm:text-sm text-gray-700 leading-relaxed font-medium break-words lang-text" 
             data-ta="&ldquo;சென்னை ஏர்போர்ட்டிற்கு அதிகாலை 3 மணிக்கு புக் செய்திருந்தோம். சொன்ன நேரத்திற்கு 10 நிமிடம் முன்பே வந்து நின்றார் செல்வபாரதி. கார் மிகவும் சுத்தமாகவும் ஏசி அருமையாகவும் இருந்தது.&rdquo;" 
-            data-en="&ldquo;We booked a cab to Chennai Airport at 3:00 AM. Selvabarathi arrived 10 minutes early. The brand new Toyota Taisor was spotless and the AC was excellent!&rdquo;">
+            data-en="&ldquo;We booked a cab to Chennai Airport at 3:00 AM. Selvabarathi arrived 10 minutes early. The cab was spotless, comfortable and the AC was excellent!&rdquo;">
             &ldquo;சென்னை ஏர்போர்ட்டிற்கு அதிகாலை 3 மணிக்கு புக் செய்திருந்தோம். சொன்ன நேரத்திற்கு 10 நிமிடம் முன்பே வந்து நின்றார் செல்வபாரதி. கார் மிகவும் சுத்தமாகவும் ஏசி அருமையாகவும் இருந்தது.&rdquo;
           </p>
           <div class="mt-3.5 pt-2.5 border-t border-gray-100 flex items-center justify-between text-xs">
@@ -504,7 +503,7 @@ html_content = f'''<!DOCTYPE html>
           <div class="flex items-center gap-1 text-amber-400 text-sm mb-2">★★★★★</div>
           <p class="text-xs sm:text-sm text-gray-700 leading-relaxed font-medium break-words lang-text" 
             data-ta="&ldquo;டொயோட்டா டைசர் கார் மிகவும் சௌகரியமாக இருந்தது. குடும்பத்துடன் திருப்பதி சென்றோம். பெரியவர்கள் ஏற இறங்க எளிதாக இருந்தது. டிரைவரின் பக்குவமான அணுகுமுறை பிடித்திருந்தது.&rdquo;" 
-            data-en="&ldquo;The Toyota Taisor SUV was extremely comfortable. We traveled with our family to Tirupati. Smooth ingress for elders and very courteous driving.&rdquo;">
+            data-en="&ldquo;The Clean AC Cab was extremely comfortable. We traveled with our family to Tirupati. Smooth ingress for elders and very courteous driving.&rdquo;">
             &ldquo;டொயோட்டா டைசர் கார் மிகவும் சௌகரியமாக இருந்தது. குடும்பத்துடன் திருப்பதி சென்றோம். பெரியவர்கள் ஏற இறங்க எளிதாக இருந்தது. டிரைவரின் பக்குவமான அணுகுமுறை பிடித்திருந்தது.&rdquo;
           </p>
           <div class="mt-3.5 pt-2.5 border-t border-gray-100 flex items-center justify-between text-xs">
@@ -576,7 +575,7 @@ html_content = f'''<!DOCTYPE html>
           </div>
           <div class="text-right shrink-0">
             <span class="text-[10px] font-black px-2.5 py-1 rounded-full bg-brand-yellow text-brand-dark block">
-              TN 46 AK 1244
+              Clean AC Cab
             </span>
           </div>
         </div>
@@ -750,7 +749,7 @@ html_content = f'''<!DOCTYPE html>
           </div>
           <div class="text-right shrink-0">
             <span class="text-[10px] font-black px-2 py-0.5 rounded-full bg-brand-yellow text-brand-dark block">
-              TN 46 AK 1244
+              Clean AC Cab
             </span>
           </div>
         </div>
@@ -849,7 +848,7 @@ html_content = f'''<!DOCTYPE html>
             பெரம்பலூர் ➔ சென்னை (~270 KM)
           </div>
           <div id="summarySubText" class="text-xs text-gray-600 mt-0.5 leading-relaxed">
-            2 பயணிகள் • 1 டிராலி • ஒரு வழி • Toyota Taisor SUV
+            2 பயணிகள் • 1 டிராலி • ஒரு வழி • Clean AC Cab
           </div>
         </div>
 
@@ -893,8 +892,8 @@ html_content = f'''<!DOCTYPE html>
         <span class="lang-text" data-ta="• பெரம்பலூர் மாவட்டம்" data-en="• Perambalur District">• பெரம்பலூர் மாவட்டம்</span>
       </div>
       <p class="font-medium text-[11px] sm:text-xs text-center sm:text-right">
-        <span class="lang-text" data-ta="ஒயிட் டொயோட்டா டெய்சர் (TN 46 AK 1244) • நேரடி தொடர்பு:" data-en="White Toyota Taisor (TN 46 AK 1244) • Direct Line:">
-          ஒயிட் டொயோட்டா டெய்சர் (TN 46 AK 1244) • நேரடி தொடர்பு:
+        <span class="lang-text" data-ta="சுத்தமான ஏசி கார் & டாக்ஸி சர்வீஸ் • நேரடி தொடர்பு:" data-en="Clean AC Cab & Outstation Taxi • Direct Line:">
+          சுத்தமான ஏசி கார் & டாக்ஸி சர்வீஸ் • நேரடி தொடர்பு:
         </span>
         <a href="tel:+916385300259" class="font-bold text-brand-dark hover:underline">+91 6385300259</a>
       </p>
@@ -1323,7 +1322,7 @@ html_content = f'''<!DOCTYPE html>
       }}
 
       const summarySubEl = document.getElementById('summarySubText');
-      if (summarySubEl) summarySubEl.textContent = `${{paxSummary}} • ${{luggageSummary}} • ${{state.selectedTime}} • ${{tripLabel}} • Toyota Taisor (TN46AK1244)`;
+      if (summarySubEl) summarySubEl.textContent = `${{paxSummary}} • ${{luggageSummary}} • ${{state.selectedTime}} • ${{tripLabel}} • Clean AC Cab`;
       const modalDateTimeEl = document.getElementById('modalSummaryDateTime');
       if (modalDateTimeEl) modalDateTimeEl.textContent = `${{state.selectedDate}} • ${{state.selectedTime}} • ${{tripLabel}}`;
     }}
@@ -1352,7 +1351,7 @@ html_content = f'''<!DOCTYPE html>
         `${{EMOJIS.clock}} *Pickup Time:* ${{state.selectedTime}}`,
         `${{EMOJIS.people}} *Passengers:* ${{state.adults}} Adults${{state.children > 0 ? `, ${{state.children}} Children` : ''}}`,
         `${{EMOJIS.luggage}} *Luggage:* ${{luggageInfo}}`,
-        `${{EMOJIS.car}} *Vehicle:* White Toyota Urban Cruiser Taisor (Clean AC SUV - TN 46 AK 1244)`,
+        `${{EMOJIS.car}} *Vehicle:* Clean AC Sedan / SUV (PKS Travels)`,
         '',
         'Please confirm vehicle availability and send the best quote!'
       ].join('\\n');
