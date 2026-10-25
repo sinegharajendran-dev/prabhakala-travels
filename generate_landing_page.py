@@ -1043,7 +1043,7 @@ html_content = f'''<!DOCTYPE html>
         <img src="{b64_logo_badge}" alt="Logo" class="w-6 h-6 rounded-md shrink-0">
         <span class="font-black text-brand-dark text-xs sm:text-sm">PKS டிராவல்ஸ் (PKS Travels)</span>
         <span class="text-gray-400">•</span>
-        <span class="text-gray-600 font-medium">Designed by <a href="https://madhvan.vercel.app/" target="_blank" rel="noopener noreferrer" class="font-bold text-brand-dark hover:text-amber-600 underline underline-offset-2 transition-colors">Madhavan</a></span>
+        <span class="text-gray-600 font-medium">Designed by <a href="https://www.madhvan.site/" target="_blank" rel="noopener noreferrer" class="font-bold text-brand-dark hover:text-amber-600 underline underline-offset-2 transition-colors">Madhavan</a></span>
       </div>
       <p class="font-medium text-[11px] sm:text-xs text-center sm:text-right">
         <span class="lang-text" data-ta="சுத்தமான ஏசி கார் & டாக்ஸி சர்வீஸ் • நேரடி தொடர்பு:" data-en="Clean AC Cab & Outstation Taxi • Direct Line:">
