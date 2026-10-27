@@ -102,19 +102,13 @@ html_content = f'''<!DOCTYPE html>
         extend: {{
           colors: {{
             brand: {{
+              yellow: '#FFC802',
+              yellowHover: '#E5B400',
+              yellowLight: '#FFF9E5',
               emerald: '#0B4632',
               emeraldDark: '#072E21',
-              emeraldLight: '#145A42',
-              emeraldTint: '#EAF4EE',
-              gold: '#C59B27',
-              goldHover: '#B0861A',
-              goldLight: '#FDF8EC',
-              goldChampagne: '#DFBF64',
-              yellow: '#C59B27',
-              yellowHover: '#B0861A',
-              yellowLight: '#FDF8EC',
-              dark: '#0D2B20',
-              grayLight: '#F3F7F5',
+              dark: '#121316',
+              grayLight: '#F4F5F7',
               whatsapp: '#25D366',
               whatsappDark: '#1EBE5D'
             }}
@@ -169,17 +163,17 @@ html_content = f'''<!DOCTYPE html>
     }}
   </style>
 </head>
-<body class="bg-[#FAF9F6] text-brand-dark min-h-screen flex flex-col antialiased selection:bg-brand-gold selection:text-white pb-20 md:pb-8">
+<body class="bg-[#FAF9F6] text-brand-dark min-h-screen flex flex-col antialiased selection:bg-brand-yellow selection:text-white pb-20 md:pb-8">
 
   <!-- ================= TOP NOTIFICATION / TRUST BAR ================= -->
-  <div class="bg-brand-emeraldDark text-white text-[11px] sm:text-xs py-2 px-3 sm:px-4 text-center font-medium w-full overflow-hidden border-b border-brand-gold/20">
+  <div class="bg-brand-emeraldDark text-white text-[11px] sm:text-xs py-2 px-3 sm:px-4 text-center font-medium w-full overflow-hidden border-b border-brand-yellow/20">
     <div class="max-w-7xl mx-auto flex items-center justify-center gap-1.5 sm:gap-2 flex-wrap leading-relaxed">
       <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-ping shrink-0"></span>
       <span class="lang-text" data-ta="பெரம்பலூர் மாவட்டத்தின் பிரத்யேக கார் சேவை" data-en="Exclusive Cab Service in Perambalur District">
         பெரம்பலூர் மாவட்டத்தின் பிரத்யேக கார் சேவை
       </span>
       <span class="text-emerald-300 hidden xs:inline">•</span>
-      <span class="text-[#DFBF64] font-bold lang-text" data-ta="⚡ பெரம்பலூர் மாவட்டம் முழுவதும் 24/7 டோர்ஸ்டெப் பிக்கப்" data-en="⚡ 24/7 Doorstep Pickup Across Perambalur District">
+      <span class="text-brand-yellow font-bold lang-text" data-ta="⚡ பெரம்பலூர் மாவட்டம் முழுவதும் 24/7 டோர்ஸ்டெப் பிக்கப்" data-en="⚡ 24/7 Doorstep Pickup Across Perambalur District">
         ⚡ பெரம்பலூர் மாவட்டம் முழுவதும் 24/7 டோர்ஸ்டெப் பிக்கப்
       </span>
     </div>
@@ -453,9 +447,9 @@ html_content = f'''<!DOCTYPE html>
         </div>
 
         <!-- BENTO CARD: WHY CHOOSE KALA'S TRAVELS OVER OLA / UBER? -->
-        <div class="bg-brand-emerald text-white rounded-3xl p-5 sm:p-6 shadow-bento relative overflow-hidden min-w-0 border border-brand-gold/30">
+        <div class="bg-brand-emerald text-white rounded-3xl p-5 sm:p-6 shadow-bento relative overflow-hidden min-w-0 border border-brand-yellow/30">
           <div class="flex items-center gap-2 mb-4">
-            <span class="w-8 h-8 rounded-xl bg-brand-gold text-brand-dark flex items-center justify-center font-bold text-sm shrink-0">★</span>
+            <span class="w-8 h-8 rounded-xl bg-brand-yellow text-brand-dark flex items-center justify-center font-bold text-sm shrink-0">★</span>
             <div>
               <h4 class="font-black text-sm sm:text-base text-white lang-text" data-ta="ஓலா / ஊபரை விட கலா டிராவல்ஸ் ஏன் சிறந்தது?" data-en="Why Choose Kala's Travels Over Ola / Uber?">
                 ஓலா / ஊபரை விட கலா டிராவல்ஸ் ஏன் சிறந்தது?
@@ -468,9 +462,9 @@ html_content = f'''<!DOCTYPE html>
 
           <ul class="space-y-3 text-xs sm:text-sm">
             <li class="flex items-start gap-2.5">
-              <span class="w-5 h-5 rounded-full bg-brand-gold/20 text-[#DFBF64] flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">✓</span>
+              <span class="w-5 h-5 rounded-full bg-brand-yellow/20 text-brand-yellow flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">✓</span>
               <div class="min-w-0 break-words">
-                <strong class="text-[#DFBF64] block leading-tight lang-text" data-ta="டிரைவர் கேன்சல் செய்யும் தொல்லை இல்லை" data-en="Zero Booking Cancellations">
+                <strong class="text-brand-yellow block leading-tight lang-text" data-ta="டிரைவர் கேன்சல் செய்யும் தொல்லை இல்லை" data-en="Zero Booking Cancellations">
                   டிரைவர் கேன்சல் செய்யும் தொல்லை இல்லை
                 </strong>
                 <span class="text-gray-200 text-[11px] sm:text-xs lang-text" data-ta="சொன்ன நேரத்திற்கு 10 நிமிடம் முன்பே உங்கள் வீட்டு வாசலில் கார் நிற்கும்." data-en="No driver cancellations. Cab arrives at your doorstep 10 mins early.">
@@ -479,9 +473,9 @@ html_content = f'''<!DOCTYPE html>
               </div>
             </li>
             <li class="flex items-start gap-2.5">
-              <span class="w-5 h-5 rounded-full bg-brand-gold/20 text-[#DFBF64] flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">✓</span>
+              <span class="w-5 h-5 rounded-full bg-brand-yellow/20 text-brand-yellow flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">✓</span>
               <div class="min-w-0 break-words">
-                <strong class="text-[#DFBF64] block leading-tight lang-text" data-ta="குடும்பங்களுக்கு 100% பாதுகாப்பான பயணம்" data-en="100% Safe For Families & Elders">
+                <strong class="text-brand-yellow block leading-tight lang-text" data-ta="குடும்பங்களுக்கு 100% பாதுகாப்பான பயணம்" data-en="100% Safe For Families & Elders">
                   குடும்பங்களுக்கு 100% பாதுகாப்பான பயணம்
                 </strong>
                 <span class="text-gray-200 text-[11px] sm:text-xs lang-text" data-ta="நிதானமான மற்றும் கண்ணியமான டிரைவிங். பெண்களுக்கும் குழந்தைகளுக்கும் நிம்மதி." data-en="Disciplined, courteous chauffeur. Highly recommended for families & seniors.">
@@ -490,9 +484,9 @@ html_content = f'''<!DOCTYPE html>
               </div>
             </li>
             <li class="flex items-start gap-2.5">
-              <span class="w-5 h-5 rounded-full bg-brand-gold/20 text-[#DFBF64] flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">✓</span>
+              <span class="w-5 h-5 rounded-full bg-brand-yellow/20 text-brand-yellow flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">✓</span>
               <div class="min-w-0 break-words">
-                <strong class="text-[#DFBF64] block leading-tight lang-text" data-ta="தெளிவான வெளிப்படையான கட்டணம்" data-en="Transparent & Fair Kilometre Rates">
+                <strong class="text-brand-yellow block leading-tight lang-text" data-ta="தெளிவான வெளிப்படையான கட்டணம்" data-en="Transparent & Fair Kilometre Rates">
                   தெளிவான வெளிப்படையான கட்டணம்
                 </strong>
                 <span class="text-gray-200 text-[11px] sm:text-xs lang-text" data-ta="மழைக்கால சர்ஜ் கட்டணங்கள் இல்லை. மறைமுக கட்டணங்கள் ஏதும் இல்லை." data-en="No surge pricing or hidden commissions. Direct, honest rates.">
@@ -508,9 +502,9 @@ html_content = f'''<!DOCTYPE html>
               <div class="text-[10px] uppercase font-bold text-emerald-300/80 lang-text" data-ta="நேரடி தொடர்பு (செல்வபாரதி)" data-en="Direct Contact (Selvabarathi)">
                 நேரடி தொடர்பு (செல்வபாரதி)
               </div>
-              <a href="tel:+916385300259" class="font-black text-sm sm:text-base text-[#DFBF64] hover:underline">+91 6385300259</a>
+              <a href="tel:+916385300259" class="font-black text-sm sm:text-base text-brand-yellow hover:underline">+91 6385300259</a>
             </div>
-            <a href="tel:+916385300259" class="px-3.5 py-1.5 rounded-xl bg-brand-gold text-brand-dark font-black text-xs tactile-btn hover:bg-brand-goldHover cursor-pointer">
+            <a href="tel:+916385300259" class="px-3.5 py-1.5 rounded-xl bg-brand-yellow text-brand-dark font-black text-xs tactile-btn hover:bg-brand-yellowHover cursor-pointer">
               <span class="lang-text" data-ta="📞 அழைக்கவும்" data-en="📞 Call Now">📞 அழைக்கவும்</span>
             </a>
           </div>
