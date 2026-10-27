@@ -14,25 +14,25 @@ html_content = f'''<!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <title>PKS Travels — Best Cab & Taxi Service in Perambalur | 24/7 Outstation & Airport Cabs</title>
+  <title>Kala's Travels — Best Cab & Taxi Service in Perambalur | 24/7 Outstation & Airport Cabs</title>
   <meta name="description" content="Official cab & taxi service in Perambalur by Selvabarathi (+91 6385300259). Reliable AC cabs for Chennai, Trichy Airport, Bangalore, Coimbatore & temple tours. Doorstep pickup across Perambalur district.">
-  <meta name="keywords" content="Perambalur cab service, Perambalur taxi service, Perambalur to Trichy airport taxi, Perambalur to Chennai cab, Perambalur car rental, Poolambadi taxi, PKS travels Perambalur, outstation cab perambalur, பெரம்பலூர் டாக்ஸி சர்வீஸ், பெரம்பலூர் கார் வாடகை">
-  <meta name="author" content="PKS Travels">
+  <meta name="keywords" content="Perambalur cab service, Perambalur taxi service, Perambalur to Trichy airport taxi, Perambalur to Chennai cab, Perambalur car rental, Poolambadi taxi, Kala's Travels Perambalur, outstation cab perambalur, பெரம்பலூர் டாக்ஸி சர்வீஸ், கலா டிராவல்ஸ்">
+  <meta name="author" content="Kala's Travels">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://perambalurcabs.vercel.app/">
+  <link rel="canonical" href="https://kalatravels.vercel.app/">
 
   <!-- Open Graph / Facebook / WhatsApp Preview -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://perambalurcabs.vercel.app/">
-  <meta property="og:title" content="PKS Travels — Best Cab & Taxi Service in Perambalur">
+  <meta property="og:url" content="https://kalatravels.vercel.app/">
+  <meta property="og:title" content="Kala's Travels — Best Cab & Taxi Service in Perambalur">
   <meta property="og:description" content="Reliable 24/7 outstation & airport taxi service in Perambalur District. Clean AC Sedans & SUVs with verified courteous chauffeurs.">
-  <meta property="og:image" content="https://perambalurcabs.vercel.app/assets/hero_chauffeur_showcase.jpg">
+  <meta property="og:image" content="https://kalatravels.vercel.app/assets/hero_chauffeur_showcase.jpg">
 
   <!-- Twitter Meta -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="PKS Travels — Cab & Taxi Service | Perambalur District">
+  <meta name="twitter:title" content="Kala's Travels — Cab & Taxi Service | Perambalur District">
   <meta name="twitter:description" content="Doorstep 24/7 cab booking in Perambalur. Outstation travel to Chennai, Bangalore, Trichy & temple tours. Call +91 6385300259.">
-  <meta name="twitter:image" content="https://perambalurcabs.vercel.app/assets/hero_chauffeur_showcase.jpg">
+  <meta name="twitter:image" content="https://kalatravels.vercel.app/assets/hero_chauffeur_showcase.jpg">
 
   <meta name="google-site-verification" content="tqvIdVWB3i0uT5pFGFkHW9k2tYQJqg9T_vb77Ksb3jc">
 
@@ -41,10 +41,10 @@ html_content = f'''<!DOCTYPE html>
   {{
     "@context": "https://schema.org",
     "@type": "TaxiService",
-    "name": "PKS Travels Perambalur",
-    "alternateName": "PKS டிராவல்ஸ் பெரம்பலூர்",
+    "name": "Kala's Travels Perambalur",
+    "alternateName": "கலா டிராவல்ஸ் பெரம்பலூர்",
     "description": "Premier 24/7 commercial cab and outstation taxi service based in Perambalur District, Tamil Nadu. Clean AC Sedans and SUVs for airport drops, family vacation, and temple pilgrimage tours.",
-    "url": "https://perambalurcabs.vercel.app/",
+    "url": "https://kalatravels.vercel.app/",
     "telephone": "+916385300259",
     "priceRange": "₹₹",
     "image": "https://perambalurcabs.vercel.app/assets/hero_chauffeur_showcase.jpg",
@@ -218,7 +218,7 @@ html_content = f'''<!DOCTYPE html>
         </a>
 
         <!-- WhatsApp Quick Link (Desktop & Tablet only, hidden on mobile) -->
-        <a href="https://api.whatsapp.com/send?phone=916385300259&text=%E0%AE%B5%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%AE%E0%AF%8D!%20I%20want%20to%20enquire%20about%20booking%20a%20cab%20with%20PKS%20Travels." target="_blank" class="hidden sm:flex px-3.5 py-2 rounded-full bg-brand-whatsapp hover:bg-brand-whatsappDark text-white font-bold text-xs shadow-wa tactile-btn items-center gap-1.5">
+        <a href="https://api.whatsapp.com/send?phone=916385300259&text=%E0%AE%B5%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%AE%E0%AF%8D!%20I%20want%20to%20enquire%20about%20booking%20a%20cab%20with%20Kala%27s%20Travels." target="_blank" class="hidden sm:flex px-3.5 py-2 rounded-full bg-brand-whatsapp hover:bg-brand-whatsappDark text-white font-bold text-xs shadow-wa tactile-btn items-center gap-1.5">
           <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.159.57 4.184 1.564 5.938l-1.564 5.714 5.86-1.537c1.704.931 3.659 1.473 5.74 1.473 6.627 0 12-5.373 12-12s-5.373-12-12-12z"/></svg>
           <span>WhatsApp</span>
         </a>
@@ -413,7 +413,7 @@ html_content = f'''<!DOCTYPE html>
 
           <!-- ZOOMED HERO SHOWCASE: CHAUFFEUR HOSPITALITY & FAMILY CAB -->
           <div class="my-4 rounded-2xl overflow-hidden shadow-md border border-gray-200/80 group relative">
-            <img src="{b64_showcase_hero}" alt="PKS Travels Chauffeur Hospitality" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500 block">
+            <img src="{b64_showcase_hero}" alt="Kala's Travels Chauffeur Hospitality" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500 block">
             <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/75 via-black/30 to-transparent p-3 pt-8 text-left flex items-center justify-between">
               <span class="text-white text-[11px] sm:text-xs font-bold flex items-center gap-1.5 drop-shadow">
                 <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
@@ -443,13 +443,13 @@ html_content = f'''<!DOCTYPE html>
 
         </div>
 
-        <!-- BENTO CARD: WHY CHOOSE PKS TRAVELS OVER OLA / UBER? -->
+        <!-- BENTO CARD: WHY CHOOSE KALA'S TRAVELS OVER OLA / UBER? -->
         <div class="bg-brand-dark text-white rounded-3xl p-5 sm:p-6 shadow-bento relative overflow-hidden min-w-0">
           <div class="flex items-center gap-2 mb-4">
             <span class="w-8 h-8 rounded-xl bg-brand-yellow text-brand-dark flex items-center justify-center font-bold text-sm shrink-0">★</span>
             <div>
-              <h4 class="font-black text-sm sm:text-base text-white lang-text" data-ta="ஓலா / ஊபரை விட PKS டிராவல்ஸ் ஏன் சிறந்தது?" data-en="Why Choose PKS Travels Over Ola / Uber?">
-                ஓலா / ஊபரை விட PKS டிராவல்ஸ் ஏன் சிறந்தது?
+              <h4 class="font-black text-sm sm:text-base text-white lang-text" data-ta="ஓலா / ஊபரை விட கலா டிராவல்ஸ் ஏன் சிறந்தது?" data-en="Why Choose Kala's Travels Over Ola / Uber?">
+                ஓலா / ஊபரை விட கலா டிராவல்ஸ் ஏன் சிறந்தது?
               </h4>
               <p class="text-[11px] text-gray-400 font-medium lang-text" data-ta="சொந்த கார் • குடும்பப் பயணம் • நியாயமான கட்டணம்" data-en="Owner Driven • Safe Family Ride • Transparent Fares">
                 சொந்த கார் • குடும்பப் பயணம் • நியாயமான கட்டணம்
@@ -613,7 +613,7 @@ html_content = f'''<!DOCTYPE html>
         <h3 class="text-xl sm:text-2xl font-black text-brand-dark tracking-tight lang-text" data-ta="பெரம்பலூர் டாக்ஸி முன்பதிவு வழிகாட்டி" data-en="Perambalur Cab Service & Travel Guide">
           பெரம்பலூர் டாக்ஸி முன்பதிவு வழிகாட்டி
         </h3>
-        <p class="text-xs sm:text-sm text-gray-500 font-medium mt-1 lang-text" data-ta="உங்கள் பயணத்திற்கான பொதுவான கேள்விகளுக்கான விடைகள்" data-en="Everything you need to know about outstation taxi booking with PKS Travels">
+        <p class="text-xs sm:text-sm text-gray-500 font-medium mt-1 lang-text" data-ta="உங்கள் பயணத்திற்கான பொதுவான கேள்விகளுக்கான விடைகள்" data-en="Everything you need to know about outstation taxi booking with Kala's Travels">
           உங்கள் பயணத்திற்கான பொதுவான கேள்விகளுக்கான விடைகள்
         </p>
       </div>
@@ -1030,7 +1030,7 @@ html_content = f'''<!DOCTYPE html>
       <span>📞</span>
       <span>6385300259</span>
     </a>
-    <a href="https://api.whatsapp.com/send?phone=916385300259&text=%E0%AE%B5%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%AE%E0%AF%8D!%20I%20want%20to%20enquire%20about%20booking%20a%20cab%20with%20PKS%20Travels." target="_blank" class="flex-1 py-3 px-2 rounded-2xl bg-brand-whatsapp text-white font-black text-xs sm:text-sm flex items-center justify-center gap-1.5 tactile-btn shadow-wa cursor-pointer">
+    <a href="https://api.whatsapp.com/send?phone=916385300259&text=%E0%AE%B5%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%AE%E0%AF%8D!%20I%20want%20to%20enquire%20about%20booking%20a%20cab%20with%20Kala%27s%20Travels." target="_blank" class="flex-1 py-3 px-2 rounded-2xl bg-brand-whatsapp text-white font-black text-xs sm:text-sm flex items-center justify-center gap-1.5 tactile-btn shadow-wa cursor-pointer">
       <span>🟢</span>
       <span class="lang-text" data-ta="WhatsApp புக்" data-en="WhatsApp Book">WhatsApp புக்</span>
     </a>
@@ -1041,7 +1041,7 @@ html_content = f'''<!DOCTYPE html>
     <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4">
       <div class="flex flex-wrap items-center justify-center sm:justify-start gap-2 max-w-full">
         <img src="{b64_logo_badge}" alt="Logo" class="w-6 h-6 rounded-md shrink-0">
-        <span class="font-black text-brand-dark text-xs sm:text-sm">PKS டிராவல்ஸ் (PKS Travels)</span>
+        <span class="font-black text-brand-dark text-xs sm:text-sm">கலா டிராவல்ஸ் (Kala's Travels)</span>
         <span class="text-gray-400">•</span>
         <span class="text-gray-600 font-medium">Designed by <a href="https://www.madhvan.site/" target="_blank" rel="noopener noreferrer" class="font-bold text-brand-dark hover:text-amber-600 underline underline-offset-2 transition-colors">Madhavan</a></span>
       </div>
@@ -1495,7 +1495,7 @@ html_content = f'''<!DOCTYPE html>
         : 'No Luggage (Small Bags Only)';
 
       return [
-        'வணக்கம்! I would like to book a cab ride with *PKS Travels*:',
+        'வணக்கம்! I would like to book a cab ride with *Kala\\'s Travels*:',
         '',
         `${{EMOJIS.pin}} *From:* ${{fromName}}`,
         `${{EMOJIS.flag}} *To:* ${{dropName}}`,
@@ -1505,7 +1505,7 @@ html_content = f'''<!DOCTYPE html>
         `${{EMOJIS.clock}} *Pickup Time:* ${{state.selectedTime}}`,
         `${{EMOJIS.people}} *Passengers:* ${{state.adults}} Adults${{state.children > 0 ? `, ${{state.children}} Children` : ''}}`,
         `${{EMOJIS.luggage}} *Luggage:* ${{luggageInfo}}`,
-        `${{EMOJIS.car}} *Vehicle:* Clean AC Sedan / SUV (PKS Travels)`,
+        `${{EMOJIS.car}} *Vehicle:* Clean AC Sedan / SUV (Kala\\'s Travels)`,
         '',
         'Please confirm vehicle availability and send the best quote!'
       ].join('\\n');
