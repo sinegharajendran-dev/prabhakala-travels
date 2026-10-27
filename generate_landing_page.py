@@ -184,14 +184,14 @@ html_content = f'''<!DOCTYPE html>
       <a href="#" class="flex items-center gap-2.5 sm:gap-3 group min-w-0 flex-1">
         <!-- Logo Badge -->
         <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl overflow-hidden shadow-sm border border-amber-300 bg-amber-50 shrink-0">
-          <img src="{b64_logo_badge}" alt="PKS Travels Logo" class="w-full h-full object-cover">
+          <img src="{b64_logo_badge}" alt="Kala's Travels Logo" class="w-full h-full object-cover">
         </div>
         
         <!-- Text Group (Flexible, legible, never wraps messily) -->
         <div class="min-w-0 flex-1">
           <div class="flex items-center gap-1.5">
-            <span class="font-black text-base sm:text-xl md:text-2xl tracking-tight text-brand-dark leading-tight whitespace-nowrap lang-text" data-ta="PKS டிராவல்ஸ்" data-en="PKS TRAVELS">
-              PKS டிராவல்ஸ்
+            <span class="font-black text-base sm:text-xl md:text-2xl tracking-tight text-brand-dark leading-tight whitespace-nowrap lang-text" data-ta="கலா டிராவல்ஸ்" data-en="Kala's Travels">
+              கலா டிராவல்ஸ்
             </span>
             <span class="hidden sm:inline-block text-[10px] font-black tracking-wider px-2 py-0.5 rounded-md bg-brand-yellow text-brand-dark shrink-0 lang-text" data-ta="பெரம்பலூர் மாவட்டம்" data-en="Perambalur District">
               பெரம்பலூர் மாவட்டம்
